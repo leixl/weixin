@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.leixl.easyframework.member.entity">
+	<class name="CmsComment" table="t_comment">
+		<meta attribute="sync-DAO">false</meta>
+		<cache usage="read-write"/>
+		<id name="id" type="integer" column="comment_id"><generator class="identity"/></id>
+		<property name="createTime" column="create_time" type="timestamp" not-null="true" length="19"/>
+		<property name="replayTime" column="reply_time" type="timestamp" not-null="false" length="19"/>
+		<property name="ups" column="ups" type="java.lang.Short" not-null="true" length="5"/>
+		<property name="downs" column="downs" type="java.lang.Short" not-null="true" length="5"/>
+		<property name="recommend" column="is_recommend" type="java.lang.Boolean" not-null="true"/>
+		<property name="checked" column="is_checked" type="java.lang.Boolean" not-null="true"/>
+		<one-to-one name="commentExt" class="CmsCommentExt" cascade="delete"/>
+		<many-to-one name="replayUser" column="reply_user_id" class="com.leixl.easyframework.system.entity.EUser" not-null="false"></many-to-one>
+		<many-to-one name="movie" column="movie_id" class="com.leixl.easyframework.doc.entity.EMovie" not-null="true"></many-to-one>
+		<many-to-one name="commentUser" column="comment_user_id" class="com.leixl.easyframework.system.entity.EUser" not-null="false"></many-to-one>
+	</class>
+</hibernate-mapping>

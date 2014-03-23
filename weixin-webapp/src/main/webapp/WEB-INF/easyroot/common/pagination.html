@@ -1,0 +1,42 @@
+<#assign p=pagination/>
+
+<div class="pagelistbox">
+<span>共 ${p.totalPage} 页/${p.totalCount}条记录 </span>
+<#if p.firstPage>
+首页
+上页 
+<#else>
+<a class="indexPage" href="javascript:;" onclick="_gotoPage('1');">首页</a>
+<a class="prePage" href="javascript:;" onclick="_gotoPage('${p.prePage}');">上页</a> 
+</#if> 
+<#list 1..p.totalPage as i>
+<a href="javascript:;" onclick="_gotoPage('${i}');">
+<#if p.pageNo==i><strong>${i}</strong>
+<#else>
+${i}
+</#if>
+</a>
+</#list>
+
+<#if p.lastPage>
+下页
+末页
+<#else>
+<a class="nextPage" href="javascript:;" onclick="_gotoPage('${p.nextPage}');">下页</a> 
+<a class="endPage" href="javascript:;" onclick="_gotoPage('${p.totalPage}');">末页</a> 
+</#if>
+</div>
+<script type="text/javascript">
+function _gotoPage(pageNo) {
+	try{
+		var tableForm = document.getElementById('tableForm');
+		$("input[name=pageNo]").val(pageNo);
+		tableForm.action="v_list.do";
+		tableForm.onsubmit=null;
+		tableForm.submit();
+	} catch(e) {
+		alert('_gotoPage(pageNo)方法出错');
+	}
+}
+
+</script>

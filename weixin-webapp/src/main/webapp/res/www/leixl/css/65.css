@@ -1,0 +1,1747 @@
+.global-nav .bn-more span {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	vertical-align: baseline
+}
+
+.global-nav .arrow {
+	position: relative;
+	top: -2px;
+	left: 2px;
+	border-width: 3px 3px 0;
+	border-color: #d5d5d5 transparent transparent transparent;
+	border-style: solid dashed dashed dashed;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0
+}
+
+.global-nav a:hover .arrow {
+	*top: 0;
+	border-color: #fff transparent transparent transparent
+}
+
+.global-nav .more-active {
+	position: relative;
+	z-index: 10
+}
+
+.global-nav .more-active a:link,.global-nav .more-active a:visited {
+	color: #369
+}
+
+.global-nav .more-active .arrow {
+	border-color: #fff transparent transparent transparent
+}
+
+.global-nav .more-active .bn-more span {
+	color: #fff
+}
+
+.global-nav .more-active .more-items {
+	display: block;
+	padding: 10px 0;
+	_width: 0;
+	border: 1px solid #e6e6e6;
+	background: #fff;
+	white-space: nowrap;
+	top: 28px
+}
+
+.global-nav .more-active .more-items table,.global-nav .more-active .more-items td
+	{
+	width: 100%;
+	white-space: nowrap;
+	border-collapse: collapse
+}
+
+.global-nav .more-active .more-items li {
+	display: block
+}
+
+.global-nav .more-active .more-items a {
+	display: block;
+	padding: 0 20px;
+	line-height: 28px
+}
+
+.global-nav .more-active .more-items a:link,.global-nav .more-active .more-items a:visited
+	{
+	color: #3d3d3d
+}
+
+.global-nav .more-active .more-items a:hover {
+	color: #3d3d3d;
+	background-color: #f6f6f6
+}
+
+.global-nav .more-items {
+	display: none;
+	position: absolute;
+	left: 0
+}
+
+.global-nav {
+	height: 28px;
+	color: #d5d5d5;
+	background-color: #545652;
+	min-width: 950px
+}
+
+.global-nav a:link,.global-nav a:visited,.global-nav a:hover,.global-nav a:active
+	{
+	color: #d5d5d5
+}
+
+.global-nav a:hover,.global-nav a:active {
+	color: #fff;
+	background-color: transparent
+}
+
+.global-nav .global-nav-items {
+	font-size: 0
+}
+
+.global-nav .global-nav-items li {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	line-height: 28px;
+	font-size: 12px;
+	vertical-align: baseline
+}
+
+.global-nav .global-nav-items a {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	padding: 0 12px;
+	height: 28px
+}
+
+.global-nav .top-nav-info {
+	float: right;
+	margin: 0 12px 0 0;
+	line-height: 28px
+}
+
+.global-nav .top-nav-info ul,.global-nav .top-nav-info li {
+	display: inline-block;
+	*display: inline;
+	zoom: 1
+}
+
+.global-nav .top-nav-info a {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	margin: 0;
+	padding: 0 12px;
+	height: 28px
+}
+
+.global-nav .nav-user-account .more-items {
+	left: auto;
+	right: 6px
+}
+
+.global-nav .more-active .lnk-remind:link,.global-nav .more-active .lnk-remind:visited,.global-nav .more-active .lnk-remind:hover,.global-nav .more-active .lnk-remind:active
+	{
+	color: #fff
+}
+
+.global-nav-a .bd {
+	max-width: 1600px;
+	margin: 0 auto
+}
+
+.global-nav-b .bd {
+	max-width: 1440px;
+	margin: 0 auto
+}
+
+.global-nav .top-nav-reminder {
+	position: relative;
+	float: right;
+	margin-right: 5px;
+	line-height: 28px
+}
+
+.global-nav .top-nav-reminder a {
+	position: relative
+}
+
+.global-nav .top-nav-reminder .lnk-remind {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	padding: 0 12px;
+	height: 28px
+}
+
+.global-nav .top-nav-reminder .num {
+	position: absolute;
+	top: 4px;
+	*top: 0;
+	left: 3em;
+	padding: 0 3px;
+	margin-left: 5px;
+	color: #fff;
+	line-height: 1.5;
+	background-color: #f7996d;
+	*margin-top: 4px
+}
+
+.global-nav .top-nav-reminder .num i {
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: -9px;
+	top: 50%;
+	margin-top: -6px;
+	line-height: 0;
+	border-color: transparent #f7996d transparent transparent;
+	border-style: dashed solid dashed dashed;
+	border-width: 6px 6px 3px 5px;
+	pointer-events: none
+}
+
+.global-nav .top-nav-reminder .more-items {
+	position: absolute;
+	z-index: 999;
+	padding: 0;
+	width: 280px;
+	left: -125px;
+	top: 28px;
+	border: 1px solid #e6e6e6;
+	background: #fff;
+	white-space: normal;
+	word-wrap: break-word
+}
+
+.global-nav .top-nav-reminder .more-items a {
+	display: inline;
+	padding: 0;
+	line-height: inherit
+}
+
+.global-nav .top-nav-reminder .more-items a:link {
+	color: #369
+}
+
+.global-nav .top-nav-reminder .more-items a:visited {
+	color: #669
+}
+
+.global-nav .top-nav-reminder .more-items a:hover {
+	color: #fff;
+	background-color: #039
+}
+
+.global-nav .top-nav-reminder .more-items a:active {
+	color: #fff;
+	background-color: #f93
+}
+
+.global-nav .top-nav-reminder .more-items .bd {
+	padding-top: 16px;
+	color: #3e3e3e;
+	line-height: 1.5
+}
+
+.global-nav .top-nav-reminder .more-items .bd p {
+	padding: 0 15px 13px 15px;
+	border-bottom: 1px solid #f0f0f0
+}
+
+.global-nav .top-nav-reminder .more-items .ft a {
+	display: block;
+	width: 100%;
+	padding: 4px 0;
+	text-align: center;
+	background-color: #fafafa
+}
+
+.global-nav .top-nav-reminder .more-items .ft a:hover,.global-nav .top-nav-reminder .more-items .ft a:active
+	{
+	background-color: #f5f5f5;
+	color: #369
+}
+
+.global-nav .top-nav-reminder .more-items p {
+	margin: 0;
+	color: #999
+}
+
+.global-nav .top-nav-reminder .more-items li {
+	overflow: hidden;
+	zoom: 1;
+	padding: 13px 15px;
+	border-bottom: 1px solid #f0f0f0
+}
+
+.global-nav .top-nav-reminder .more-items li .pic {
+	float: left;
+	margin-right: 8px
+}
+
+.global-nav .top-nav-reminder .more-items li .content {
+	width: auto;
+	overflow: hidden;
+	zoom: 1
+}
+
+.global-nav .top-nav-reminder .more-items li .content a {
+	line-height: 1.4
+}
+
+.global-nav .top-nav-reminder .more-items li .item-req {
+	padding: 0;
+	border: 0
+}
+
+.global-nav .top-nav-reminder .more-items li .item-req .ops {
+	width: 49px;
+	float: right;
+	*display: inline;
+	position: static;
+	overflow: hidden;
+	color: #aaa
+}
+
+.global-nav .top-nav-reminder .more-items li .item-req .ops a:link,.global-nav .top-nav-reminder .more-items li .item-req .ops a:visited,.global-nav .top-nav-reminder .more-items li .item-req .ops a:hover,.global-nav .top-nav-reminder .more-items li .item-req .ops a:active
+	{
+	color: #aaa
+}
+
+.global-nav .top-nav-reminder .more-items li .item-req .ops a:hover,.global-nav .top-nav-reminder .more-items li .item-req .ops a:active
+	{
+	background-color: #aaa;
+	color: #fff
+}
+
+.global-nav .top-nav-reminder .more-items li .unread {
+	background-color: transparent
+}
+
+.global-nav .top-nav-reminder .more-items li .new-reply-item {
+	overflow: hidden
+}
+
+.global-nav .top-nav-reminder .more-items li .new-reply-item .content {
+	float: left;
+	width: 186px
+}
+
+.top-nav-reminder.more-active {
+	color: #fff
+}
+
+.top-nav-reminder.more-active .num {
+	z-index: 1000
+}
+
+.top-nav-reminder.more-active .more-items {
+	display: block;
+	z-index: 999
+}
+
+body #db-pay-tips {
+	top: 136px
+}
+
+.perf-metric {
+	position: absolute;
+	margin-left: -200px
+}
+
+.nav {
+	width: 100%;
+	min-width: 950px;
+	overflow: hidden;
+	zoom: 1;
+}
+
+
+
+.nav .nav-primary,.nav .nav-secondary {
+	width: 950px;
+	margin: 0 auto;
+	padding-bottom: 0;
+	overflow: hidden;
+	zoom: 1
+}
+
+.nav .nav-primary {
+	position: relative;
+	padding: 10px 0 5px;
+	overflow: hidden;
+	zoom: 1
+}
+
+
+
+.nav .nav-logo a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	line-height: 100em
+}
+
+.nav .nav-logo a:hover,.nav .nav-logo a:active {
+	background: none !important
+}
+
+.ua-iphone .nav {
+	-webkit-text-size-adjust: none
+}
+
+.nav-search {
+	position: relative;
+	overflow: hidden;
+	zoom: 1;
+	padding: 10px 0 15px 0
+}
+
+.nav-search input {
+	-webkit-appearance: none;
+	border: 0;
+	background: transparent
+}
+
+.nav-search label {
+	position: absolute;
+	left: 11px;
+	top: 10px;
+	line-height: 30px;
+	cursor: text;
+	color: #bbb;
+	width: auto
+}
+
+.nav-search ::-webkit-input-placeholder {
+	color: #bbb
+}
+
+.nav-search :-moz-placeholder {
+	color: #bbb
+}
+
+.nav-search ::-moz-placeholder {
+	color: #bbb
+}
+
+.nav-search :-ms-input-placeholder {
+	color: #bbb
+}
+
+.nav-search .inp {
+	float: left;
+	width: 470px;
+	height: 34px;
+	text-align: center;
+	_margin-right: -3px;
+	cursor: text;
+	background:
+		url(http://img3.douban.com/f/shire/d45aaa7569335285e298dd7f3c045c8b364a19de/pics/nav1/nav_bg_a1.png)
+		no-repeat 0 0
+}
+
+.nav-search .inp input {
+	background: #fff;
+	width: 96%;
+	margin: 0;
+	text-align: left;
+	height: 30px;
+	padding-left: 10px;
+	height: 28px\9;
+	line-height: 28px\9;
+	outline: 0
+}
+
+.nav-search legend {
+	display: none
+}
+
+.nav-search fieldset {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	position: static
+}
+
+.nav-search .inp-btn {
+	position: relative;
+	left: -1px;
+	*top: -1px;
+	width: 37px;
+	height: 34px;
+	zoom: 1;
+	overflow: hidden
+}
+
+.nav-search .inp-btn input {
+	width: 100%;
+	height: 100%;
+	font-size: 0;
+	padding: 35px 0 0 0;
+	overflow: hidden;
+	background:
+		url(http://img3.douban.com/f/shire/d45aaa7569335285e298dd7f3c045c8b364a19de/pics/nav1/nav_bg_a1.png)
+		no-repeat 0 -40px;
+	color: transparent;
+	cursor: pointer
+}
+
+.nav-search .inp-btn input:hover {
+	background-position: -40px -40px
+}
+
+.nav-search .inp-btn input:active {
+	background-position: 0 -40px
+}
+
+.nav-secondary {
+	width: 100%;
+	zoom: 1
+}
+
+.nav-secondary:after {
+	content: '\0020';
+	display: block;
+	clear: both
+}
+
+.nav-secondary img {
+	vertical-align: middle;
+	margin-right: 4px
+}
+
+.nav-secondary ul {
+	margin: 9px 0
+}
+
+.nav-secondary li {
+	display: inline;
+	margin-right: 30px
+}
+
+.nav-secondary .nav-items {
+	float: none;
+	*padding-bottom: 8px;
+	zoom: 1;
+	font-size: 13px
+}
+
+.nav-secondary .nav-items li {
+	_float: left;
+	_display: inline
+}
+
+#db-nav-book .nav-search .inp {
+	background-image:
+		url(http://img3.douban.com/f/shire/d45aaa7569335285e298dd7f3c045c8b364a19de/pics/nav1/nav_bg_a1.png)
+}
+
+#db-nav-book .nav-search .inp-btn input {
+	background-image:
+		url(http://img3.douban.com/f/shire/d45aaa7569335285e298dd7f3c045c8b364a19de/pics/nav1/nav_bg_a1.png)
+}
+
+#db-nav-movie .nav-search .inp {
+	background-image:
+		url(http://img3.douban.com/f/shire/44552ac9f592ad9d2ef5c8ae708533990e94b605/pics/nav1/nav_mv_bg.png)
+}
+
+#db-nav-movie .nav-search .inp-btn input {
+	background-image:
+		url(http://img3.douban.com/f/shire/44552ac9f592ad9d2ef5c8ae708533990e94b605/pics/nav1/nav_mv_bg.png)
+}
+
+#db-nav-group .nav-search .inp {
+	background-image:
+		url(http://img3.douban.com/f/shire/44552ac9f592ad9d2ef5c8ae708533990e94b605/pics/nav1/nav_mv_bg.png)
+}
+
+#db-nav-group .nav-search .inp-btn input {
+	background-image:
+		url(http://img3.douban.com/f/shire/44552ac9f592ad9d2ef5c8ae708533990e94b605/pics/nav1/nav_mv_bg.png)
+}
+
+#db-nav-music .nav-search .inp {
+	background-image:
+		url(http://img3.douban.com/f/shire/b78a848a3825bda97797e3c1816ad3b01139aa1c/pics/nav1/nav_mu_bg.png)
+}
+
+#db-nav-music .nav-search .inp-btn input {
+	background-image:
+		url(http://img3.douban.com/f/shire/b78a848a3825bda97797e3c1816ad3b01139aa1c/pics/nav1/nav_mu_bg.png)
+}
+
+#db-nav-movie {
+
+}
+
+#db-nav-movie .nav-wrap {
+	border-color: #e3ebec
+}
+
+#db-nav-movie .nav-logo {
+	
+}
+
+#db-nav-movie a:link,#db-nav-movie a:visited {
+	color: #27a
+}
+
+#db-nav-movie a:hover,#db-nav-movie a:active {
+	background-color: #27a;
+	color: #fff
+}
+
+h2 {
+	color: #111
+}
+
+.xbar {
+	background: 0
+}
+
+.xbar div {
+	background: 0;
+	padding-right: 0
+}
+
+.xbar a {
+	padding: 0 5px;
+	margin: 3px 0 0
+}
+
+.xbar span.now {
+	background: #69c;
+	padding: 0 10px;
+	margin: 0 5px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px
+}
+
+.xbar span.now span {
+	background: 0;
+	padding: 0;
+	color: #fff
+}
+
+a.colbutt span {
+	color: #000
+}
+
+.link-bt:link,.link-bt:visited,.link-bt:hover,.link-bt:active {
+	background-color: #f0f3f5
+}
+
+fieldset {
+	border: 0 none
+}
+
+h2 {
+	color: #111
+}
+
+h2.green_tab a.on,h2.green_tab a.on span,.sort_tabs a.on,.sort_tabs a.on span
+	{
+	background: 0;
+	background-color: #649fc8;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-weibkit-border-radius: 3px
+}
+
+.btn-prev a,.btn-prev a:active,.btn-prev a:hover,.btn-next a,.btn-next a:active,.btn-next a:hover
+	{
+	background:
+		url("http://img3.douban.com/f/shire/708be21a7bb2d0f21419dc4e2e2fde8b21ad661a/pics/movie/slide_swithc_2.png")
+		no-repeat;
+	height: 18px;
+	width: 18px;
+	background-position: 0 0
+}
+
+.btn-prev a,.btn-prev a:active,.btn-prev a:hover {
+	background-position: 0 0
+}
+
+.btn-prev a.dis,.btn-prev a.dis:link,.btn-prev a.dis:visited,.btn-prev a.dis:hover,.btn-prev a.dis:active
+	{
+	background:
+		url("http://img3.douban.com/f/shire/708be21a7bb2d0f21419dc4e2e2fde8b21ad661a/pics/movie/slide_swithc_2.png")
+		no-repeat;
+	background-position: 0 -18px
+}
+
+.btn-next a,.btn-next a:active,.btn-next a:hover {
+	background-position: -18px 0
+}
+
+.btn-next a.dis,.btn-next a.dis:link,.btn-next a.dis:visited,.btn-next a.dis:hover,.btn-next a.dis:active
+	{
+	background:
+		url("http://img3.douban.com/f/shire/708be21a7bb2d0f21419dc4e2e2fde8b21ad661a/pics/movie/slide_swithc_2.png")
+		no-repeat;
+	background-position: -18px -18px
+}
+
+ul.switch-dot li {
+	background:
+		url("http://img3.douban.com/f/shire/ed6f41f6556d423c28d1ad79c1b269cfebc5300c/pics/book/dots.png")
+		no-repeat -7px 0;
+	width: 5px;
+	height: 5px;
+	overflow: hidden
+}
+
+.switch-dot li.current {
+	background-position: 0 0
+}
+
+.movie_headerline {
+	border: 0 none
+}
+
+.movie_headerline .content {
+	background-color: #f1f3f5;
+	-moz-border-radius: 8px 0 0 8px;
+	-webkit-border-radius: 8px 0 0 8px;
+	border-radius: 8px 0 0 8px;
+	height: 218px;
+	width: 394px
+}
+
+.movie_headerline .onelinep {
+	margin: 0
+}
+
+.movie_headerline ul.menu li .on {
+	background-color: #cfd5d9
+}
+
+.movie_headerline ul.menu .first .on {
+	border-radius: 0 8px 0 0;
+	-moz-border-radius: 0 8px 0 0;
+	-webkit-border-radius: 0 8px 0 0
+}
+
+.movie_headerline ul.menu .last .on {
+	border-radius: 0 0 8px 0;
+	-moz-border-radius: 0 0 8px 0;
+	-webkit-border-radius: 0 0 8px 0
+}
+
+.movie_headerline ul.menu {
+	border: 1px solid #ebeef1;
+	border-left: 0 none;
+	-moz-border-radius: 0 10px 10px 0;
+	-webkit-border-radius: 0 10px 10px 0;
+	border-radius: 0 10px 10px 0
+}
+
+.movie_headerline ul.menu li .on .arrow {
+	background: 0
+}
+
+.movie_headerline .content .ul {
+	border-bottom: 1px solid #e1e6e9
+}
+
+.movie_headerline .left_conner em,.movie_headerline .left_conner b,.movie_headerline .first em,.movie_headerline .last em
+	{
+	background: 0
+}
+
+.movie_headerline ul.menu li {
+	border-bottom: 1px solid #ebeef1
+}
+
+.hot_search .infobox .ex1,.hot_search .infobox .ex1 span,.hot_search .infobox .ex2,.hot_search .infobox .ex2 span,.hot_search .infobox .bd
+	{
+	background-color: #f6f3dc
+}
+
+.hot_search h2 {
+	color: #998124
+}
+
+.hot_search a.s_submit {
+	background-color: #e5ddb4
+}
+
+.paginator .thispage {
+	background-color: #649fc8
+}
+
+#db-usr-profile a:link {
+	color: #369
+}
+
+#db-usr-profile a:hover {
+	color: #fff;
+	background-color: #039
+}
+
+.nlst {
+	background-color: #f0f3f5
+}
+
+.nlst h3 {
+	background: 0;
+	background-color: #f0f3f5;
+	line-height: 26px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px
+}
+
+.rating_list li.on a,.rating_list li.on a span {
+	background: 0;
+	background-color: #649fc8;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px
+}
+
+.a_unfolder .bn-arrow,a.a_unfolder:hover .bn-arrow,.a_folder .bn-arrow,a.a_folder:hover .bn-arrow
+	{
+	background:
+		url('http://img3.douban.com/f/shire/30d6b18445bb4f47709f1c1ae7b5c7496e5a6fb2/pics/review-expand.png')
+		no-repeat;
+	background-position: 0 1px
+}
+
+.a_unfolder .bn-arrow {
+	background-position: 0 -13px
+}
+
+a.a_unfolder:hover .bn-arrow {
+	background-position: 0 -33px
+}
+
+a.a_folder:hover .bn-arrow {
+	background-position: 0 -64px
+}
+
+.comment-item .author {
+	background: #f0f3f5 none
+}
+
+.nav-srh .inp {
+	position: relative;
+	z-index: 40
+}
+
+#search_suggest {
+	background: #fff;
+	border: 1px solid #ddd;
+	position: absolute;
+	z-index: 99;
+	top: 32px;
+	width: 302px;
+	border-top: 0 none
+}
+
+#search_suggest li {
+	border-bottom: 1px solid #eee;
+	overflow: hidden
+}
+
+#search_suggest li:last-child {
+	border-bottom: 0 none
+}
+
+#search_suggest li.curr_item {
+	background: #efefef
+}
+
+#search_suggest li a {
+	color: #999;
+	display: block;
+	overflow: hidden;
+	padding: 6px;
+	zoom: 1
+}
+
+#search_suggest li a:hover {
+	background: #f9f9f9;
+	color: #999
+}
+
+#search_suggest li a em {
+	font-style: normal;
+	color: #369
+}
+
+#search_suggest li p {
+	margin: 0;
+	zoom: 1;
+	overflow: hidden
+}
+
+#search_suggest li img {
+	float: left;
+	margin-right: 8px;
+	margin-top: 3px
+}
+
+#search_suggest li.over {
+	background: #fbfbfb
+}
+
+#search_suggest {
+	width: 468px;
+	margin-left: -6px;
+	margin-top: 2px;
+}
+
+.ui-slide-content {
+	letter-spacing: -0.31em;
+	*letter-spacing: normal; word-spacing-0 .43em;
+	white-space: nowrap;
+	position: absolute
+}
+
+.ui-slide-item {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	vertical-align: top;
+	letter-spacing: normal;
+	word-spacing: normal
+}
+
+.ui-slide-control {
+	float: right;
+	margin: 5px 0 0 15px
+}
+
+.ui-slide-control a {
+	display: block;
+	float: left;
+	width: 18px;
+	height: 18px;
+	margin-right: 5px;
+	cursor: pointer;
+	background:
+		url('http://img3.douban.com/f/movie/708be21a7bb2d0f21419dc4e2e2fde8b21ad661a/pics/movie/slide_swithc_2.png')
+		no-repeat
+}
+
+.ui-slide-control .btn-prev {
+	background-position: 0 0
+}
+
+.ui-slide-control .prev-btn .btn-disabled {
+	background-position: 0 -18px
+}
+
+.ui-slide-control .btn-next {
+	background-position: -18px 0
+}
+
+.ui-slide-control .next-btn .btn-disabled {
+	background-position: -18px -18px
+}
+
+.slide-tip {
+	float: right;
+	line-height: 30px;
+	color: #666
+}
+
+.ui-control-nav {
+	zoom: 1;
+	position: absolute;
+	right: 10px;
+	bottom: 10px
+}
+
+.ui-control-nav a {
+	background-color: #000;
+	opacity: .75;
+	color: #fff;
+	padding: 3px 6px;
+	margin-left: 5px
+}
+
+.ui-control-nav .active {
+	background-color: #268dcd;
+	opacity: 1
+}
+
+#screening .title a:link,#screening .title a:visited,#screening .title a:hover,#screening .title a:active
+	{
+	color: #333
+}
+
+#screening .title a:hover {
+	background: 0;
+	color: #222
+}
+
+#screening h2 span {
+	margin-left: 15px
+}
+
+#screening .screening-bd {
+	overflow: hidden;
+	position: relative;
+	width: 584px;
+	height: 270px
+}
+
+#screening .ui-slide-content {
+	position: absolute;
+	left: 0
+}
+
+#screening .ui-slide-item {
+	font-size: 12px;
+	text-align: center;
+	margin-right: 24px;
+	width: 128px;
+	height: 270px;
+	overflow: hidden
+}
+
+#screening .ui-slide-item img {
+	width: 128px
+}
+
+#screening .subject-rate {
+	color: #e82100;
+	font-size: 12px;
+	margin-left: 2px
+}
+
+#screening .poster {
+	height: 180px;
+	overflow: hidden;
+	margin-bottom: 12px
+}
+
+#screening .title {
+	font-size: 14px
+}
+
+#screening .rating {
+	height: 19px;
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	margin: 4px auto 2px
+}
+
+#screening .rating span {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	float: left
+}
+
+#screening .rating .rating-star {
+	margin: 3px 3px 0 0;
+	width: 55px
+}
+
+#screening .ticket_btn span {
+	background-color: #268dcd;
+	color: #fff;
+	border-radius: 2px;
+	display: block;
+	width: 90px;
+	height: 24px;
+	text-align: center;
+	line-height: 24px;
+	margin: 0 auto
+}
+
+#screening .ticket_btn a:link,#screening .ticket_btn a:visited,#screening .ticket_btn a:hover,#screening .ticket_btn a:active
+	{
+	background: 0;
+	color: #fff
+}
+
+#screening .new-show {
+	padding-right: 13px;
+	background:
+		url("http://img3.douban.com/f/movie/3b1dc75c76318125e77069dbd84c1a35fb59d1aa/pics/movie/new_release_icon.png")
+		left 1px no-repeat;
+	width: 13px;
+	margin: 2px 0 0 3px;
+	zoom: 1
+}
+
+#screening .title {
+	letter-spacing: -0.31em;
+	*letter-spacing: normal; word-spacing-0 .43em;
+	white-space: nowrap;
+	height: 22px;
+	overflow: hidden
+}
+
+#screening .title a,#screening .new-show {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	vertical-align: top;
+	letter-spacing: normal;
+	word-spacing: normal;
+	height: 24px;
+	line-height: 24px
+}
+
+#new-movies .movies-list {
+	font-size: 0;
+	letter-spacing: -0.31em;
+	*letter-spacing: normal;
+}
+
+#new-movies .list-item {
+	font-size: 13px;
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	letter-spacing: normal;
+	text-align: center;
+	width: 100px;
+	height: 180px;
+	vertical-align: top;
+	margin: 0 18px 28px 0;
+}
+
+#new-movies .list-item .poster {
+	margin-bottom: 5px;
+	height: 150px;
+	width: 100px;
+	overflow: hidden;
+}
+
+#new-movies .list-item .title {
+	color: #666;
+}
+
+#new-movies .list-item .title span {
+	white-space: nowrap;
+	margin-left: 2px;
+}
+
+.category-hd {
+	font-size: 12px;
+	padding: 2px 5px;
+}
+
+#new-movies h2 .on {
+	background-color: #00a1dc;
+	color: #fff;
+	border-radius: 2px;
+}
+
+#category-tv {
+	display: none;
+}
+
+.category-ft {
+	text-align: right;
+	padding-right: 20px;
+}
+
+#doulists {
+	margin-bottom: 28px;
+}
+
+#doulists .doulist {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	width: 278px;
+	vertical-align: top;
+	margin: 0 15px 20px 0;
+	overflow: hidden;
+}
+
+#doulists .doulist-hd {
+	float: left;
+	width: 48px;
+}
+
+#doulists .doulist-bd {
+	padding-left: 60px;
+}
+
+#doulists h3 {
+	background: none;
+	margin: 0;
+	font-size: 14px;
+	height: auto;
+	margin-bottom: 5px;
+}
+
+#doulists .doulist-meta {
+	color: #666;
+}
+
+#doulists .doulist-meta a {
+	color: #666;
+}
+
+#doulists .doulist-meta a:hover {
+	color: #fff;
+}
+
+.review {
+	overflow: hidden;
+	zoom: 1;
+	margin-bottom: 24px;
+	padding-bottom: 24px;
+	border-bottom: 1px solid #eaeaea;
+}
+
+.review-hd {
+	float: left;
+	width: 68px;
+}
+
+.review-hd img {
+	width: 68px;
+}
+
+.review-bd {
+	padding-left: 83px;
+}
+
+.review-bd h3 {
+	margin: 0;
+	height: auto;
+	background: none;
+}
+
+.review-bd .review-meta {
+	color: #666;
+	padding: 5px 0;
+}
+
+.review-bd .review-meta a {
+	color: #666;
+}
+
+.review-bd .review-meta a:hover {
+	color: #fff;
+}
+
+.review-bd .review-content {
+	line-height: 18px;
+}
+
+#reviews .last {
+	border: 0 none;
+}
+
+#cities-list {
+	position: absolute;
+	background-color: #fff;
+	z-index: 11;
+	display: none;
+	width: 310px;
+	padding: 15px;
+	border: 1px solid #dfdfdf;
+	border-radius: 3px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .3)
+}
+
+#cities-list .arrow {
+	background:
+		url(&#34;http://img3.douban.com/f/movie/9a08f2be6ddd79d5d803eb26c5ff8d42b8f1eb30/pics/movie/hot_cities_arrow.gif&#34;)
+		no-repeat 0 0;
+	height: 7px;
+	left: 46px;
+	position: absolute;
+	top: -5px;
+	width: 8px
+}
+
+.cities-list-hd {
+	padding: 0 0 10px 20px;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 10px
+}
+
+.cities-list-hd span {
+	margin-right: 20px;
+	color: #2e7ab3;
+	cursor: pointer
+}
+
+.cities-list-hd .on {
+	background-color: #69c;
+	color: #fff;
+	padding: 2px 8px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px
+}
+
+#cities-list .cities-list-bd {
+	text-align: left
+}
+
+.cities-list-item {
+	padding-left: 2px
+}
+
+.city-mod {
+	border-bottom: 1px solid #eee;
+	margin: 5px 0 0 0;
+	padding-bottom: 5px
+}
+
+.cities-list-bd span {
+	margin: 0 10px 0 0;
+	color: #2e7ab3;
+	white-space: nowrap;
+	display: inline-block;
+	line-height: 2em
+}
+
+.cities-list-bd dt {
+	float: left;
+	margin-right: 25px
+}
+
+.cities-list-bd dd {
+	clear: both
+}
+
+.dui-dialog-content .arrow {
+	position: absolute;
+	left: 12px;
+	top: -5px;
+	background:
+		url(http://img3.douban.com/f/movie/af668e024a735aef8086cddd7332a5d55bc9a68f/pics/movie-simple-up-arrow.png)
+		no-repeat;
+	width: 6px;
+	height: 7px
+}
+
+.dlg_sms .dui-dialog-content .arrow {
+	top: 13px
+}
+
+.simple .dui-dialog-shd {
+	background: none #fff;
+	border: 1px solid #aaa;
+	opacity: 1;
+	filter: alpha(opacity = 100)
+}
+
+#loc .now {
+	background-color: #00c26f;
+	color: #fff;
+	padding: 0 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px
+}
+
+#loc .now a {
+	color: #fff
+}
+
+#loc .now a:hover {
+	background-color: #00c26f
+}
+
+#cinemas-search {
+	background-color: #f6f3d3;
+	border-radius: 4px;
+	padding: 12px;
+	vertical-align: top;
+	width: 276px;
+}
+
+#city,#cinemas-suggestion {
+	height: 26px;
+	line-height: 26px;
+	float: left;
+}
+
+#city {
+	width: 65px;
+	height: 24px;
+	border: 1px solid #ddd;
+	text-align: center;
+	background: #fff url("/pics/movie/city_select_arrow.png") no-repeat 50px
+		10px;
+	cursor: pointer;
+	color: #666;
+	position: relative;
+	broder-radius: 4px;
+	margin-right: 5px;
+}
+
+#city-id {
+	display: block;
+	text-align: left;
+	padding-left: 5px;
+	zoom: 1;
+}
+
+#cinemas-search .toggleCities {
+	text-align: left;
+	top: 30px;
+}
+
+#cinemas-suggestion {
+	width: 202px;
+	_width: 198px;
+	border: 1px solid #e0e0e0;
+	background-color: #fff;
+	height: 24px;
+	_height: 26px;
+}
+
+#cinemas-suggestion-input {
+	height: 24px;
+	overflow: hidden;
+}
+
+#cinemas-search #cinemas-suggestion input {
+	width: 195px;
+	_width: 188px;
+	border: 0 none;
+	display: block;
+	height: 24px;
+	padding: 0 5px;
+	margin: 0;
+	padding-top: 5px\9;
+}
+
+#city #cities-list {
+	left: 0;
+	top: 29px;
+}
+
+#cinemas-search #cinemas-suggestion-search,#cinemas-search #cinemas-suggestion-search:hover
+	{
+	top: 6px;
+	background: url("/pics/focus_search.png") no-repeat -12px 0;
+}
+
+#cinemas-search #cinemas-suggestion a {
+	overflow: hidden;
+}
+
+#subject-tags .tags-list {
+	letter-spacing: -0.31em;
+	*letter-spacing: normal;
+}
+
+#subject-tags .tags-list a {
+	display: inline;
+	margin: 0;
+}
+
+#subject-tags .list-item {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	letter-spacing: normal;
+	vertical-align: top;
+	width: 40px;
+	margin-bottom: 5px;
+}
+
+#billboard td {
+	border-bottom: 1px solid #eaeaea;
+}
+
+#billboard td {
+	padding: 7px 0;
+}
+
+#billboard .order {
+	width: 20px;
+	font-size: 9px;
+	text-align: center;
+}
+
+#billboard .title {
+	width: 290px;
+}
+
+#billboard .up,#billboard .down,#billboard .stay {
+	display: block;
+	color: #999;
+	width: 20px;
+	height: 12px;
+	font-size: 9px;
+	padding-left: 15px;
+	background: url("/pics/movie_top.gif") no-repeat;
+	overflow: hidden;
+	line-height: 13px;
+}
+
+#billboard .up {
+	background-position: 0 0;
+}
+
+#billboard .down {
+	background-position: 0 -11px;
+}
+
+#billboard .stay {
+	background-position: 0 -23px;
+}
+
+#douban-top250 h2 span {
+	font-size: 12px;
+	margin-left: 12px;
+}
+
+#douban-top250 .douban-top250-bd {
+	font-size: 0;
+	letter-spacing: -0.31em;
+	*letter-spacing: normal;
+}
+
+#douban-top250 dl {
+	font-size: 12px;
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	letter-spacing: normal;
+	text-align: center;
+	width: 75px;
+	overflow: hidden;
+	vertical-align: top;
+	margin: 0 2px 10px 0;
+}
+
+#douban-top250 dt {
+	margin-bottom: 8px;
+	height: 100px;
+	overflow: hidden;
+}
+
+#contact-and-cooperation li {
+	line-height: 24px;
+}
+
+#contact-and-cooperation .mail {
+	width: 150px;
+}
+
+#contact-and-cooperation .mail img {
+	margin-top: 5px;
+	float: right;
+	width: 111px;
+}
+
+.mobile-app-entrance {
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+
+.mobile-app-entrance .entrance-link {
+	display: block;
+	position: relative;
+	padding: 10px;
+	height: 50px;
+	margin-top: 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.mobile-app-entrance .entrance-link.first-link {
+	margin-top: 0;
+}
+
+.mobile-app-entrance .entrance-link,.mobile-app-entrance .entrance-link:link,.mobile-app-entrance .entrance-link:visited,.mobile-app-entrance .entrance-link:active,.mobile-app-entrance .entrance-link:hover
+	{
+	background: #f1f1f1 url("http://img3.douban.com/pics/app/arrw.png")
+		no-repeat scroll 97% 50%;
+	outline: none;
+	color: #4e4e4e;
+}
+
+.mobile-app-entrance .app-icon {
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin-right: 13px;
+	background: url("http://img5.douban.com/pics/app/app_icons_50_6.jpg")
+		no-repeat;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 1px 1px 2px #999;
+	-moz-box-shadow: 1px 1px 2px #999;
+	box-shadow: 1px 1px 2px #999;
+}
+
+.mobile-app-entrance .main-title,.mobile-app-entrance .sub-title {
+	display: block;
+}
+
+.mobile-app-entrance .main-title {
+	color: #204d92;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 1;
+	padding-top: 9px;
+}
+
+.mobile-app-entrance .app-list {
+	background: #f1f1f1;
+	padding: 14px 21px 8px;
+	font-size: 0;
+}
+
+.mobile-app-entrance .app-list .app-item {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width: 50px;
+	margin-right: 25px;
+}
+
+.mobile-app-entrance .app-item .app-link {
+	display: block;
+	text-align: center;
+	color: #4e4e4e;
+	font-size: 12px;
+}
+
+.mobile-app-entrance .app-item .app-link:hover {
+	background: transparent;
+	color: #4e4e4e;
+}
+
+.mobile-app-entrance .app-item .app-icon {
+	margin-right: none;
+	float: none;
+	display: block;
+	margin: 0 0 8px 0;
+}
+
+/* SNS Index */
+.mobile-app-entrance.app-main .entrance-link {
+	background-image: none;
+	height: 50px;
+	padding: 15px 15px 15px 21px;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+.mobile-app-entrance.app-main .main-title {
+	font-size: 18px;
+	padding-top: 10px;
+}
+
+.mobile-app-entrance.app-main .sub-title {
+	font-size: 14px;
+}
+
+.mobile-app-entrance.app-main .app-icon {
+	width: 62px;
+	height: 50px;
+	background: url("http://img3.douban.com/pics/app/mobile_app_icon1.png")
+		no-repeat;
+	float: right;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+/* Update */
+.mobile-app-entrance.app-update {
+	margin-top: 20px;
+}
+
+/* Movie */
+.mobile-app-entrance.app-movie {
+	margin-top: 20px;
+}
+
+/* music */
+.mobile-app-entrance.app-music {
+	margin-top: 20px;
+}
+
+.mobile-app-entrance.app-artist {
+	margin: -20px 0px 20px 50px;
+	width: 200px;
+}
+
+#artist-link {
+	background: #f1f1f1;
+	padding: 10px 5px;
+}
+
+#artist-link .app-icon {
+	margin-right: 5px;
+}
+
+#artist-link .main-title {
+	font-size: 14px;
+}
+
+/* App Icons */
+.mobile-app-entrance .app-icon.icon-read {
+	background-position: 0 0;
+}
+
+.mobile-app-entrance .app-icon.icon-update {
+	background-position: -150px 0;
+}
+
+.mobile-app-entrance .app-icon.icon-fm {
+	background-position: -250px 0;
+}
+
+.mobile-app-entrance .app-icon.icon-fm-ipad {
+	background-position: -300px 0;
+}
+
+.mobile-app-entrance .app-icon.icon-movie {
+	background-position: -350px 0;
+}
+
+.mobile-app-entrance .app-icon.icon-artists {
+	background-position: -50px;
+}
+
+.mobile-app-entrance .app-icon.icon-cart {
+	background-position: -200px 0;
+}
+
+.mobile-app-entrance .app-icon.icon-location {
+	background-position: -100px 0;
+}
+
+.mobile-app-entrance .app-icon.icon-read-notes {
+	background-position: -400px 0;
+}
+
+.mobile-app-entrance .app-icon.icon-online {
+	background-position: -450px 0;
+}
+
+.mobile-app-entrance .app-icon.icon-group {
+	background-position: -500px 0;
+}

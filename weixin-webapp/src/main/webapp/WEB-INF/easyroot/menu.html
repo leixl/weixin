@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DedeCms menu</title>
+<link rel="stylesheet" href="${base}/res/admin/css/base.css" type="text/css" />
+<script src="${base}/res/admin/js/dedeajax2.js" type="text/javascript"></script>
+<script src="${base}/res/admin/js/jquery-1.8.1.min.js" type="text/javascript"></script>
+<script language='javascript'>var curopenItem = '1';</script>
+<script src="${base}/res/admin/js/leftmenu.js" type="text/javascript"></script>
+<style>
+div {
+	padding:0px;
+	margin:0px;
+}
+body {
+	padding:0px;
+	margin:auto;
+	text-align:center;
+	background-color:#eff5ed;
+	background:url(${base}/res/admin/images/leftmenu_bg.gif);
+	padding-left:3px;
+	overflow:scroll;
+	overflow-x:hidden;
+	scrollbar-face-color: #eff8e6;
+	scrollbar-shadow-color: #edf2e3;
+	scrollbar-highlight-color: #ffffff;
+	scrollbar-3dlight-color: #F2F2F2;
+	scrollbar-darkshadow-color: #bdbcbd;
+	scrollbar-arrow-color: #bdbcbd
+}
+dl.bitem {
+	clear:both;
+	width:140px;
+	margin:0px 0px 5px 12px;
+	background:url(${base}/res/admin/images/menunewbg.gif) repeat-x;
+}
+dl.bitem2 {
+	clear:both;
+	width:140px;
+	margin:0px 0px 5px 12px;
+	background:url(${base}/res/admin/images/menunewbg2.gif) repeat-x;
+}
+dl.bitem dt, dl.bitem2 dt {
+	height:25px;
+	line-height:25px;
+	padding-left:35px;
+	cursor:pointer;
+}
+dl.bitem dt b, dl.bitem2 dt b {
+	color:#4D6C2F;
+}
+dl.bitem dd, dl.bitem2 dd {
+	padding:3px 3px 3px 3px;
+	background-color:#fff;
+}
+div.items {
+	clear:both;
+	padding:0px;
+	height:0px;
+}
+.fllct {
+	float:left;
+	width:85px;
+}
+.flrct {
+	padding-top:3px;
+	float:left;
+}
+.sitemu li {
+	padding:0px 0px 0px 18px;
+	line-height:22px;
+	background:url(${base}/res/admin/images/arr4.gif) no-repeat 5px 9px;
+}
+ul {
+	padding-top:3px;
+}
+li {
+	height:22px;
+}
+a.mmac div {
+	background:url(${base}/res/admin/images/leftbg2.gif) no-repeat;
+	height:37px!important;
+	height:47px;
+	padding:6px 4px 4px 10px;
+	word-wrap: break-word;
+	word-break : break-all;
+	font-weight:bold;
+	color:#325304;
+}
+a.mm div {
+	background:url(${base}/res/admin/images/leftmbg1.gif) no-repeat;
+	height:37px!important;
+	height:47px;
+	padding:6px 4px 4px 10px;
+	word-wrap: break-word;
+	word-break : break-all;
+	font-weight:bold;
+	color:#475645;
+	cursor:pointer;
+}
+a.mm:hover div {
+	background:url(${base}/res/admin/images/leftbg2.gif) no-repeat;
+	color:#4F7632;
+}
+.mmf {
+	height:1px;
+	padding:5px 7px 5px 7px;
+}
+#mainct {
+	padding-top:8px;
+	background: url(${base}/res/admin/images/idnbg1.gif) repeat-y;
+}
+</style>
+<base target="main" />
+</head>
+<body target="main" onLoad="CheckOpenMenu();">
+<table width="180" align="left" border='0' cellspacing='0' cellpadding='0' style="text-align:left;">
+  <tr>
+    <td valign='top' style='padding-top:10px' width='20'>
+      <a id='link1' class='mmac'>
+      <div onclick="ShowMainMenu(1)">核心</div>
+      </a>
+      <a id='link2' class='mm'> 
+      <div onclick="ShowMainMenu(2)">会员</div>
+      </a> 
+      <div class='mmf'></div>
+    </td>
+    <td width='160' id='mainct' valign="top">
+    
+    <div id='ct1'>
+        <!-- Item 2 Strat -->
+	<dl class='bitem' id='sunitems1_1'><dt onclick='showHide("items1_1")'><b>系统管理</b></dt>
+	<dd style='display:block' class='sitem' id='items1_1'>
+	<ul class='sitemu'>
+	<li>        <div class='items'>
+	            <div class='fllct'><a href='system/user/list.do' target='main'>用户管理</a></div>
+	
+	            <div class='flrct'>
+	                <a href='system/user/add.do' target='main'><img src='${base}/res/admin/images/gtk-sadd.png' alt='创建栏目' title='创建栏目'/></a>
+	            </div>
+	        </div>
+	</li>
+	</ul>
+	</dd>
+	</dl>
+<!-- Item 2 End -->
+<!-- Item 3 Strat -->
+	<dl class='bitem' id='sunitems2_1'><dt onclick='showHide("items2_1")'><b>内容管理</b></dt>
+	<dd style='display:block' class='sitem' id='items2_1'>
+	<ul class='sitemu'>
+	<li>        <div class='items'>
+	            <div class='fllct'><a href='content_sg_list.php?channelid=-8' target='main'>分类信息</a></div>
+	
+	            <div class='flrct'>
+	                <a href='archives_sg_add.php?channelid=-8' target='main'><img src='${base}/res/admin/images/gtk-sadd.png' alt='录入新内容' title='录入新内容'/></a>
+	            </div>
+	        </div>
+	</li>
+	</ul>
+	</dd>
+	</dl>
+<!-- Item 3 End -->
+	
+      </div>
+      
+      <div id='ct2' style="display:none;">
+        <!-- Item 3 Strat -->
+			<dl class='bitem' id='sunitems2_2'><dt onclick='showHide("items2_2")'><b>会员管理</b></dt>
+			<dd style='display:block' class='sitem' id='items2_2'>
+			<ul class='sitemu'>
+			<li>        
+		       <div class='items'>
+		            <div class='fllct'><a href='content_sg_list.php?channelid=-8' target='main'>会员信息</a></div>
+		        </div>
+			</li>
+			</ul>
+			</dd>
+			</dl>
+		<!-- Item 3 End -->
+      </div>
+      
+      
+      
+      
+      </td>
+  </tr>
+  
+		<tr>
+			<td width='26'></td>
+			<td width='160' valign='top'><img
+				src='${base}/res/admin/images/idnbgfoot.gif' /></td>
+		</tr>
+	</table>
+
+</body>
+</html>

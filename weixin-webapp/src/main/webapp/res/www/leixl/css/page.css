@@ -1,0 +1,355 @@
+#paginator {
+	font-size: 14px;
+	color: #aaa
+}
+
+#paginator a,#paginator .thispage,#paginator .break {
+	margin: 2px;
+	padding: 0 4px
+}
+
+#paginator .prev {
+	margin-right: 20px
+}
+
+#paginator .thispage {
+	background-color: #83bf73;
+	color: #fff
+}
+
+#paginator .next {
+	margin-left: 20px
+}
+
+.filter {
+	overflow: hidden;
+	zoom: 1;
+	margin-bottom: 5px
+}
+
+.filter a:link {
+	color: #69c
+}
+
+.filter a:visited {
+	color: #69c
+}
+
+.filter a:hover {
+	color: #fff
+}
+
+.filter ul {
+	padding-left: 40px
+}
+
+.filter ul li {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	vertical-align: top;
+	letter-spacing: normal;
+	word-spacing: normal;
+	margin: 0 10px 5px 0;
+	line-height: 21px
+}
+
+.filter ul li span {
+	color: #666
+}
+
+.filter .more:link,.filter .more:visited,.filter .more:hover,.filter .more:active,.filter .less:link,.filter .less:visited,.filter .less:hover,.filter .less:active
+	{
+	display: block;
+	height: 20px;
+	width: 20px;
+	float: right;
+	text-indent: -9999em;
+	background:
+		url('http://img3.douban.com/f/movie/79d05fa1a1f89326d7982a3f38c8a26541647991/pics/movie/more.png')
+		no-repeat center center
+}
+
+h4 {
+	float: left;
+	background: 0;
+	margin: 0;
+	height: auto;
+	color: #111
+}
+
+#keys {
+	overflow: hidden;
+	zoom: 1;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 15px
+}
+
+#keys .label .save {
+	display: none
+}
+
+#keys ul {
+	padding-left: 95px
+}
+
+#keys ul li {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	vertical-align: top;
+	letter-spacing: normal;
+	word-spacing: normal;
+	border: 1px solid #ccc;
+	height: 19px;
+	margin: 0 10px 5px 0
+}
+
+#keys ul li span {
+	padding: 5px
+}
+
+#keys ul li a {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	vertical-align: top;
+	letter-spacing: normal;
+	word-spacing: normal;
+	text-align: center;
+	padding: 0 5px;
+	background-color: #ccc;
+	color: #fff;
+	text-align: center
+}
+
+#type {
+	border-bottom: 1px dashed #ccc;
+	margin-bottom: 10px
+}
+
+#district,#era {
+	height: 28px;
+	margin-bottom: 15px;
+	overflow: hidden;
+	border-bottom: 1px dashed #ccc
+}
+
+#district ul,#era ul {
+	margin-right: 20px
+}
+
+#district {
+	margin-bottom: 10px
+}
+
+#custom {
+	position: relative
+}
+
+#custom-district {
+	width: 100px;
+	display: none
+}
+
+#btn-search {
+	display: none;
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	top: 5px;
+	left: 88px;
+	overflow: hidden;
+	border: 0 none;
+	text-indent: -9999em;
+	cursor: pointer;
+	background:
+		url("http://img3.douban.com/f/movie/3776e9ac5b67d16ae2653166711dca8af3216a87/pics/focus_search.png")
+		no-repeat -12px 0
+}
+
+#era {
+	margin-bottom: 50px
+}
+
+#extra {
+	height: 26px;
+	line-height: 26px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 15px;
+	display: none;
+	padding-bottom: 3px
+}
+
+#sort {
+	float: right
+}
+
+#sort span,#sort a {
+	margin: 0 2px
+}
+
+#other label,#other span,#other a {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	vertical-align: top;
+	letter-spacing: normal;
+	word-spacing: normal
+}
+
+#other label {
+	line-height: 24px;
+	overflow: hidden;
+	zoom: 1
+}
+
+#other label input {
+	float: left;
+	margin-top: 5px;
+	*margin: 2px 0 0 0
+}
+
+#other span,#other a {
+	margin: 0 2px
+}
+
+#other #category-tv {
+	margin-right: 20px
+}
+
+#keywords-saved {
+	display: none
+}
+
+#keywords-saved .ft {
+	display: none
+}
+
+#keywords-saved h3 {
+	background: 0;
+	margin-left: 0
+}
+
+#keywords-saved li {
+	line-height: 20px;
+	padding-right: 5px
+}
+
+#keywords-saved .del-keywords-saved {
+	float: right;
+	display: none;
+	padding: 0 5px
+}
+
+#keywords-saved .hover {
+	background-color: #e9f3fa
+}
+
+#keywords-saved .hover .del-keywords-saved {
+	display: block
+}
+
+#keywords-saved .hover a:hover {
+	background: 0;
+	color: #369
+}
+
+#paginator a:link {
+	color: #0090b3
+}
+
+#paginator a:visited {
+	color: #0090b3
+}
+
+#paginator a:hover {
+	color: #fff;
+	background-color: #0090b3
+}
+
+#paginator a:active {
+	color: #0090b3
+}
+
+#subjects .item {
+	border-bottom: 1px dashed #ccc;
+	overflow: hidden;
+	zoom: 1;
+	margin-bottom: 15px;
+	padding-bottom: 20px
+}
+
+#subjects .item h4 {
+	font-size: 14px
+}
+
+#subjects .poster {
+	width: 70px;
+	height: 100px;
+	overflow: hidden;
+	float: left
+}
+
+#subjects .info {
+	padding-left: 100px
+}
+
+#subjects h4 {
+	float: none;
+	margin-bottom: 5px
+}
+
+#subjects .released {
+	color: #666;
+	margin: 0 10px
+}
+
+#subjects .available {
+	background-color: #71b5de;
+	padding: 3px 5px;
+	color: #fff;
+	font-size: 12px;
+	border-radius: 2px
+}
+
+#subjects .rating,#subjects .abstract {
+	color: #666
+}
+
+#subjects .rating {
+	margin-bottom: 5px
+}
+
+#subjects .rate {
+	color: #ff5138
+}
+
+#subjects .status {
+	color: #666;
+	margin: 20px 0 0
+}
+
+#subjects p {
+	text-align: center;
+	color: #666;
+	font-size: 12px
+}
+
+#paginator {
+	text-align: center
+}
+
+.aside .entrance {
+	background-color: #f2f7f6;
+	padding: 10px 15px;
+	font-size: 14px;
+	margin-bottom: 15px;
+	width: 270px;
+	margin-top: 18px
+}
+
+.aside .entrance h3 {
+	background: 0;
+	margin: 0
+}

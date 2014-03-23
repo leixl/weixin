@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.leixl.easyframework.system.entity">
+	<class name="EUser" table="t_user">
+		<meta attribute="sync-DAO">false</meta>
+		<cache usage="read-write"/>
+		<id name="id" type="java.lang.Long" column="user_id"><generator class="identity"/></id>
+		<property name="username" column="username" type="string"  length="100"/>
+		<property name="password" column="password" type="string"  length="32"/>
+		<property name="email" column="email" type="string"  length="100"/>
+		<property name="registerTime" column="register_time" type="timestamp"  length="19"/>
+		<property name="registerIp" column="register_ip" type="string"  length="50"/>
+		<property name="lastLoginTime" column="last_login_time" type="timestamp"  length="19"/>
+		<property name="lastLoginIp" column="last_login_ip" type="string"  length="50"/>
+		<property name="loginCount" column="login_count" type="integer"  length="10"/>
+		<property name="rank" column="rank" type="integer"  length="10"/>
+		<property name="uploadTotal" column="upload_total" type="java.lang.Long"  length="19"/>
+		<property name="uploadSize" column="upload_size" type="integer"  length="10"/>
+		<property name="uploadDate" column="upload_date" type="java.sql.Date"  length="19"/>
+		<property name="admin" column="is_admin" type="java.lang.Boolean" />
+		<property name="viewonlyAdmin" column="is_viewonly_admin" type="java.lang.Boolean" />
+		<property name="selfAdmin" column="is_self_admin" type="java.lang.Boolean" />
+		<property name="disabled" column="is_disabled" type="java.lang.Boolean" />
+		<property name="resetKey" column="reset_key" type="string"  length="32"/>
+		<property name="resetPwd" column="reset_pwd" type="string"  length="10"/>
+		<property name="errorTime" column="error_time" type="timestamp"  length="19"/>
+		<property name="errorCount" column="error_count" type="integer"  length="10"/>
+		<property name="errorIp" column="error_ip" type="string"  length="50"/>
+		<property name="activation" type="java.lang.Boolean" />
+		<property name="activationCode" column="activation_code" type="string"  length="32"/>
+	</class>
+</hibernate-mapping>

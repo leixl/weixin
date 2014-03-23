@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.leixl.easyframework.system.entity">
+	<class name="EMenu" table="t_menu" dynamic-update="true">
+		<meta attribute="sync-DAO">false</meta>
+		<cache usage="read-write"/>
+		<id name="id" type="java.lang.Integer" column="menu_id"><generator class="identity"/></id>
+		<property name="name" column="menu_name" type="string" not-null="false" length="30"/>
+		<property name="actionUrl" column="action_url" type="string" not-null="false" length="30"/>
+		<property name="lft" column="lft" type="integer" not-null="true" length="10"/>
+		<property name="rgt" column="rgt" type="integer" not-null="true" length="10"/>
+		<property name="priority" column="priority" type="integer" not-null="true" length="10"/>
+		<property name="createDate" column="create_date" type="timestamp" not-null="true" length="19"/>
+		<property name="updateDate" column="update_date" type="timestamp" not-null="true" length="19"/>		
+		<property name="permPrefix" column="perm_prefix" type="string" not-null="false" length="19"/>		
+		<property name="isLeaf" column="is_leaf" type="java.lang.Boolean"/>
+		<property name="display" column="is_display" type="java.lang.Boolean" not-null="true"/>
+		<many-to-one name="parent" column="parent_id" class="EMenu" not-null="false"></many-to-one>
+		<set name="child" inverse="true" cascade="delete" sort="org.easyframework.core.hibernate3.PriorityComparator">
+			<cache usage="read-write"/>
+			<key column="parent_id"/>
+			<one-to-many class="EMenu"/>
+		</set>
+	</class>
+</hibernate-mapping>

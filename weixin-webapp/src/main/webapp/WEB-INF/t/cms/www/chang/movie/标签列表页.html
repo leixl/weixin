@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)http://movie.douban.com/ -->
+<html lang="zh-CN" class="ua-windows ua-webkit">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>电影</title>
+<link href="/${res}/css/chang.css" rel="stylesheet" type="text/css">
+<link href="/${res}/css/_all.css" rel="stylesheet" type="text/css">
+<link href="/${res}/css/65.css" rel="stylesheet">
+<link href="/${res}/css/page.css" rel="stylesheet">
+
+<script type="text/javascript" src="/${res}/js/jquery.js"></script>
+<script type="text/javascript" src="/${res}/js/slide.js"></script>
+
+<style type="text/css">
+.tagCol{width:100%}
+.tagCol td{width:20%;font-size:14px;}
+.tagCol td b{font-weight:normal;color:#aaa;}
+</style>
+</head>
+
+<body>
+	<#include "../include/页头顶栏.html"/> 
+	<#include "../include/页头搜索栏.html"/>
+
+	<div id="wrapper">
+
+
+
+		<div id="content">
+
+			<div class="grid-16-8 clearfix">
+
+			<div class="article">
+			<#if tagId??>
+			<@ch_movie_page tagId=tagId count='20' >
+	             <div class="">
+				    
+                    <#list tag_pagination.list as a>
+				    <p class="ul first"></p>
+				    <table width="100%" class="">
+				        <tbody><tr class="item">
+				            <td width="100" valign="top">
+				                    <a class="nbg" href="${a.url}" title="${a.name}">
+				                        <img src="${a.cover!}" alt="${a.name}" class="" width="66" height="98">
+				                    </a>
+				            </td>
+				            <td valign="top">
+				                <div class="pl2">
+				                    <a href="${a.url}" class="">
+				                        ${a.name}
+				                    </a>
+				                         
+				                        <div class="star clearfix">
+				                                    <span class="allstar 40"></span>
+				                                    <span class="rating_nums">7.7</span>
+				                            <span class="pl">(83325人评价)</span>
+				                        </div>
+				                         
+				                </div>
+				            </td>
+				        </tr>
+				    </tbody></table>
+				    
+				    <div id="collect_form_3094909"></div>
+				    <p class="ul"></p>
+	                </#list>
+                    
+	                <@ch_pagination sysPage='1'></@ch_pagination>
+	               </div>
+	        </@ch_movie_page>
+	        </#if>
+	            </div>
+
+
+				<div class="aside">
+
+					<#include "include/列表侧栏.html"/>
+
+				</div>
+				<div class="extra"></div>
+			</div>
+		</div>
+
+
+		<#include "../include/页脚.html"/>
+
+	</div>
+</body>
+</html>

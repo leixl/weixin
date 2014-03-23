@@ -1,0 +1,56 @@
+<style>
+.layout{width:980px;margin:0 auto;clear:both}
+/*search*/
+.search{ height:40px; padding-top:50px;}
+.toplogo{ width:176px; height:43px; float:left; display:inline-block;}
+.toplogo a{display: block; width: 176px; height: 43px;}
+
+.search_panel{ width:600px; height:33px; border:#D3D3D3 solid 2px; position:relative; float:left; z-index:100;}
+.search_panel:hover{border-color:#CF005D}
+.search_panel input{ width:500px; height:25px; padding:4px 5px; border:0; outline:medium none; border:none; background:none; font-size:14px; float:left; line-height:25px;}
+.search_panel button{ width:86px; height:37px; font-size:14px; background:url(http://static.m1905.cn/index2012/images/headerico.png) no-repeat -168px -405px #CF005D; border:none; outline:medium none; position: absolute; top:-2px; right:-2px; cursor:pointer}
+.search_panel label{position: absolute; top: 0; left: 5px; line-height:33px; color: #a8a8a8; font-size:14px; cursor: text;}
+
+.search_panel .sh_ass{position: absolute; top: 33px; left:-1px; width:514px; padding:2px 0; z-index:100; background:#fff; border:1px solid #CDCDCD; box-shadow:#ececec 0 0 2px 2px; display:none;}
+.search_panel .sh_ass li{ width:100%; height:26px; line-height:26px; text-indent:8px; font-size:14px; overflow:hidden;}
+.search_panel .sh_ass li.select{ background:#f9f9f9; cursor:pointer;}
+.search_panel .sh_ass li a{color:#053565}
+.search_panel .sh_ass li.hd{ font-size:12px; color:#a8a8a8;}
+
+/*nav*/
+.nav{ margin-top:18px; background-color:#FAFAFA; border-radius:3px; width:960px; color:#464646; line-height:22px; }
+.nav a{color:#464646; padding:0 7px;}
+.nav a:hover{ color:#0090CE}
+.nav dl{ float:left; border-left:#BBBBBB dotted 1px; padding:0 6px; *padding:0 3px;}
+.nav dl:first-child{ border:none;}
+
+.floor-logo, .tody_news .newslist li, #bookingOl .c_list li,.webcinema .c_list li, .green_video, #carousel_data ul li.item1,
+#carousel_data ul li.item2, #carousel_data ul li.item3, #carousel_data ul .active + li, #carousel_data ul li.active, #reviews li .author, #hotTopic li .author, #bbsSelect .author, #reviews li .author.offline, #hotTopic li .author.offline, #mAlbum .albumCv, #mAlbum .c_list li, .mini-nav-search, .mini-nav-search form button, .payTag, .cinemaTag, .HDTag{ background-image:url(http://static.m1905.cn/index2012/images/indexgif.png); background-repeat:no-repeat;}
+
+</style>
+
+<div class="layout search">
+  <h1 class="toplogo fl">
+  <a title="柯南爱生活网" target="_blank" href="http://www.kenanai.com/">柯南爱生活</a></h1>
+  <div class="search_panel">
+    <form method="get" name="search_box" action="${base}/search.htm" target="_blank">
+      <input type="text" id="search-keyword" maxlength="32" autocomplete="off" class="gray_f02" value="${q!}" name="q"  onfocus="if(this.value=='输入关键词'){this.value='';}"  onblur="if(this.value==''){this.value='输入关键词';}">
+      <button value="" onclick="return checkinput()"></button>
+    </form>
+    <div class="sh_ass" id="hotwords" style="display: none;">
+      <ul>
+        <li class="hd">最近热门</li>
+        <@ch_movie_list recommend='1' orderBy='4'>
+        <#list tag_list as a>
+		<li><span>${a.name}</span></li>
+	    </#list>
+        </@ch_movie_list>
+      </ul>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="${base}/res/www/leixl/js/plugin/search.js"></script>
+
+<div class="nav">
+  	
+</div>

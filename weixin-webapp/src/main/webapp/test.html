@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)http://movie.douban.com/ -->
+<html lang="zh-CN" class="ua-windows ua-webkit">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+</head>
+<body>
+
+
+<script type="text/javascript">
+  (function(){
+	  function Rectangle(w,h){
+		  this.width = w;
+		  this.height = h;
+	  }
+	  
+	  Rectangle.prototype.area = function(){
+		  with(this){
+			  return width * height;
+		  }
+	  }
+	  
+	  var p = new Rectangle(8.5,11);
+	 
+	  alert(p.area());
+  })();
+</script>
+</body>
+</html>

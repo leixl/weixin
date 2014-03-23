@@ -1,0 +1,41 @@
+<div class="person_left avatar_left">
+    <div class="p_l_avatar">
+        <a href="">
+        <img class="img_avatar" src="http://nuc.m1905.com/data/avatar/009/39/19/98_avatar_big.jpg" onerror="this.onerror=null;this.src='http://nuc.m1905.com/images/noavatar_big.gif'" height="100" width="100" /></a>
+    </div>
+    <p class="p_l_separate"><span>个人资料</span></p>
+    <ul class="navigation">
+        <li ><a class="" href="">修改头像</a></li>
+        <li ><a class="show_now" href="">个性域名</a></li>
+        <li><a class="" href="">身份认证</a></li>
+
+    </ul>
+    <p class="p_l_separate"><span>隐私设置</span></p>
+    <ul class="navigation">
+        <li ><a class="" href="">修改密码</a></li>
+        <li ><a class="" href="">安全提醒</a></li>
+        <li><a class="" href="">账号绑定</a></li>
+        <li><a class="" href="">黑名单</a></li>
+
+    </ul>
+    <p class="p_l_separate"><span>个人偏好</span></p>
+    <ul class="navigation">
+        <li ><a class="" href="">消息提醒</a></li>
+        <li ><a class="" href="">互动设置</a></li>
+    </ul>
+</div>
+<script type="text/javascript">
+    $(function(){
+         //评论页面 左右高度一致
+        if($(".person_left").length > 0){
+            var screen_height = $(window).height() -60;
+            var left_height = $(".person_left").height();
+            var right_height = $(".person_right").height();
+            var person_left = screen_height > left_height ? screen_height : left_height;
+            var person_right = screen_height > right_height ? screen_height : right_height;
+            $(".person_left").css({"min-height" : person_left,"_height" : person_left});
+            $(".person_right").css({"min-height" : person_right,"_height" : person_right});
+        }
+      
+    })
+</script>

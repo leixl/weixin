@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="ua-windows ua-webkit"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="keywords" content="柯南爱生活网,电影下载,畅销商品推荐" />
+<meta name="description" content="柯南爱生活网,热门电影下载,畅销商品推荐" name="description">
+<title>柯南爱生活</title>
+<script type="text/javascript" src="/${res}/js/jquery.js"></script>
+<link href="/${res}/css/chang.css" rel="stylesheet" type="text/css">
+<link href="/${res}/css/65.css" rel="stylesheet">
+<link rel="stylesheet" href="/${res}/css/chang_home.css">
+<!-- COLLECTED CSS -->
+<script src="http://l.tbcdn.cn/apps/top/x/sdk.js?appkey=21754647"></script>
+</head>
+
+<body>
+
+
+  <#include "../include/页头顶栏.html"/>
+  <#include "../include/页头搜索栏.html"/>
+
+   
+<div id="anony-movie" class="section">
+  <div class="wrapper">
+  
+  
+<div class="sidenav">
+  <h2 class="section-title"><a href="http://www.kenanai.com/movie/">电影</a></h2>
+  
+  
+  <div class="side-links nav-anon">
+      <ul>
+             
+                 <li><a href="#">电视剧</a></li>
+             
+                 <li><a href="#">排行榜</a></li>
+             
+                 <li><a href="#">分类</a></li>
+             
+      
+      </ul>
+  </div>
+ 
+  
+
+
+    <div class="apps-list">
+    <ul>
+    
+    <li><a href="http://www.kenanai.com/mobile/movie" class="lnk-icon"><i class="app-icon app-icon-movie"></i></a><a href="http://www.kenanai.com/mobile/movie">柯南爱电影</a></li>
+    </ul>
+    </div>
+
+</div>
+
+  <div class="side">
+<div class="mod">
+
+
+    <h2>
+        影片分类
+            &nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·
+            <span class="pl">&nbsp;(
+                
+                    <a href="http://movie.kenanai.com/tag/?view=type" target="_self">更多</a>
+                ) </span>
+    </h2>
+
+<div class="tags list">
+  <ul>
+    <@ch_movietag_list typeId='1'>
+    <#list tag_list as a>
+    <li><a href="${base}/getPageByTagIds.htm?tagId=${a.id}">${a.name}</a></li>
+    </#list>   
+    </@ch_movietag_list>
+  </ul>
+</div>
+</div>
+
+<div class="mod">
+
+
+    <h2>
+        近期热门
+            &nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·
+            <span class="pl">&nbsp;(
+                
+                    <a href="http://movie.kenanai.com/chart" target="_self">更多</a>
+                ) </span>
+    </h2>
+
+<div class="list1 movie-charts">
+  <ol>
+    <@ch_movie_list orderBy='4' count='10'>
+    <#list tag_list as a>
+    <li>
+    <a href="${a.url}">${a.name}</a>
+    </li>
+    </#list>
+    </@ch_movie_list>
+  </ol>
+</div>
+</div>
+</div>
+  <div class="main">
+
+
+    <h2>
+     晓亮推荐
+            &nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·
+            <span class="pl">&nbsp;(
+                
+                    <a href="${base}/movie/" target="_self">更多</a>
+                ) </span>
+    </h2>
+
+<div class="movie-list list">
+  <ul>
+    <@ch_movie_list recommend='1' count='12' orderBy='4'>
+    <#list tag_list as a>
+   <li>
+    <div class="pic">
+        <a href="${a.url}"><img src="${a.cover!}" alt="${a.name}"></a>
+    </div>
+    <div class="title">
+      <a href="${a.url}">${a.name}</a>
+    </div>
+    <div class="rating">
+        <span class="allstar35"></span><i>6.3</i>
+    </div>
+  </li>
+  </#list>
+   </@ch_movie_list>
+  </ul>
+</div>
+</div>
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+            
+<div id="anony-dongxi" class="section">
+  <div class="wrapper">
+  
+  
+
+<div class="sidenav">
+  <h2 class="section-title"><a href="http://dongxi.kenanai.com/?dcs=anonymous-home-sidenav&dcm=douban">东西</a></h2>
+  <ul>
+    <li><a class="story-category" href="http://dongxi.kenanai.com/shows/%E7%94%B7%E5%A3%AB/?dcs=anonymous-home-sidenav&dcm=douban">男士</a></li>
+    <li><a class="story-category" href="http://dongxi.kenanai.com/shows/%E5%A5%B3%E5%A3%AB/?dcs=anonymous-home-sidenav&dcm=douban">女士</a></li>
+    <li><a class="story-category" href="http://dongxi.kenanai.com/shows/%E5%B1%85%E5%AE%B6/?dcs=anonymous-home-sidenav&dcm=douban">居家</a></li>
+    <li><a class="story-category" href="http://dongxi.kenanai.com/shows/%E6%95%B0%E7%A0%81/?dcs=anonymous-home-sidenav&dcm=douban">数码</a></li>
+    <li><a class="story-category" href="http://dongxi.kenanai.com/shows/%E6%88%B7%E5%A4%96/?dcs=anonymous-home-sidenav&dcm=douban">户外</a></li>
+    <li><a class="story-category" href="http://dongxi.kenanai.com/shows/%E7%BE%8E%E5%A6%86/?dcs=anonymous-home-sidenav&dcm=douban">美妆</a></li>
+    <li><a class="story-category" href="http://dongxi.kenanai.com/shows/%E9%A3%9F%E5%93%81/?dcs=anonymous-home-sidenav&dcm=douban">食品</a></li>
+    <li><a class="story-category" href="http://dongxi.kenanai.com/haitao/?dcs=anonymous-home-sidenav&dcm=douban">海淘</a></li>
+  </ul>
+  
+  <div class="weibo">
+    <a class="pic" href="http://e.weibo.com/doubandongxi" target="_blank">
+      <img src="./柯南爱_files/weibo_dongxi.png">
+    </a>
+    <a href="http://e.weibo.com/doubandongxi" target="_blank">关注我们</a>
+  </div>
+</div>
+
+  <div class="side">
+  <div class="mod">
+    
+    <h2>
+        热门图文
+            &nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·
+            <span class="pl">&nbsp;(
+                
+                    <a href="http://dongxi.kenanai.com/articles?dcs=anonymous-home-more-articles&dcm=douban" target="_self">更多</a>
+                ) </span>
+    </h2>
+
+    
+    <div class="review-list">
+      <ul>
+        
+        <li class="first">
+          <div class="title">
+            <a href="http://dongxi.kenanai.com/article/1000013/?dcm=douban&dcs=anonymous-home-title" title="雾霾天眼镜党的福音——3M 9002口罩开箱">
+              雾霾天眼镜党的福音——3M 9002口罩开箱
+            </a>
+          </div>
+          <div class="content">
+            <div class="pic">
+              <a href="http://dongxi.kenanai.com/article/1000013/?dcm=douban&dcs=anonymous-home-pic">
+                <img src="./柯南爱_files/p56827.jpg" width="94" alt="雾霾天眼镜党的福音——3M 9002口罩开箱">
+              </a>
+            </div>
+            <div class="desc"> 北京的空气已经超神了，早上一出门感觉和寂静岭一样。实在hold不住了，准备天猫买点口...</div>
+          </div>
+        </li>
+        
+        <li class="">
+          <div class="title">
+            <a href="http://dongxi.kenanai.com/article/1041118/?dcm=douban&dcs=anonymous-home-title" title="豆豆美丽日志之眼霜篇">
+              豆豆美丽日志之眼霜篇
+            </a>
+          </div>
+          <div class="content">
+            <div class="pic">
+              <a href="http://dongxi.kenanai.com/article/1041118/?dcm=douban&dcs=anonymous-home-pic">
+                <img src="./柯南爱_files/p56141.jpg" width="94" alt="豆豆美丽日志之眼霜篇">
+              </a>
+            </div>
+            <div class="desc">    眼部肌肤是人体最薄肌肤，同时又是活动最频繁的部位，而且还是化妆中拉扯皮肤次数最...</div>
+          </div>
+        </li>
+        
+        <li class="">
+          <div class="title">
+            <a href="http://dongxi.kenanai.com/article/1040705/?dcm=douban&dcs=anonymous-home-title" title="假如生活从来都是你想象中的模样">
+              假如生活从来都是你想象中的模样
+            </a>
+          </div>
+          <div class="content">
+            <div class="pic">
+              <a href="http://dongxi.kenanai.com/article/1040705/?dcm=douban&dcs=anonymous-home-pic">
+                <img src="./柯南爱_files/p55318.jpg" width="94" alt="假如生活从来都是你想象中的模样">
+              </a>
+            </div>
+            <div class="desc">           家，可以简单，但要简单的有内涵。没有人规定家的样子，是你喜欢的样子就好...</div>
+          </div>
+        </li>
+        
+        <li class="">
+          <div class="title">
+            <a href="http://dongxi.kenanai.com/article/1040593/?dcm=douban&dcs=anonymous-home-title" title="我的酸奶往事">
+              我的酸奶往事
+            </a>
+          </div>
+          <div class="content">
+            <div class="pic">
+              <a href="http://dongxi.kenanai.com/article/1040593/?dcm=douban&dcs=anonymous-home-pic">
+                <img src="./柯南爱_files/p55152.jpg" width="94" alt="我的酸奶往事">
+              </a>
+            </div>
+            <div class="desc">　　上图之前先盘点一下我喝酸奶的动机~O(∩_∩)~       1.乳酸菌能减少某些致癌物质的...</div>
+          </div>
+        </li>
+        
+        <li class="">
+          <div class="title">
+            <a href="http://dongxi.kenanai.com/article/1040531/?dcm=douban&dcs=anonymous-home-title" title="家居那点事儿——实用又有创意的自然感小物(厨房篇)">
+              家居那点事儿——实用又有创意的自然感小...
+            </a>
+          </div>
+          <div class="content">
+            <div class="pic">
+              <a href="http://dongxi.kenanai.com/article/1040531/?dcm=douban&dcs=anonymous-home-pic">
+                <img src="./柯南爱_files/p55025.jpg" width="94" alt="家居那点事儿——实用又有创意的自然感小物(厨房篇)">
+              </a>
+            </div>
+            <div class="desc">      中国传统千年不变的餐具--筷子 虽然经过沧桑与历史有了许多的蜕变 虽然蜕变的过程...</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <div class="main">
+  
+    <h2>
+        热门东西
+            &nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·
+            <span class="pl">&nbsp;(
+                
+                    <a href="http://dongxi.kenanai.com/?dcs=anonymous-home-more-shows&dcm=douban" target="_self">更多</a>
+                ) </span>
+    </h2>
+
+  
+  <div class="list story-list first">
+    <div class="main-story">
+      <div class="pic">
+        <a href="http://dongxi.kenanai.com/show/1564700/?dcm=douban&dcs=anonymous-home-pic">
+          <img src="./柯南爱_files/p7670969.jpg" width="245" height="245">
+        </a>
+      </div>
+      <div class="footer">
+        <div class="story-headline">
+          <a href="http://dongxi.kenanai.com/show/1564700/?dcm=douban&dcs=anonymous-home-title">
+            <span class="story-title">
+              迅哥青瓷提花毛背心
+            </span>
+            <span class="story-price">
+              ￥458.00
+            </span>
+          </a>
+        </div>
+        
+        <div class="story-text">
+          “迅哥儿，这么看着好醉人~~虽然不高，但是真的...”
+        </div>
+      </div>
+    </div>
+    <div class="other-stories">
+      <ul>
+        <li class="first">
+          <div class="pic">
+            <a href="http://dongxi.kenanai.com/show/1150905/?dcm=douban&dcs=anonymous-home-pic">
+              <img src="./柯南爱_files/p3122765.jpg" width="115" height="115">
+            </a>
+          </div>
+          <div class="footer">
+            <a class="title" href="http://dongxi.kenanai.com/show/1150905/?dcm=douban&dcs=anonymous-home-title">和面不黏手</a>
+          </div>
+        </li>
+        <li class="first">
+          <div class="pic">
+            <a href="http://dongxi.kenanai.com/show/1041378/?dcm=douban&dcs=anonymous-home-pic">
+              <img src="./柯南爱_files/p326604.jpg" width="115" height="115">
+            </a>
+          </div>
+          <div class="footer">
+            <a class="title" href="http://dongxi.kenanai.com/show/1041378/?dcm=douban&dcs=anonymous-home-title">夜光荧光鞋带</a>
+          </div>
+        </li>
+        <li class="">
+          <div class="pic">
+            <a href="http://dongxi.kenanai.com/show/1096123/?dcm=douban&dcs=anonymous-home-pic">
+              <img src="./柯南爱_files/p1866217.jpg" width="115" height="115">
+            </a>
+          </div>
+          <div class="footer">
+            <a class="title" href="http://dongxi.kenanai.com/show/1096123/?dcm=douban&dcs=anonymous-home-title">一行消橡皮</a>
+          </div>
+        </li>
+        <li class="">
+          <div class="pic">
+            <a href="http://dongxi.kenanai.com/show/1608403/?dcm=douban&dcs=anonymous-home-pic">
+              <img src="./柯南爱_files/p7814202.jpg" width="115" height="115">
+            </a>
+          </div>
+          <div class="footer">
+            <a class="title" href="http://dongxi.kenanai.com/show/1608403/?dcm=douban&dcs=anonymous-home-title">USB台灯</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="list story-list ">
+    <div class="main-story">
+      <div class="pic">
+        <a href="http://dongxi.kenanai.com/show/1246771/?dcm=douban&dcs=anonymous-home-pic">
+          <img src="./柯南爱_files/p4837087.jpg" width="245" height="245">
+        </a>
+      </div>
+      <div class="footer">
+        <div class="story-headline">
+          <a href="http://dongxi.kenanai.com/show/1246771/?dcm=douban&dcs=anonymous-home-title">
+            <span class="story-title">
+              提升嘴角神器
+            </span>
+            <span class="story-price">
+              ￥110.00
+            </span>
+          </a>
+        </div>
+        
+        <div class="story-text">
+          “面瘫脸的福星”
+        </div>
+      </div>
+    </div>
+    <div class="other-stories">
+      <ul>
+        <li class="first">
+          <div class="pic">
+            <a href="http://dongxi.kenanai.com/show/1068025/?dcm=douban&dcs=anonymous-home-pic">
+              <img src="./柯南爱_files/p860484.jpg" width="115" height="115">
+            </a>
+          </div>
+          <div class="footer">
+            <a class="title" href="http://dongxi.kenanai.com/show/1068025/?dcm=douban&dcs=anonymous-home-title">Infobar A02</a>
+          </div>
+        </li>
+        <li class="first">
+          <div class="pic">
+            <a href="http://dongxi.kenanai.com/show/1591367/?dcm=douban&dcs=anonymous-home-pic">
+              <img src="./柯南爱_files/p7757377.jpg" width="115" height="115">
+            </a>
+          </div>
+          <div class="footer">
+            <a class="title" href="http://dongxi.kenanai.com/show/1591367/?dcm=douban&dcs=anonymous-home-title">Umbra对话气泡</a>
+          </div>
+        </li>
+        <li class="">
+          <div class="pic">
+            <a href="http://dongxi.kenanai.com/show/1044560/?dcm=douban&dcs=anonymous-home-pic">
+              <img src="./柯南爱_files/p368606.jpg" width="115" height="115">
+            </a>
+          </div>
+          <div class="footer">
+            <a class="title" href="http://dongxi.kenanai.com/show/1044560/?dcm=douban&dcs=anonymous-home-title">99元小火锅</a>
+          </div>
+        </li>
+        <li class="">
+          <div class="pic">
+            <a href="http://dongxi.kenanai.com/show/1195388/?dcm=douban&dcs=anonymous-home-pic">
+              <img src="./柯南爱_files/p3939307.jpg" width="115" height="115">
+            </a>
+          </div>
+          <div class="footer">
+            <a class="title" href="http://dongxi.kenanai.com/show/1195388/?dcm=douban&dcs=anonymous-home-title">吸盘电吹风架</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+  </div>
+  
+    <div id="dale_anonymous_home_page_middle" class="extra"><iframe id="dale_anonymous_home_page_middle_frame" frameborder="0" scrolling="no" width="950" height="90" style="overflow: hidden; margin: 0px;"></iframe></div>
+
+</div>
+
+
+
+
+
+
+
+
+            
+
+            
+<div id="anony-events" class="section">
+  <div class="wrapper">
+  
+  
+<div class="sidenav">
+  <h2 class="section-title"><a href="http://www.kenanai.com/location/">同城</a></h2>
+  
+  
+  <div class="side-links nav-anon">
+      <ul>
+        
+  
+    
+    <li>
+        <a href="http://www.kenanai.com/location/hangzhou/events">同城活动</a>
+    </li>
+      
+      </ul>
+  </div>
+ 
+
+</div>
+
+  <div class="side">
+
+<div class="mod">
+
+    <h2>
+        活动标签
+            &nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·
+    </h2>
+
+<div class="cate events-cate">
+  <ul>
+  <li class="cate-label"><a href="http://www.kenanai.com/location/hangzhou/events/week-music">音乐»</a></li>
+    <li><a href="http://www.kenanai.com/location/hangzhou/events/week-1001">小型现场</a></li>
+    <li><a href="http://www.kenanai.com/location/hangzhou/events/week-1002">音乐会</a></li>
+    <li><a href="http://www.kenanai.com/location/hangzhou/events/week-1003">演唱会</a></li>
+    <li><a href="http://www.kenanai.com/location/hangzhou/events/week-1004">音乐节</a></li>
+  </ul>
+</div>
+<div class="cate events-cate">
+  <ul>
+  <li class="cate-label"><a href="http://www.kenanai.com/location/hangzhou/events/week-drama">戏剧»</a></li>
+    <li><a href="http://www.kenanai.com/location/hangzhou/events/week-1101">话剧</a></li>
+    <li><a href="http://www.kenanai.com/location/hangzhou/events/week-1102">音乐剧</a></li>
+    <li><a href="http://www.kenanai.com/location/hangzhou/events/week-1103">舞剧</a></li>
+    <li><a href="http://www.kenanai.com/location/hangzhou/events/week-1104">歌剧</a></li>
+    <li><a href="http://www.kenanai.com/location/hangzhou/events/week-1105">戏曲</a></li>
+  </ul>
+</div>
+<div class="cate events-cate">
+  <ul>
+  <li class="cate-label"><a href="http://www.kenanai.com/location/hangzhou/events/week-party">聚会»</a></li>
+    <li><a href="http://www.kenanai.com/location/hangzhou/events/week-1401">生活</a></li>
+    <li><a href="http://www.kenanai.com/location/hangzhou/events/week-1403">摄影</a></li>
+    <li><a href="http://www.kenanai.com/location/hangzhou/events/week-1404">外语</a></li>
+    <li><a href="http://www.kenanai.com/location/hangzhou/events/week-1405">桌游</a></li>
+    <li><a href="http://www.kenanai.com/location/hangzhou/events/week-1407">交友</a></li>
+    <li><a href="http://www.kenanai.com/location/hangzhou/events/week-1406">夜店</a></li>
+    <li><a href="http://www.kenanai.com/location/hangzhou/events/week-1402">集市</a></li>
+  </ul>
+</div>
+<div class="cate events-cate">
+  <ul>
+  <li class="cate-label"><a href="http://www.kenanai.com/location/hangzhou/events/week-film">电影»</a></li>
+    <li><a href="http://www.kenanai.com/location/hangzhou/events/week-1801">主题放映</a></li>
+    <li><a href="http://www.kenanai.com/location/hangzhou/events/week-1802">影展</a></li>
+    <li><a href="http://www.kenanai.com/location/hangzhou/events/week-1803">影院活动</a></li>
+  </ul>
+</div>
+<div class="cate events-cate">
+  <ul>
+  <li class="cate-label"><a href="http://www.kenanai.com/location/hangzhou/events/week-all">其他»</a></li>
+    <li><a href="http://www.kenanai.com/location/hangzhou/events/week-salon">讲座</a></li>
+    <li><a href="http://www.kenanai.com/location/hangzhou/events/week-exhibition">展览</a></li>
+    <li><a href="http://www.kenanai.com/location/hangzhou/events/week-sports">运动</a></li>
+    <li><a href="http://www.kenanai.com/location/hangzhou/events/week-travel">旅行</a></li>
+    <li><a href="http://www.kenanai.com/location/hangzhou/events/week-commonweal">公益</a></li>
+  </ul>
+</div>
+</div>
+</div>
+  <div class="main">
+
+
+    <h2>
+        杭州 · 本周热门活动
+            &nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·
+            <span class="pl">&nbsp;(
+                
+                    <a href="http://www.kenanai.com/location/" target="_self">更多</a>
+                ) </span>
+    </h2>
+
+<div class="events-list list">
+  <ul>
+    <li>
+      <div class="pic">
+        <a href="http://www.kenanai.com/event/19948282/">
+            <img data-origin="http://img3.kenanai.com/view/event_poster/small/public/198f4dc94cd41dc.jpg" src="./柯南爱_files/198f4dc94cd41dc.jpg" width="70">
+        </a>
+      </div>
+      <div class="info">
+        <div class="title">
+          <a href="http://www.kenanai.com/event/19948282/" title="杭州笑海相声会馆，周末休闲爆笑满满！">
+            杭州笑海相声会馆，周末休闲爆笑满满！
+          </a>
+        </div>
+        <div class="datetime">
+            12月20日 周五 - 3月16日 周日
+        </div>
+        <address title="青年路48号大华书场（周六晚）">
+          青年路48号大华书场（周六晚）
+        </address>
+        <div class="follow">
+          132人关注
+        </div>
+      </div>
+    </li><li>
+      <div class="pic">
+        <a href="http://www.kenanai.com/event/20910881/">
+            <img data-origin="http://img3.kenanai.com/view/event_poster/small/public/d17b00d68ef0c2e.jpg" src="./柯南爱_files/d17b00d68ef0c2e.jpg" width="70">
+        </a>
+      </div>
+      <div class="info">
+        <div class="title">
+          <a href="http://www.kenanai.com/event/20910881/" title="Page One杭州万象城店－ 朱赢椿《肥肉》分享会X签售会">
+            Page One杭州万象城店－ 朱赢椿《肥肉》分享会X签售会
+          </a>
+        </div>
+        <div class="datetime">
+            3月15日 周六 14:30 - 16:30
+        </div>
+        <address title="杭州市江干区富春路701号万象城四层488商铺">
+          杭州市江干区富春路701号万...
+        </address>
+        <div class="follow">
+          12人关注
+        </div>
+      </div>
+    </li><li>
+      <div class="pic">
+        <a href="http://www.kenanai.com/event/20749951/">
+            <img data-origin="http://img3.kenanai.com/view/event_poster/small/public/0b5cbb6972ad534.jpg" src="./柯南爱_files/0b5cbb6972ad534.jpg" width="70">
+        </a>
+      </div>
+      <div class="info">
+        <div class="title">
+          <a href="http://www.kenanai.com/event/20749951/" title="木马戏剧——《阴道独白》">
+            木马戏剧——《阴道独白》
+              <span class="title-badge title-tickets-badge">正在售票</span>
+          </a>
+        </div>
+        <div class="datetime">
+            3月7日 周五 - 3月8日 周六
+        </div>
+        <address title="西湖文化广场C区杭州木马剧场（新远电影城二楼）">
+          西湖文化广场C区杭州木马剧...
+        </address>
+        <div class="follow">
+          687人关注
+        </div>
+      </div>
+    </li><li>
+      <div class="pic">
+        <a href="http://www.kenanai.com/event/20888433/">
+            <img data-origin="http://img3.kenanai.com/view/event_poster/small/public/fe0dae9395e8cd1.jpg" src="./柯南爱_files/fe0dae9395e8cd1.jpg" width="70">
+        </a>
+      </div>
+      <div class="info">
+        <div class="title">
+          <a href="http://www.kenanai.com/event/20888433/" title="木马戏剧——《最后的晚餐》">
+            木马戏剧——《最后的晚餐》
+              <span class="title-badge title-tickets-badge">正在售票</span>
+          </a>
+        </div>
+        <div class="datetime">
+            4月15日 周二 - 4月16日 周三
+        </div>
+        <address title="西湖文化广场C区杭州木马剧场（新远电影城二楼）">
+          西湖文化广场C区杭州木马剧...
+        </address>
+        <div class="follow">
+          34人关注
+        </div>
+      </div>
+  </li></ul>
+</div>
+</div>
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+<div class="wrapper">
+  <#include "../include/页脚.html"/>
+</div>
+
+
+</body></html>

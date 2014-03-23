@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.leixl.easyframework.doc.entity">
+	<class name="EDongxi" table="t_dongxi">
+		<meta attribute="sync-DAO">false</meta>
+		<cache usage="read-write"/>
+		<id name="id" type="java.lang.Long" column="dongxi_id"><generator class="identity"/></id>
+		<property name="title" column="title" type="string" not-null="false" />
+		<property name="cover" column="cover" type="string" not-null="false" />
+		<property name="price" column="price" type="string" not-null="false" />
+		<property name="createDate" column="create_date" type="timestamp" not-null="true"/>
+		<property name="updateDate" column="update_date" type="timestamp" not-null="true"/>
+		<property name="recommend" column="is_recommend" type="java.lang.Boolean" not-null="true"/>
+		<property name="disabled" column="is_disabled" type="java.lang.Boolean" not-null="true"/>
+		<property name="userId" type="java.lang.Long" column="user_id" not-null="true"/>
+		<property name="typeId" type="java.lang.Integer" column="type_id" not-null="true"/>
+	</class>
+</hibernate-mapping>

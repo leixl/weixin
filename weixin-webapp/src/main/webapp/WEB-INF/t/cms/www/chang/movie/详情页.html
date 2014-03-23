@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)http://movie.douban.com/ -->
+<html lang="zh-CN" class="ua-windows ua-webkit">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="柯南爱生活网,电影下载,畅销商品推荐,《${movie.name!}》" />
+<meta name="description" content="柯南爱生活网,热门电影下载,畅销商品推荐" name="description">
+<title>电影</title>
+<link href="/${res}/css/chang.css" rel="stylesheet" type="text/css">
+<link href="/${res}/css/_all.css" rel="stylesheet" type="text/css">
+<link href="/${res}/css/65.css" rel="stylesheet">
+<link href="${base}/res/www/leixl/css/login.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/${res}/js/jquery.js"></script>
+
+<style type="text/css">
+.tagCol{width:100%}
+.tagCol td{width:20%;font-size:14px;}
+.tagCol td b{font-weight:normal;color:#aaa;}
+</style>
+</head>
+
+<body>
+	<#include "../include/页头顶栏.html"/> 
+	<#include "../include/页头搜索栏.html"/>
+
+	<div id="wrapper">
+
+
+
+		<div id="content">
+		
+            <h1>${movie.title}</h1>
+
+			<div class="grid-16-8 clearfix">
+
+			<div class="article">
+                
+             <!-- 电影 -->
+            <div class="indent">
+            <div class="subjectwrap clearfix" xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Movie">
+	                
+	                <div class="subject clearfix">
+						<div id="mainpic" class="">
+						    <a class="nbgnbg" href="http://movie.douban.com/subject/4915857/photos?type=R" title="点击看更多海报">
+						        <img src="${movie.cover!}" width="100" height="139" title="点击看更多海报" alt="Despicable Me 2" rel="v:image">
+						   </a>
+						</div>
+						<div id="info">
+						        <span><span class="pl">导演</span>: ${movie.director!}</span><br>
+						        <span><span class="pl">编剧</span>:  ${movie.scenarist!}</span><br>
+						        <span><span class="pl">主演</span>: </span><br>
+						        <span class="pl">类型:</span> <#if movie.tags??> <#list movie.tags as t><span property="v:genre">${t.name}</span> / </#list></#if><br>
+						        <span class="pl">官方网站:</span> <br>
+						        <span class="pl">制片国家/地区:</span> ${movie.area!}<br>
+						        <span class="pl">上映日期:</span> <span>${movie.screeningDate!}</span><br>
+						        <span class="pl">片长:</span><span>${movie.leng!} &nbsp;分钟</span><br>
+						        <span class="pl">又名:</span> <span>${movie.aliasName1!}</span><br>
+						
+						</div>
+	                </div>
+                    
+	                    <!-- 评分 
+						<div id="interest_sectl">
+								    <div class="rating_wrap clearbox" rel="v:rating">
+								        <p class="rating_self clearfix" typeof="v:Rating">
+								            <span class="ll bigstar40"></span>
+								            <strong class="ll rating_num" property="v:average">8.1</strong>
+								            <span property="v:best" content="10.0"></span>
+								        </p>
+								        <p style="height:18px;margin:5px 0;font-size:12px;">
+								            (<a href="collections"><span property="v:votes">96859</span>人评价</a>)
+								        </p>
+								            
+								                
+								                <span class="stars5 starstop" title="力荐"></span>
+								                <div class="power" style="width:40px"></div>
+								                30.2%
+								                <br>
+								                
+								                <span class="stars4 starstop" title="推荐"></span>
+								                <div class="power" style="width:60px"></div>
+								                44.8%
+								                <br>
+								                
+								                <span class="stars3 starstop" title="还行"></span>
+								                <div class="power" style="width:30px"></div>
+								                22.8%
+								                <br>
+								                
+								                <span class="stars2 starstop" title="较差"></span>
+								                <div class="power" style="width:2px"></div>
+								                2.0%
+								                <br>
+								                
+								                <span class="stars1 starstop" title="很差"></span>
+								                <div class="power" style="width:0px"></div>
+								                0.3%
+								                <br>
+								    </div>
+								</div>
+			                                             -->
+			            </div>
+                
+
+
+
+						<div id="interest_sect_level" class="clearfix">
+						 <h2><span style="color:red;">下载地址：&nbsp;&nbsp; <a href="${movie.downloadUrlxl!}" target="_self"> ${movie.downloadUrl!}</a></span></h2>     
+						</div>
+			
+			            
+			        </div>
+			        
+			        
+			    <div class="related-info">
+				    <a name="intro"></a>
+				    
+				        
+				            
+				            <h2>${movie.title}的剧情简介&nbsp;&nbsp;·&nbsp;&nbsp;·&nbsp;&nbsp;·&nbsp;&nbsp;·&nbsp;&nbsp;·&nbsp;&nbsp;·</h2>
+				            <div class="indent" id="link-report">
+				                    ${movie.remark!}
+				            </div>
+				</div>    
+				
+				<h2><span style="color:red;">下载地址：&nbsp;&nbsp; <a href="${movie.downloadUrlxl!}" target="_self"> ${movie.downloadUrl!}</a></span></h2>  
+                <!-- 电影 -->
+                
+                 <div class="hundred100">
+		            <div class="rim06">
+		                <!--网友评论_Begin-->
+		                <#include "include/评论页.html"/>
+		                <!--网友评论_End-->
+		            </div>
+                 </div>
+
+                </div>
+
+
+				<div class="aside">
+
+					<#include "include/标签页侧栏.html"/>
+
+				</div>
+				<div class="extra"></div>
+			</div>
+		</div>
+
+
+		<#include "../include/页脚.html"/>
+
+	</div>
+</body>
+</html>

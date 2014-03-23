@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN" class="ua-windows ua-webkit">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="renderer" content="webkit">
+
+<title>豆瓣</title>
+
+
+<meta content="提供图书、电影、音乐唱片的推荐、评论和价格比较，以及城市独特的文化生活。" name="description" />
+<script>
+	_head_start = new Date();
+</script>
+<link href="${base}/res/www/leixl/css/member/index.css" rel="stylesheet">
+<link href="${base}/res/www/leixl/css/member/default.css"
+	rel="stylesheet">
+<script type="text/javascript" src="${base}/res/www/leixl/js/jquery.js"></script>
+</head>
+
+<body>
+
+	<script type="text/javascript">
+		var _body_start = new Date();
+	</script>
+
+
+	<#include "../include/页头顶栏.html"/> <#include "include/页头搜索栏.html"/>
+
+
+	<div id="wrapper">
+
+
+
+		<div id="content">
+
+
+			<div class="grid-16-8 clearfix">
+
+
+				<div class="article">
+
+
+
+
+
+
+					<div class="statuses-setting">
+						<div class="hd">
+							<a href="#" class="a_status_setting">首页设置</a>
+						</div>
+						<div class="bd" style="display: none;">
+							<i class="arrow"></i>
+							<div class="loading">正在加载中...</div>
+						</div>
+						<p class="setting-tips" style="display: none;">设置成功!
+							相关内容后继会出现在你的首页上
+					</div>
+					<script>
+						EXPAND_SETTING_FORM = false;
+					</script>
+
+					<div id="statuses">
+
+
+
+
+
+
+						<div id="db-isay" class="mod isay isay-disable  has-commodity">
+							<form name="mbform" method="post" action="http://www.douban.com/">
+								<div style="display: none;">
+									<input type="hidden" name="ck" value="8aV_" />
+								</div>
+								<ul class="isay-links">
+									<li class="isay-main active"><a data-action="main"
+										href="javascript:void(0);">说句话</a></li>
+									<li class="isay-pic"><a data-action="pic"
+										href="javascript:void(0);">发照片</a></li>
+									<li class="isay-share"><a data-action="share"
+										href="javascript:void(0);">推荐网页</a></li>
+									<li class="notes-link"><a
+										href="http://www.douban.com/note/create" title="添加日记">写日记</a></li>
+									<li class="commodity-link"><a data-action="commodity"
+										href="javascript:void(0)" title="发布东西">发布东西</a>
+										<div class="publish-ways">
+											<div class="share">
+												<a target="_blank"
+													href="http://dongxi.douban.com/show/create">发布东西</a>
+											</div>
+											<div class="review">
+												<a target="_blank"
+													href="http://dongxi.douban.com/article/create">写图文评论</a>
+											</div>
+											<s class="arr"></s> <s class="arr-inner"></s>
+										</div></li>
+								</ul>
+								<div class="item">
+									<p class="highlighter mention-highlighter"></p>
+									<p class="highlighter error-highlighter"></p>
+									<label id="isay-label" for="isay-cont">分享生活点滴...</label>
+									<textarea data-minheight="70" tabindex="1" id="isay-cont"
+										name="comment" rows="1"></textarea>
+								</div>
+								<div id="isay-act-field" class="isay-act"></div>
+								<div class="btn">
+									<span id="isay-counter"></span> <span class="bn-submit bn-flat"><input
+										id="isay-submit" tabindex="1" type="submit" value="发布"></span>
+									<a target="_blank"
+										href="http://www.douban.com/service/bookmarklet"
+										class="lnk-share-tools"
+										onclick="moreurl(this, {from:'index_rec'})">添加网页推荐工具</a>
+								</div>
+							</form>
+							<div class="btn-group">
+								<form charset="utf-8" id="isay-upload" data-action="pic"
+									action="/j/upload" enctype="multipart/form-data" method="post">
+									<div style="display: none;">
+										<input type="hidden" name="ck" value="8aV_" />
+									</div>
+									<input id="isay-upload-inp" tabindex="2" autocomplete="off"
+										data-action="pic" name="image" title="可传多张照片" type="file"
+										multiple>
+								</form>
+								<a href="javascript:void(0);" tabindex="-1" data-action="pic"
+									class="ico ico-pic" title="上传照片">照片</a> <a
+									href="javascript:void(0);" tabindex="2" data-action="topic"
+									class="ico ico-topic" title="添加话题">话题</a>
+							</div>
+						</div>
+						<script>
+							UPLOAD_AUTH_TOKEN = '45434163:0f930089e6418b2342dd763a1fa0e7b949ae2c1d';
+							UPLOAD_URL = '/j/upload';
+							SWFUPLOAD_FILES = [ 'http://img3.douban.com/f/shire/e00d8601c922bd0bca9b0090996fc6e79931a210/js/swfupload.js' ];
+							UPLOAD_LIMIT = 9;
+							var isay_src = "http://img3.douban.com/f/sns/9a384b3469e5768a04e5dfd27d1a70da1d15fb6b/js/sns/widgets/isay_a.js";
+						</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					<div class="stream-items">
+
+
+                        
+					<!-- 1352566347, photo_album.html -->
+
+                      <div class="status-item" data-sid="1352565317" data-action="0"
+								data-target-type="editor" data-object-kind="3090"
+								data-object-id="1010186">
+								<div class="mod" data-status-id="1352565317">
+									<div class="hd">
+
+
+										<div class="usr-pic">
+											<a href="http://www.douban.com/people/TED./"
+												onclick="moreurl(this,{from: 'nmbp-1352565317', action: '0', target_type: 'editor', object_kind: '3090'})"
+												title="unTed"><img
+												src="http://img3.douban.com/icon/u2774431-50.jpg"
+												alt="unTed" /></a>
+										</div>
+										<div class="text">
+											<a href="http://www.douban.com/people/TED./"
+												onclick="moreurl(this,{from: 'nmbp-1352565317', action: '0', target_type: 'editor', object_kind: '3090'})"
+												class="lnk-people">unTed</a> 的东西:
+										</div>
+
+									</div>
+									<div class="bd">
+
+
+
+
+										<div class="block commodity-block">
+											<div class="pic">
+												<div class="pic-wrap">
+
+													<a
+														href="http://dongxi.douban.com/show/1010186/?r=9&amp;c=1_1"
+														onclick="moreurl(this,{from: 'nmb-1352565317', action: '0', target_type: 'editor', object_kind: '3090'})"
+														title="星巴克海岸世界保温随行杯" target="_blank"><img
+														src="http://img3.douban.com/view/commodity_story/medium/public/p40744.jpg"></a>
+
+													<span class="valign"></span>
+												</div>
+											</div>
+											<div class="content">
+
+
+												<div class="title">
+													<a
+														href="http://dongxi.douban.com/show/1010186/?r=9&amp;c=1_1"
+														onclick="moreurl(this,{from: 'nmb-1352565317', action: '0', target_type: 'editor', object_kind: '3090'})"
+														target="_blank">星巴克海岸世界保温随行杯</a>
+												</div>
+												<div class="price">￥198.00 / 家居</div>
+												<p>终于出了个还算不错的配色（左边这个= =）
+											</div>
+										</div>
+
+
+
+
+										<div class="actions">
+
+											<span class="created_at" title="2014-03-13 15:20:18">
+
+												25分钟前<span class="ghost">，来自 <a
+													href="http://www.douban.com/interest/1/1/">热门精选</a></span>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+						</div>
+
+
+
+
+
+
+						<div class="paginator">
+							<span class="prev"> &lt;前页 </span> <span class="thispage"
+								data-total-page="9223372036854775807">1</span> <a href="?p=2">2</a>
+
+
+							<a href="?p=3">3</a> <a href="?p=4">4</a> <a href="?p=5">5</a>
+
+
+							<a href="?p=6">6</a> <a href="?p=7">7</a> <a href="?p=8">8</a>
+
+
+							<a href="?p=9">9</a> <span class="break">...</span> <span
+								class="next">
+								<link rel="next" href="?p=2" /> <a href="?p=2">后页&gt;</a>
+							</span>
+
+						</div>
+
+
+					</div>
+
+				</div>
+				
+				
+				<div class="aside">
+
+                <#include "include/右侧栏.html"/>
+               
+
+				</div>
+				<div class="extra"></div>
+			</div>
+		</div>
+
+
+		<#include "../include/页脚.html"/>
+
+	</div>
+
+
+
+</body>
+
+</html>
+

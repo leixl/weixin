@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)http://movie.douban.com/ -->
+<html lang="zh-CN" class="ua-windows ua-webkit">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="柯南爱生活网,电影下载,畅销商品推荐" />
+<meta name="description" content="柯南爱生活网,热门电影下载,畅销商品推荐" name="description">
+<title>电影</title>
+<link href="/${res}/css/chang.css" rel="stylesheet" type="text/css">
+<link href="/${res}/css/_all.css" rel="stylesheet" type="text/css">
+<link href="/${res}/css/65.css" rel="stylesheet">
+
+<script type="text/javascript" src="/${res}/js/jquery.js"></script>
+<script type="text/javascript" src="/${res}/js/slide.js"></script>
+
+<style type="text/css">
+.tagCol{width:100%}
+.tagCol td{width:20%;font-size:14px;}
+.tagCol td b{font-weight:normal;color:#aaa;}
+</style>
+<script src="http://l.tbcdn.cn/apps/top/x/sdk.js?appkey=21754647"></script>
+</head>
+
+<body>
+	<#include "../include/页头顶栏.html"/> 
+	<#include "../include/页头搜索栏.html"/>
+
+	<div id="wrapper">
+
+
+
+		<div id="content">
+            <h1>豆瓣电影标签</h1>
+
+			<div class="grid-16-8 clearfix">
+
+				<div class="article">
+                
+<div style="border-bottom: 1px solid rgb(204, 204, 204); padding-bottom: 5px; margin-bottom: 10px;" class="clearfix">
+
+    <span class="rr greyinput">
+        分类浏览 /
+        <a href="http://movie.douban.com/tag/?view=cloud">所有热门标签</a>
+    </span>
+</div>
+        
+        <a name="类型"><h2 style="padding-top:10px">类型 · · · · · · </h2>
+        </a>
+        <table class="tagCol">
+            <tbody>
+                    <@ch_movietag_list typeId='1'>
+                    <tr>
+                    <#list tag_list as a>
+                    <td><a href="${base}/getPageByTagIds.htm?tagId=${a.id}">${a.name}</a><b>(${a.count})</b></td>
+                     <#assign i=a_index+1 />
+                     <#if i % 4 == 0>
+                        </tr>
+                        <tr>
+                    </#if>
+                     </#list>  
+                     </tr> 
+                    </@ch_movietag_list>    
+            </tbody>
+        </table>
+        <a name="国家/地区"><h2 style="padding-top:10px">国家/地区 · · · · · · </h2>
+        </a>
+        <table class="tagCol">
+            <tbody>
+                    <@ch_movietag_list typeId='2'>
+                    <tr>
+                    <#list tag_list as a>
+                    <td><a href="${base}/getPageByTagIds.htm?tagId=${a.id}">${a.name}</a><b>(${a.count})</b></td>
+                     <#assign i=a_index+1 />
+                     <#if i % 4 == 0>
+                        </tr>
+                        <tr>
+                    </#if>
+                     </#list>  
+                     </tr>  
+                    </@ch_movietag_list>
+            </tbody>
+        </table>
+        
+        <a name="年代"><h2 style="padding-top:10px">年代 · · · · · · </h2>
+        </a>
+        <table class="tagCol">
+            <tbody>
+                    <@ch_movietag_list typeId='3'>
+                    <#list tag_list as a>
+                        <tr>
+                    <#list tag_list as a>
+                    <td><a href="${base}/getPageByTagIds.htm?tagId=${a.id}">${a.name}</a><b>(${a.count})</b></td>
+                     <#assign i=a_index+1 />
+                     <#if i % 4 == 0>
+                        </tr>
+                        <tr>
+                    </#if>
+                     </#list>  
+                     </tr> 
+                     </#list>   
+                    </@ch_movietag_list>
+            </tbody>
+        </table>
+
+            </div>
+
+
+				<div class="aside">
+
+					<#include "include/标签页侧栏.html"/>
+
+				</div>
+				<div class="extra"></div>
+			</div>
+		</div>
+
+
+		<#include "../include/页脚.html"/>
+
+	</div>
+</body>
+</html>

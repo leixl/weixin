@@ -1,0 +1,43 @@
+<div id="screening" class="s" data-dstat-areaid="70"
+						data-dstat-mode="click,expose">
+						<div class="screening-hd">
+							<div class="ui-slide-control">
+								<span class="prev-btn"><a class="btn-prev"
+									href="javascript:void(0)"></a></span> <span class="next-btn"><a
+									class="btn-next" href="javascript:void(0)"></a></span>
+							</div>
+							<div class="slide-tip">
+								<span class="ui-slide-index">1</span> / <span
+									class="ui-slide-max">4</span>
+							</div>
+							<h2>
+								正在热映<span><a onclick="moreurl(this, {from:'mv_l_a'})"
+									href="./nowplaying/">全部正在热映»</a></span>
+							</h2>
+						</div>
+						<div class="screening-bd">
+							<ul class="ui-slide-content" data-slide-index="1"
+								data-index-max="4" >
+								
+								 <@ch_movie_list orderBy='2' count='16'>
+                                    <#list tag_list as a>
+								<li class="ui-slide-item s">
+									<ul class="">
+										<li class="poster"><a
+											href="${a.url}"> <img
+												src="${a.cover!}"
+												alt="${a.name}" rel="nofollow" class="">
+										</a></li>
+										<li class="title"><a
+											onclick="moreurl(this, {from:'mv_a_tl'})"
+											href="${a.url}" class="">${a.name}</a>
+										</li>
+										<li class="rating"><span class="text-tip">暂无评分</span></li>
+									</ul>
+								</li>
+                                </#list>
+                                </@ch_movie_list>
+
+							</ul>
+						</div>
+					</div>

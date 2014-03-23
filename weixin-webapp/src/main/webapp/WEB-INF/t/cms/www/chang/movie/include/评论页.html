@@ -1,0 +1,112 @@
+<div class="pinglun">
+	
+    <div class="clear-10"></div>
+	    <div id="logined" class="pltable" style="display:none;">
+		    <form id="commentForm">
+		    <div class="plfl1">网友评论：</div>
+		    <div class="plfr1"><textarea id="commContent" name="commContent" class="cinput" cols="60" rows="5"></textarea></div>
+		    <div class="clear"></div>
+		    
+		    <div class="plfr1">
+		    <input type="hidden" id="movieId" value="${movie.id}"/>
+		    <button type="button" id="published" class="btn-submit" tabindex="6">马上发表 </button>
+		    </div>
+		    </form>
+	    </div>
+	    <div id="noLogin" style="width:96%;font-size:14px;color:red;margin:10px;">
+		    您尚未登录，请登录后发布评论！ 【<a href="${base}/tologin.htm?returnUrl=/">马上登录</a>】
+		</div>
+</div>	  
+
+<!-- 评论列表 -->
+<div class="clear-10"></div>
+<div class="LanMu01-2">
+    <div class="LanMu01-1"></div>
+    <div id="commentList">评论列表&nbsp;&nbsp;已有  条评论<a href="${base}/comment.htm?movieId=${movie.id}" target="_blank">（查看更多评论）</a></div>
+    <div id="commentListContainer"></div>
+</div>
+
+
+<!-- 评论列表 -->
+
+  
+<script type="text/javascript" src="${base}/res/www/leixl/js/plugin/jquery.validate.min.js"></script>
+	<script type="text/javascript">
+	var base = "${base}";
+	
+    $(function() {
+    	$.ajax({
+			type:'post',
+			url:'${base}/isLogin.htm',
+			dataType:'json',
+			success:function(responseJson){	
+				if(responseJson.success) {
+					$("#logined").show();
+					$("#noLogin").hide();
+				} else {
+					$("#noLogin").show();
+					$("#logined").hide();
+				}
+			}
+	    });
+    	
+    	//输入验证
+    	 $("#commentForm").validate({
+  			rules:{
+  				commContent:{required: true}
+  			},
+  			messages:{
+  				'commContent': {
+  					required: "请输入内容"
+  				}
+  			}
+  		});
+  	   
+  	   //发表评论
+  	   $("#published").click(function() {
+  			if($("#commentForm").valid())
+  			{
+  				$.ajax({
+  					type: 'post',
+  					url: base+'/comment.htm',
+  					data: {movieId:$("#movieId").val(), 
+  						content:$("#commContent").val()
+  						  },
+  					dataType: 'json',
+  					success: function(responseJson) {
+  						$("#commContent").val("");
+  						loadCommList();
+  					}
+  			    });
+  			}
+  		});
+  	   
+  	   //加载评论列表
+  	   function loadCommList(){
+  		$.ajax({
+			type:'post',
+			url:'${base}/comment_list.htm',
+			data:{movieId:$("#movieId").val()},
+			dataType:'json',
+			success:function(responseJson){	
+				var vhtml = '';
+				$.each(responseJson, function(i,item){
+					vhtml += '<div class="comment-item">';
+					vhtml += '<div class="comment">';
+					vhtml += '<h2><a href="" target="_blank">雷雷</a></h2>';
+					vhtml += '<p>'+item.content+'</p>';
+		            vhtml += '</div>';
+				});
+				$("#commentListContainer").html(vhtml);
+			}
+	    });
+  	   }
+  	   
+  	 loadCommList();
+  	   
+    });
+    </script>
+
+
+
+

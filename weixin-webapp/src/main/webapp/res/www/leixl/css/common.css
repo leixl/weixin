@@ -1,0 +1,25 @@
+#site_nav{height:30px;background:#333;width:100%;position:fixed;top:0;left:0;z-index:999}
+#site_nav_md{width:980px;margin:auto;height:30px;line-height:30px}
+#site_nav_md a{padding:0 5px 0 5px;margin:0 2px;color:#A8A8A8;height:30px;float:left;text-shadow:0 -1px 0 rgba(0,0,0,.25)}
+#site_nav_md a:hover,#site_nav_md .active a{color:#FAFAFA;text-decoration:none;background-color:#686868}
+#site_nav_md a s{display:inline-block;height:16px;width:25px;margin:7px 0;float:left}
+#site_nav_md .login-reg a s{background:url(//static.m1905.cn/index2012/images/headerico.png) no-repeat -2px -1px}
+#site_nav_md .login-reg a:hover s,#site_nav_md .login-reg.active a s{background-position:-2px -33px}
+#site_nav_md .login-reg,#site_nav_md .logged{float:left;color:#a8a8a8}
+.logged a.myusername s{background:url(//static.m1905.cn/index2012/images/headerico.png) no-repeat -198px -324px;color:#A8A8A8}
+.logged a.myusername:hover s{background-position:-198px -364px}
+#site_nav_md .logged a.btns{color:#fff;margin-top:5px;line-height:20px;height:20px;background:#D00060}
+#site_nav_md li{float:right;line-height:30px}
+.menu .history a s{background:url(//static.m1905.cn/index2012/images/headerico.png) no-repeat -38px -1px}
+.menu .history a:hover s,.menu .history.active a s{background-position:-38px -32px}
+.menu .media a s{background:url(//static.m1905.cn/index2012/images/headerico.png) no-repeat -79px -1px}
+.menu .media a:hover s,.menu .media.active a s{background-position:-79px -32px}
+.menu .client a s{background:url(//static.m1905.cn/index2012/images/headerico.png) no-repeat -120px -1px}
+.menu .client a:hover s,.menu .client.active a s{background-position:-120px -32px}
+.menu .cctv6menu a s{background:url(//static.m1905.cn/index2012/images/headerico.png) no-repeat -160px -1px}
+.menu .cctv6menu a:hover s,.menu .cctv6menu.active a s{background-position:-160px -32px}
+.menu .site_all a s{background:url(//static.m1905.cn/index2012/images/headerico.png) no-repeat -200px -1px}
+.menu .site_all a:hover s,.menu .site_all.active a s{background-position:-200px -32px}
+.nav_slide{position:absolute;background-color:#686868;width:100%;height:auto;margin-top:0;left:0;padding:20px 0;display:none;z-index:900}
+.nav_slide.active{}
+.menubox{width:980px;margin:auto}

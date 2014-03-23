@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>发布电影</title>
+<style type="text/css">
+<!--
+body { background-image: url(${base}/res/admin/images/allbg.gif); }
+-->
+</style>
+<link rel="stylesheet" href="${base}/res/admin/css/base.css" type="text/css" />
+<link rel="stylesheet" href="${base}/res/admin/css/theme.css" type="text/css" />
+<link rel="stylesheet" href="${base}/res/common/css/bootstrap.css" type="text/css" />
+<script src="${base}/res/admin/js/jquery-1.8.1.min.js" type="text/javascript"></script>
+<script src="${base}/res/common/js/bootstrap.js" type="text/javascript"></script>
+<script src="${base}/res/common/js/website.js" type="text/javascript"></script>
+<script src="${base}/thirdparty/ckeditor/ckeditor.js" type="text/javascript"></script>
+
+<#include "../../../common/image_upload.html"/>
+</head>
+<body topmargin="8">
+  <table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="65%" height="30"><img height=14 src="${base}/res/admin/images/book1.gif" width=20 />&nbsp;<a href="catalog_do.php?cid=0&channelid=6&dopost=listArchives"><u>电影列表</u></a> &gt;&gt; 新增</td>
+      <td width="30%" align='right'>&nbsp;</td>
+    </tr>
+  </table>
+
+
+<form id="submitForm" action="o_save.do" method="post">
+  <table width="98%"  border="0" align="center" cellpadding="2" cellspacing="2" id="adset" style="border:1px solid #cfcfcf;background:#ffffff;">
+  <tr>
+	  <td height="24" colspan="4" class="bline">
+	      	<table width="800" border="0" cellspacing="0" cellpadding="0">
+	          <tr>
+	            <td width="90" height="22" id="titleTip">&nbsp;<span class="pn-required">*</span>标题：</td>
+	            <td colspan="3"> <input name="title" type="text" id="title" style="width:360px" value="" />
+	            </td>
+	          </tr>
+	        </table>
+	     </td>
+    </tr>
+    <tr>
+	  <td height="24" colspan="4" class="bline">
+	      	<table width="800" border="0" cellspacing="0" cellpadding="0">
+	          <tr>
+	            <td width="90" height="22">&nbsp;<span class="pn-required">*</span>价格：</td>
+	            <td colspan="3"> <input name="price" type="text" id="price" style="width:100px" value="" />
+	            </td>
+	          </tr>
+	        </table>
+	     </td>
+    </tr>
+    <tr>
+      <td height="24" colspan="4" class="bline">
+      	<table width="800" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="90">&nbsp;会员组：</td>
+	        <td width="240"> 
+	        <select name="typeId" id="sortup" style="width:150">
+	                <option value="0" selected>默认排序</option>
+	                <option value="1">置顶一周</option>
+	                <option value="2">置顶一个月</option>
+	                <option value="3">置顶三个月</option>
+	                <option value="4">置顶半年</option>
+	                <option value="5">置顶一年</option>
+	         </select> 
+	         </td>
+            <td width="90">&nbsp;热门推荐：</td>
+            <td> 
+            <input name="recommend" type="radio" class="np" value="1" />
+              是
+            <input name="recommend" type="radio" class="np" value="0" checked />
+              否             <span class="pn-help">（勾选为热门推荐）</span>
+         </td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr>
+      <td height="24" colspan="4" class="bline">
+      	<table width="800" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="90">&nbsp;标题图：</td>
+            <td colspan="1" width="50%">
+            <input type="text" id="uploadImgPath1" name="cover" style="width:220px"/>
+            <input type="button" value="预览" onclick="previewImg(1);" class="preview-button" /><br/>
+			<span id="ufc1" style="position:relative">
+<input type="text" id="uploadFileText1" size="14" />  
+<input class="browse" type="button" value="浏览"/>
+<input onchange="$('#uploadFileText1').val(this.value)" size="14" type="file" id="uploadFile1" class="file-button"/></span>
+			<input type="button" value="上传" onclick="upload(1);"/>
+			<br/>
+			宽：<input type="text" id="zoomWidth1" value="67" size="5" style="width:60px"/>
+			高：<input type="text" id="zoomHeight1" value="97" size="5" style="width:60px"/>
+			<input type="button" value="裁剪" onclick="imgCut(1);" class="cut-button" />
+			</td>
+            <td colspan="2">
+              <img id="preImg1" alt="预览" style="width:100px;height:70px;background-color:#ccc;border:1px solid #333"/>
+            </td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+
+<table width="98%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#F9FCEF" style="border:1px solid #cfcfcf;border-top:none;">
+  <tr>
+    <td height="35">
+	<table width="98%" border="0" cellspacing="1" cellpadding="1">
+        <tr>
+          <td width="17%">&nbsp;</td>
+          <td width="83%">
+            <table width="214" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="115">
+                    <input type="image" src="${base}/res/admin/images/button_ok.gif" class="np" style="cursor:pointer; " />
+                </td>
+                <td width="99">
+                	<img src="${base}/res/admin/images/button_reset.gif" width="60" height="22" border="0" onclick="location.reload();" style="cursor:pointer; " />
+                </td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+</form>
+<script src="${base}/res/admin/js/ajaxInterceptor.js" type="text/javascript"></script>
+<script src="${base}/res/admin/js/jquery/jquery.form.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function() {
+	
+	function CKupdate(){
+		 for ( instance in CKEDITOR.instances )
+		  CKEDITOR.instances[instance].updateElement();
+	}
+	
+	var options = {
+        success:showResponse
+    };
+	
+	$("#submitForm").submit(function() {
+		
+        if($.trim($("#title").val()) == ""){
+        	showAlert($("#title"),$("#titleTip"),"请输入标题!",null,"right");
+			return false;
+		}
+        
+        $(this).ajaxSubmit(options); 
+        return false; 
+    }); 
+	 
+}) 
+
+function showResponse(responseText, statusText, xhr, $form) {
+	
+	console.log(responseText);
+	if(checkAjaxRequestValidity(responseText)){
+		var resultDOM = $("#result");
+		
+		if(responseText == "success"){
+			console.log("success");
+			resultDOM.html("");
+	    	window.location.href = "v_list.do";
+	    }else{
+	    	if(responseText == "errorParam"){
+	    		alert("ID不存在");
+    			return false;
+		    }
+	    	
+	    	
+    	}
+	}
+}
+	
+
+</script>
+</body>
+</html>

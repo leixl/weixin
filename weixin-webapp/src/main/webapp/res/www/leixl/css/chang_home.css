@@ -1,0 +1,1226 @@
+::-webkit-input-placeholder {
+	color: #ccc
+}
+
+::-moz-placeholder {
+	color: #ccc
+}
+
+:-ms-input-placeholder {
+	color: #ccc
+}
+
+.section {
+	padding: 20px 0;
+	margin-bottom: 30px;
+	min-height: 200px
+}
+
+.section .main {
+	overflow: hidden;
+	zoom: 1
+}
+
+.section .sidenav {
+	float: left;
+	width: 100px;
+	margin-right: 20px
+}
+
+.section .side {
+	float: right;
+	width: 265px;
+	margin-left: 30px
+}
+
+.section .extra {
+	width: 950px;
+	margin: 0 auto 0
+}
+
+.section .extra iframe {
+	margin-top: 20px !important
+}
+
+.section .wrapper {
+	zoom: 1
+}
+
+.section .wrapper:before,.section .wrapper:after {
+	content: "\0020";
+	display: block;
+	clear: both
+}
+
+.section-bg {
+	padding: 40px 0 20px;
+}
+
+.section:nth-child(2n) {
+	padding: 40px 0 20px;
+}
+
+.mod {
+	margin-bottom: 30px
+}
+
+.wrapper {
+	width: 950px;
+	margin: 0 auto
+}
+
+.section-title a {
+	font-size: 24px
+}
+
+.section-title a:link,.section-title a:visited {
+	font-size: 24px
+}
+
+.side-links {
+	margin-bottom: 40px
+}
+
+.side-links li {
+	position: relative;
+	margin-top: 5px;
+	font-size: 14px
+}
+
+.rating {
+	margin-bottom: 4px
+}
+
+.rating i {
+	margin-left: 4px;
+	color: #f40
+}
+
+.rating .txt-tip {
+	margin-left: 4px
+}
+
+.list {
+	font-size: 0;
+	letter-spacing: -0.31em;
+	*letter-spacing: normal;
+	*word-spacing: -0.43em
+}
+
+.list ul {
+	margin-top: -40px
+}
+
+.list li {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	width: 24.8%;
+	margin-top: 40px;
+	vertical-align: top;
+	text-align: center;
+	font-size: 12px;
+	letter-spacing: normal;
+	word-spacing: normal
+}
+
+.list .pic {
+	margin-bottom: 10px
+}
+
+.list .title {
+	line-height: 1.45;
+	font-size: 13px;
+	margin-bottom: 4px;
+	word-wrap: break-word
+}
+
+.list1 li {
+	padding-bottom: 8px;
+	margin-bottom: 8px
+}
+
+.bn-link {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	vertical-align: middle;
+	padding: 2px 10px;
+	border-radius: 2px
+}
+
+.bn-link:link,.bn-link:visited {
+	background: #999a95;
+	color: #fff
+}
+
+.bn-link:hover,.bn-link:active {
+	background: #878882
+}
+
+.tags ul {
+	margin-top: -4px
+}
+
+.tags li {
+	width: 4em;
+	margin-top: 4px;
+	text-align: left
+}
+
+.cate {
+	margin-bottom: 10px
+}
+
+.cate .cate-label {
+	width: 100%;
+	margin-bottom: 2px;
+	font-size: 14px;
+	color: #333
+}
+
+.cate .cate-label a:link,.cate .cate-label a:visited {
+	color: #333
+}
+
+.cate .cate-label a:hover,.cate .cate-label a:active {
+	color: #fff
+}
+
+.cate ul {
+	margin-left: -10px
+}
+
+.cate li {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	margin-left: 10px
+}
+
+.inp-focus {
+	border-color: #aaa
+}
+
+.inp-focus .label {
+	display: none
+}
+
+#anony-nav {
+	width: 950px;
+	margin: 0 auto 25px
+}
+
+#anony-nav h1 {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	vertical-align: middle;
+	width: 160px;
+	height: 34px;
+	margin: 0 20px 0 0;
+	padding: 0;
+	font-size: 12px;
+	font-weight: normal;
+	background:
+		url(http://img3.douban.com/f/shire/19886d443852bee48de2ed91f4a3bdfdaf8c809c/pics/nav/logo_db.png)
+		no-repeat 0 0;
+	background-image: -webkit-image-set(url(http://img3.douban.com/f/shire/19886d443852bee48de2ed91f4a3bdfdaf8c809c/pics/nav/logo_db.png)
+		1x,
+		url(http://img3.douban.com/f/shire/0f9e2dbca60b52f595ddbc02073cb4bb879ed1c9/pics/nav/logo_db@2x.png)
+		2x);
+	background-image: -moz-image-set(url(http://img3.douban.com/f/shire/19886d443852bee48de2ed91f4a3bdfdaf8c809c/pics/nav/logo_db.png)
+		1x,
+		url(http://img3.douban.com/f/shire/0f9e2dbca60b52f595ddbc02073cb4bb879ed1c9/pics/nav/logo_db@2x.png)
+		2x);
+	background-image: -ms-image-set(url(http://img3.douban.com/f/shire/19886d443852bee48de2ed91f4a3bdfdaf8c809c/pics/nav/logo_db.png)
+		1x,
+		url(http://img3.douban.com/f/shire/0f9e2dbca60b52f595ddbc02073cb4bb879ed1c9/pics/nav/logo_db@2x.png)
+		2x);
+	background-image: -o-image-set(url(http://img3.douban.com/f/shire/19886d443852bee48de2ed91f4a3bdfdaf8c809c/pics/nav/logo_db.png)
+		1x,
+		url(http://img3.douban.com/f/shire/0f9e2dbca60b52f595ddbc02073cb4bb879ed1c9/pics/nav/logo_db@2x.png)
+		2x);
+	overflow: hidden
+}
+
+#anony-nav h1 a {
+	display: block;
+	height: 34px;
+	line-height: 10em
+}
+
+#anony-nav h1 a:hover,#anony-nav h1 a:active {
+	background: transparent
+}
+
+#anony-nav .anony-srh {
+	position: relative;
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	vertical-align: middle;
+	width: 270px;
+	height: 30px;
+	border: 1px solid #c3c3c3
+}
+
+#anony-nav .anony-srh .inp {
+	display: block;
+	height: 30px;
+	overflow: hidden
+}
+
+#anony-nav .anony-srh .inp input {
+	width: 240px;
+	border: 0;
+	font-size: 13px;
+	height: 20px;
+	padding: 5px
+}
+
+#anony-nav .anony-srh .bn {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 30px;
+	height: 30px;
+	overflow: hidden;
+	cursor: pointer;
+	background:
+		url(http://img3.douban.com/f/shire/f71f15922ebd7c0ff0ea0e7a25577529efd8981a/pics/icon/bn_srh_1.png)
+		50% 50% no-repeat
+}
+
+#anony-nav .anony-srh .bn input {
+	border: 0;
+	background: transparent;
+	*padding-left: 30px;
+	overflow: hidden;
+	width: 30px;
+	height: 30px;
+	font-size: 0;
+	color: transparent;
+	cursor: pointer
+}
+
+#anony-nav .anony-srh .label {
+	font-size: 13px;
+	color: #ccc;
+	line-height: 28px;
+	padding-left: 5px;
+	cursor: text
+}
+
+#anony-nav .anony-nav-links {
+	float: right;
+	margin-top: 6px
+}
+
+#anony-nav .anony-nav-links li {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	margin: 0 0 0 21px
+}
+
+#anony-nav .anony-nav-links li a {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	width: 40px;
+	height: 20px;
+	overflow: hidden;
+	margin: 0;
+	line-height: 20em;
+	outline: 0;
+	vertical-align: middle;
+	background: transparent
+		url(http://img3.douban.com/f/shire/16681eca0be1db2d0c47c7d71fe6dda90ee86440/pics/nav/anony_nav_logo4.png)
+		no-repeat 100% 100%;
+	background-image: -webkit-image-set(url(http://img3.douban.com/f/shire/406caa7b44abcc8b59db59cea0e54f271afb7695/pics/nav/anony_nav_logo5.png)
+		1x,
+		url(http://img3.douban.com/f/shire/bbd44463bb9b49689ff7b3633e79900b4c61f498/pics/nav/anony_nav_logo5@2x.png)
+		2x);
+	background-image: -moz-image-set(url(http://img3.douban.com/f/shire/406caa7b44abcc8b59db59cea0e54f271afb7695/pics/nav/anony_nav_logo5.png)
+		1x,
+		url(http://img3.douban.com/f/shire/bbd44463bb9b49689ff7b3633e79900b4c61f498/pics/nav/anony_nav_logo5@2x.png)
+		2x);
+	background-image: -ms-image-set(url(http://img3.douban.com/f/shire/406caa7b44abcc8b59db59cea0e54f271afb7695/pics/nav/anony_nav_logo5.png)
+		1x,
+		url(http://img3.douban.com/f/shire/bbd44463bb9b49689ff7b3633e79900b4c61f498/pics/nav/anony_nav_logo5@2x.png)
+		2x);
+	background-image: -o-image-set(url(http://img3.douban.com/f/shire/406caa7b44abcc8b59db59cea0e54f271afb7695/pics/nav/anony_nav_logo5.png)
+		1x,
+		url(http://img3.douban.com/f/shire/bbd44463bb9b49689ff7b3633e79900b4c61f498/pics/nav/anony_nav_logo5@2x.png)
+		2x)
+}
+
+#anony-nav .anony-nav-links li .lnk-book {
+	background-position: 0 0
+}
+
+#anony-nav .anony-nav-links li .lnk-movie {
+	background-position: -60px 0
+}
+
+#anony-nav .anony-nav-links li .lnk-music {
+	background-position: -120px 0
+}
+
+#anony-nav .anony-nav-links li .lnk-events {
+	background-position: -340px 0
+}
+
+#anony-nav .anony-nav-links li .lnk-fm {
+	width: 80px;
+	background-position: -240px 0
+}
+
+#anony-nav .anony-nav-links li .lnk-group {
+	background-position: -180px 0
+}
+
+#anony-nav .anony-nav-links li .lnk-dongxi {
+	background-position: -400px 0
+}
+
+#anony-reg {
+	margin-bottom: 25px;
+	background: #e8edf1
+}
+
+#anony-reg .lnk-reg {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	padding: 7px 18px;
+	vertical-align: top;
+	margin-right: 15px;
+	border-radius: 2px
+}
+
+#anony-reg .lnk-reg:link,#anony-reg .lnk-reg:visited,#anony-reg .lnk-reg:hover,#anony-reg .lnk-reg:active
+	{
+	font-size: 14px;
+	color: #fff;
+	background: #ef7360
+}
+
+#anony-reg .lnk-reg:hover,#anony-reg .lnk-reg:active {
+	font-size: 14px;
+	color: #fff;
+	background: #ed6752
+}
+
+#anony-reg .lnk-reg i {
+	font-size: 12px
+}
+
+#anony-reg .nb-info {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	color: #666;
+	vertical-align: bottom
+}
+
+#anony-reg .nb-info b {
+	font-size: 16px;
+	line-height: 2;
+	font-weight: normal
+}
+
+#anony-reg .wrapper {
+	padding: 20px 0 10px;
+	overflow: hidden;
+	zoom: 1
+}
+
+#anony-reg .login {
+	float: right;
+	text-align: right;
+	font-size: 0;
+	letter-spacing: -0.31em;
+	*letter-spacing: normal;
+	*word-spacing: -0.43em
+}
+
+#anony-reg .login legend {
+	display: none
+}
+
+#anony-reg .login fieldset {
+	*display: inline;
+	margin: 0;
+	padding: 0;
+	border: 0
+}
+
+#anony-reg .login .label {
+	position: absolute;
+	z-index: 1;
+	top: 7px;
+	left: 8px;
+	color: #ccc;
+	font-size: 13px;
+	cursor: text
+}
+
+#anony-reg .login .item {
+	position: relative;
+	margin-right: 4px
+}
+
+#anony-reg .login .item .opt {
+	font-size: 12px
+}
+
+#anony-reg .login .item,#anony-reg .login .item-submit {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	vertical-align: top;
+	text-align: left;
+	font-size: 0;
+	letter-spacing: normal;
+	word-spacing: normal
+}
+
+#anony-reg .login .item .inp {
+	border: 0;
+	width: 142px;
+	margin-bottom: 5px;
+	margin-right: 0;
+	padding: 9px 8px;
+	font-size: 13px;
+	*position: relative;
+	*top: -2px;
+	*padding-top: 8px
+}
+
+#anony-reg .login .bn-submit {
+	-webkit-appearance: none;
+	padding: 0 24px;
+	height: 33px;
+	font-size: 13px;
+	border: 0;
+	border-radius: 2px;
+	cursor: pointer;
+	background: #3ba354;
+	color: #fff
+}
+
+#anony-reg .login .bn-submit:hover {
+	background-color: #1c9439
+}
+
+#anony-reg .login .item-captcha img {
+	width: 158px;
+	height: 28px
+}
+
+#anony-sns .albums {
+	float: left;
+	width: 350px;
+	margin-right: 30px;
+	color: #999;
+	font-size: 0;
+	letter-spacing: -0.31em;
+	*letter-spacing: normal;
+	*word-spacing: -0.43em
+}
+
+#anony-sns .albums .pic {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	width: 170px;
+	max-height: 170px;
+	_height: 170px;
+	overflow: hidden;
+	vertical-align: middle;
+	white-space: nowrap
+}
+
+#anony-sns .albums .pic img {
+	width: 170px
+}
+
+#anony-sns .albums ul {
+	margin: -10px 0 0 -10px
+}
+
+#anony-sns .albums li {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	letter-spacing: normal;
+	word-spacing: normal;
+	width: 170px;
+	vertical-align: top;
+	font-size: 12px;
+	margin: 10px 0 0 10px
+}
+
+#anony-sns .notes {
+	overflow: hidden;
+	zoom: 1;
+	color: #666
+}
+
+#anony-sns .notes p {
+	margin: 0
+}
+
+#anony-sns .notes .author {
+	color: #999
+}
+
+#anony-sns .notes .first {
+	margin-top: 0
+}
+
+#anony-sns .notes li {
+	margin-top: 12px;
+	word-wrap: break-word
+}
+
+#anony-sns .online ul {
+	margin-top: -4px
+}
+
+#anony-sns .online li {
+	margin-top: 10px;
+	color: #999
+}
+
+#anony-sns .online .title {
+	margin-bottom: 4px;
+	line-height: 1.45
+}
+
+#anony-dongxi a:link,#anony-dongxi a:visited {
+	color: #a16b4e
+}
+
+#anony-dongxi a:hover,#anony-dongxi a:active {
+	color: #7f4b2f
+}
+
+#anony-dongxi a:hover {
+	background-color: transparent
+}
+
+#anony-dongxi .side {
+	margin-left: 15px
+}
+
+#anony-dongxi .sidenav .story-category {
+	font-size: 14px
+}
+
+#anony-dongxi .sidenav ul li {
+	margin-top: 5px
+}
+
+#anony-dongxi .sidenav .weibo {
+	margin-top: 20px
+}
+
+#anony-dongxi .sidenav .weibo .pic {
+	margin-bottom: 8px
+}
+
+#anony-dongxi .sidenav .weibo a {
+	display: inline-block
+}
+
+#anony-dongxi .story-list {
+	letter-spacing: 0;
+	margin-bottom: 20px
+}
+
+#anony-dongxi .story-list .main-story {
+	float: left;
+	width: 245px;
+	margin: 10px 20px 10px 0
+}
+
+#anony-dongxi .story-list .main-story .pic {
+	margin-bottom: 0;
+	height: 189px;
+	overflow: hidden
+}
+
+#anony-dongxi .story-list .main-story .footer {
+	background: #f4f4f4;
+	margin-bottom: 0;
+	font-size: 14px
+}
+
+#anony-dongxi .story-list .main-story .footer .story-headline {
+	height: 20px;
+	line-height: 22px;
+	padding: 8px 10px
+}
+
+#anony-dongxi .story-list .main-story .footer .story-headline a {
+	width: 100%;
+	height: 100%;
+	display: block;
+	overflow: hidden
+}
+
+#anony-dongxi .story-list .main-story .footer .story-headline a .story-title
+	{
+	float: left;
+	font-size: 14px
+}
+
+#anony-dongxi .story-list .main-story .footer .story-headline a .story-price
+	{
+	float: right;
+	color: #6a6a6a;
+	font-size: 13px
+}
+
+#anony-dongxi .story-list .main-story .footer .story-text {
+	color: #6a6a6a;
+	border-top: 1px dashed #dbdbdb;
+	padding: 8px 10px;
+	font-size: 12px;
+	line-height: 14px;
+	height: 28px
+}
+
+#anony-dongxi .story-list .other-stories {
+	float: left;
+	height: 275px;
+	width: 270px;
+	margin-bottom: 10px;
+	margin-top: 10px
+}
+
+#anony-dongxi .story-list .other-stories ul li {
+	float: left;
+	margin-top: 20px;
+	margin-left: 0;
+	margin-right: 20px;
+	height: 125px;
+	width: 115px
+}
+
+#anony-dongxi .story-list .other-stories ul li.first {
+	margin-top: 40px
+}
+
+#anony-dongxi .story-list .other-stories ul li .pic {
+	overflow: hidden;
+	margin-bottom: 0;
+	height: 100px
+}
+
+#anony-dongxi .story-list .other-stories ul li .footer {
+	margin-top: 0;
+	height: 25px;
+	background: #f4f4f4
+}
+
+#anony-dongxi .story-list .other-stories ul li .footer .title {
+	display: inline-block;
+	margin: 6.5px;
+	font-size: 12px;
+	height: 12px;
+	line-height: 12px
+}
+
+#anony-dongxi ul.hot-list li.banner-item {
+	width: 277px;
+	height: 55px;
+	margin-bottom: 20px
+}
+
+#anony-dongxi ul.hot-list li.banner-item a.banner {
+	display: block;
+	width: 100%;
+	height: 100%
+}
+
+#anony-dongxi ul.hot-list li.banner-item a.banner img {
+	display: block;
+	width: 100%;
+	height: 100%:
+}
+
+#anony-dongxi .review-list {
+	margin-top: 10px;
+	width: 280px
+}
+
+#anony-dongxi .review-list ul li {
+	overflow: hidden;
+	margin-bottom: 30px;
+	color: #666
+}
+
+#anony-dongxi .review-list ul li.first {
+	margin-top: 20px
+}
+
+#anony-dongxi .review-list ul li .title {
+	height: 25px;
+	line-height: 25px;
+	font-size: 13px
+}
+
+#anony-dongxi .review-list ul li .content {
+	height: 60px;
+	overflow: hidden;
+	margin-top: 5px;
+	font-size: 12px;
+	line-height: 20px
+}
+
+#anony-dongxi .review-list ul li .content .desc {
+	color: #6a6a6a
+}
+
+#anony-dongxi .review-list ul li .content .pic {
+	float: right;
+	margin-left: 5px;
+	height: 60px
+}
+
+#anony-dongxi .review-list ul li .content .pic img {
+	width: 90px;
+	overflow: hidden
+}
+
+#anony-movie .bn-link:link,#anony-movie .bn-link:visited {
+	background: #1c8bd0;
+	color: #fff
+}
+
+#anony-movie .bn-link:hover,#anony-movie .bn-link:active {
+	background: #047fcb
+}
+
+#anony-movie a:link,#anony-movie a:visited {
+	color: #27a
+}
+
+#anony-movie a:hover,#anony-movie a:active {
+	color: #333
+}
+
+#anony-movie .movie-list .title a:link,#anony-movie .movie-list .title a:visited
+	{
+	color: #333
+}
+
+#anony-movie .movie-list .title a:hover,#anony-movie .movie-list .title a:active
+	{
+	color: #333
+}
+
+#anony-movie .movie-list .pic {
+	height: 145px;
+	overflow: hidden
+}
+
+#anony-movie .movie-list img {
+	width: 100px
+}
+
+#anony-movie .movie-charts ol {
+	margin: 0;
+	padding: 0
+}
+
+#anony-movie .movie-charts li {
+	margin-bottom: 6px;
+	padding-bottom: 5px;
+	list-style-type: decimal;
+	list-style-position: inside;
+	border-bottom: 1px solid #eaeaea
+}
+
+#anony-movie .movie-charts li a {
+	margin-left: 5px
+}
+
+#anony-book a:link,#anony-book a:visited {
+	color: #614e3c
+}
+
+#anony-book a:hover,#anony-book a:active {
+	color: #fff
+}
+
+#anony-book .section-title a:link,#anony-book .section-title a:visited {
+	color: #4a2f14
+}
+
+#anony-book .section-title a:hover,#anony-book .section-title a:active {
+	color: #fff
+}
+
+#anony-book .bn-link:link,#anony-book .bn-link:visited {
+	color: #fff
+}
+
+#anony-book .list s {
+	color: #999
+}
+
+#anony-book .list .pic {
+	height: 148px;
+	overflow: hidden
+}
+
+#anony-book .list .pic img {
+	width: 100px
+}
+
+#anony-book .list .price {
+	height: 19px;
+	margin-bottom: 4px;
+	color: #666
+}
+
+#anony-book .book-cate-mod {
+	overflow: hidden;
+	margin-top: -10px
+}
+
+#anony-book .book-cate-mod .cate-label {
+	width: auto;
+	font-size: 12px;
+	color: #999
+}
+
+#anony-book .book-cate-mod .cate {
+	padding-top: 10px;
+	margin: -1px 0 10px 0;
+	border-top: 1px solid #eaeaea
+}
+
+#anony-music .section-title a:link,#anony-music .section-title a:visited
+	{
+	color: #f38c00
+}
+
+#anony-music .section-title a:hover,#anony-music .section-title a:active
+	{
+	color: #fff
+}
+
+#anony-music a:link,#anony-music a:visited {
+	color: #555d53
+}
+
+#anony-music a:hover,#anony-music a:active {
+	color: #fff
+}
+
+#anony-music .album-list .title {
+	font-size: 12px;
+	color: #666
+}
+
+#anony-music .album-list .pic {
+	height: 80px;
+	overflow: hidden
+}
+
+#anony-music .artist-charts li {
+	*zoom: 1
+}
+
+#anony-music .artist-charts .num,#anony-music .artist-charts .pic {
+	float: left;
+	max-height: 61px;
+	_height: 61px;
+	overflow: hidden;
+	margin-right: 10px
+}
+
+#anony-music .artist-charts .content {
+	overflow: hidden;
+	zoom: 1
+}
+
+#anony-music .artist-charts .desc {
+	margin-top: 4px;
+	color: #999
+}
+
+#anony-music .artist-song-play {
+	position: relative;
+	cursor: pointer
+}
+
+#anony-music .artist-song-play a:hover {
+	background: 0
+}
+
+#anony-music .artist-song-play .icon {
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	overflow: hidden
+}
+
+#anony-music .artist-song-play .icon-bg {
+	width: 48px;
+	height: 49px;
+	margin: -24px 0 0 -24px;
+	background: #222;
+	opacity: .85;
+	filter: alpha(opacity = 85);
+	*margin-top: -31px
+}
+
+#anony-music .artist-song-play .icon-play {
+	width: 9px;
+	height: 11px;
+	margin: -6px 0 0 -4px;
+	background:
+		url(http://img3.douban.com/f/shire/2e2ba4027350d34a57a969920083aaff0193de7f/pics/icon/ic_bg_play.png)
+		no-repeat 0 0;
+	_background: 0;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/pics/icon/ic_bg_play.png');
+	*margin-top: -13px
+}
+
+#anony-music .artist-song-play.hover .icon {
+	display: block
+}
+
+#anony-group .section-title a:link,#anony-group .section-title a:visited
+	{
+	color: #007982
+}
+
+#anony-group .section-title a:hover,#anony-group .section-title a:active
+	{
+	color: #fff
+}
+
+#anony-group a:link,#anony-group a:visited {
+	color: #017a85
+}
+
+#anony-group a:hover,#anony-group a:active {
+	color: #fff
+}
+
+#anony-group .group-list ul {
+	margin-left: -30px;
+	margin-top: -30px
+}
+
+#anony-group .group-list li {
+	width: 248px;
+	_width: 244px;
+	margin-left: 30px;
+	margin-top: 30px;
+	text-align: left;
+	overflow: hidden;
+	zoom: 1;
+	color: #999
+}
+
+#anony-group .group-list .info {
+	overflow: hidden;
+	zoom: 1
+}
+
+#anony-group .group-list .title {
+	margin-bottom: 5px;
+	word-wrap: break-word
+}
+
+#anony-group .group-list .pic {
+	float: left;
+	margin-right: 15px
+}
+
+#anony-group .cate .cate-label a:link,#anony-group .cate .cate-label a:visited
+	{
+	color: #333
+}
+
+#anony-group .cate .cate-label a:hover,#anony-group .cate .cate-label a:active
+	{
+	color: #fff
+}
+
+#anony-events .section-title a:link,#anony-events .section-title a:visited
+	{
+	color: #ec5303
+}
+
+#anony-events .section-title a:hover,#anony-events .section-title a:active
+	{
+	color: #fff
+}
+
+#anony-events a:link,#anony-events a:visited {
+	color: #643
+}
+
+#anony-events a:hover,#anony-events a:active {
+	color: #fff
+}
+
+#anony-events .events-list ul {
+	margin-left: -20px
+}
+
+#anony-events .events-list li {
+	width: 248px;
+	margin-left: 20px;
+	text-align: left;
+	overflow: hidden;
+	zoom: 1
+}
+
+#anony-events .events-list .pic {
+	float: left;
+	margin-right: 10px
+}
+
+#anony-events .events-list .info {
+	overflow: hidden;
+	zoom: 1;
+	color: #666
+}
+
+.title-badge {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	vertical-align: top;
+	vertical-align: baseline;
+	color: #fff;
+	font-weight: 200;
+	background-color: #80c8da;
+	font-size: 11px;
+	line-height: 17px;
+	padding: 0 3px;
+	padding-top: 1px\9;
+	border-radius: 3px;
+	margin-bottom: 3px
+}
+
+a.title-badge:link,a.title-badge:visited {
+	color: #fff
+}
+
+.title-tickets-badge {
+	background-color: #ff8263
+}
+
+.title-tickets-badge:hover {
+	background-color: #ff7056
+}
+
+#anony-events .cate .cate-label a:link,#anony-events .cate .cate-label a:visited
+	{
+	color: #333
+}
+
+#anony-events .cate .cate-label a:hover,#anony-events .cate .cate-label a:active
+	{
+	color: #fff
+}
+
+.app-icon {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	vertical-align: top;
+	width: 50px;
+	height: 50px;
+	background:
+		url(http://img3.douban.com/f/shire/580165a9895bba91503e5ec6277a5d50a35b7df8/pics/app/app_icons_50_6.jpg)
+		no-repeat;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 1px 1px 2px #999;
+	-moz-box-shadow: 1px 1px 2px #999;
+	box-shadow: 1px 1px 2px #999
+}
+
+.lnk-icon {
+	display: block
+}
+
+.lnk-icon:hover,.lnk-icon:active {
+	background-color: transparent
+}
+
+.apps-list ul {
+	margin-top: -15px
+}
+
+.apps-list li {
+	margin-top: 15px
+}
+
+.app-icon-read {
+	background-position: 0 0
+}
+
+.app-icon-update {
+	background-position: -150px 0
+}
+
+.app-icon-fm {
+	background-position: -250px 0
+}
+
+.app-icon-fm-ipad {
+	background-position: -300px 0
+}
+
+.app-icon-movie {
+	background-position: -350px 0
+}
+
+.app-icon-artists {
+	background-position: -50px
+}
+
+.app-icon-cart {
+	background-position: -200px 0
+}
+
+.app-icon-location {
+	background-position: -100px 0
+}
+
+.app-icon-read-notes {
+	background-position: -400px 0
+}
+
+.app-icon-online {
+	background-position: -450px 0
+}
+
+.app-icon-group {
+	background-position: -500px 0
+}
+
+#ft {
+	overflow: hidden;
+	zoom: 1;
+	padding: 14px 0;
+	margin-top: 30px;
+	border-top: 1px dashed #dcdcdc;
+	color: #999
+}
