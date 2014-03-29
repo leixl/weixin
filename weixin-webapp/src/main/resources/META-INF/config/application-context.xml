@@ -8,7 +8,7 @@
 	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd"
 	default-lazy-init="true">
 
-    <context:component-scan base-package="com.leixl.easyframework" />
+    <context:component-scan base-package="com.kenanai.weixin" />
 
 	<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
 		<property name="locations">
@@ -35,9 +35,7 @@
 		<property name="dataSource" ref="dataSource"/>	
 		<property name="mappingLocations">
 			<list>
-				<value>classpath*:/com/leixl/easyframework/system/hbm/*.hbm.xml</value>
-				<value>classpath*:/com/leixl/easyframework/doc/hbm/*.hbm.xml</value>
-				<value>classpath*:/com/leixl/easyframework/member/hbm/*.hbm.xml</value>
+				<value>classpath*:/com/kenanai/weixin/hbm/*.hbm.xml</value>
 			</list>
 		</property>
 		<property name="hibernateProperties">
@@ -49,9 +47,6 @@
 			hibernate.jdbc.batch_size=20
 			hibernate.cache.use_query_cache=true
 			</value>
-		</property>
-		<property name="entityInterceptor">   
-			<ref local="treeInterceptor"/>
 		</property>
 		<property name="cacheProvider">
 			<ref local="cacheProvider"/>
@@ -70,7 +65,6 @@
 			<value>/WEB-INF/cache/hibernate</value>
 		</property>
 	</bean>
-	<bean id="treeInterceptor" class="org.easyframework.core.hibernate3.TreeIntercptor"/>
 	<bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
 		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>

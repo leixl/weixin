@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
-	<display-name>easyframework-root</display-name>
+	<display-name>weixin-root</display-name>
 	
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
@@ -14,7 +14,6 @@
 		<param-value>
 			classpath:META-INF/config/application-context.xml
 			classpath:META-INF/config/cache-context.xml
-			classpath:META-INF/config/captcha-context.xml
 		</param-value>
 	</context-param>
 	<filter>
@@ -25,66 +24,20 @@
 			<param-value>UTF-8</param-value>
 		</init-param>
 	</filter>
-	<filter>
-		<filter-name>processTime</filter-name>
-		<filter-class>com.leixl.easyframework.web.filter.ProcessTimeFilter</filter-class>
-	</filter>
-	<filter>
-		<filter-name>captchaFilter</filter-name>
-		<filter-class>com.leixl.easyframework.web.filter.VcaptchaFilter</filter-class>
-		<init-param>
-			<param-name>includeURIs</param-name>
-			<param-value>/regist.htm</param-value>
-		</init-param>
-	</filter>
-
+	
 	<filter>
 		<filter-name>osivFilter</filter-name>
 		<filter-class>org.springframework.orm.hibernate3.support.OpenSessionInViewFilter</filter-class>
 	</filter>
 	
 	<filter-mapping>
-		<filter-name>processTime</filter-name>
-		<url-pattern>*.do</url-pattern>
-	</filter-mapping>
-	<filter-mapping>
 		<filter-name>encoding</filter-name>
-		<url-pattern>*.do</url-pattern>
+		<url-pattern>*.php</url-pattern>
 	</filter-mapping>
 	<filter-mapping>
 		<filter-name>osivFilter</filter-name>
-		<url-pattern>*.do</url-pattern>
+		<url-pattern>*.php</url-pattern>
 	</filter-mapping>
-	<filter-mapping>
-		<filter-name>processTime</filter-name>
-		<url-pattern>*.jhtml</url-pattern>
-	</filter-mapping>
-	<filter-mapping>
-		<filter-name>encoding</filter-name>
-		<url-pattern>*.jhtml</url-pattern>
-	</filter-mapping>
-	<filter-mapping>
-		<filter-name>osivFilter</filter-name>
-		<url-pattern>*.jhtml</url-pattern>
-	</filter-mapping>
-	<filter-mapping>
-		<filter-name>processTime</filter-name>
-		<url-pattern>*.htm</url-pattern>
-	</filter-mapping>
-	<filter-mapping>
-		<filter-name>captchaFilter</filter-name>
-		<url-pattern>*.htm</url-pattern>
-	</filter-mapping>
-	<filter-mapping>
-		<filter-name>encoding</filter-name>
-		<url-pattern>*.htm</url-pattern>
-	</filter-mapping>
-	<filter-mapping>
-		<filter-name>osivFilter</filter-name>
-		<url-pattern>*.htm</url-pattern>
-	</filter-mapping>
-
-	
 	
 	<servlet>
 		<servlet-name>EasyAdmin</servlet-name>
@@ -96,34 +49,9 @@
 		<load-on-startup>1</load-on-startup>
 	</servlet>
 	
-	<servlet>
-		<servlet-name>EasyFront</servlet-name>
-		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-		<init-param>
-			<param-name>contextConfigLocation</param-name>
-			<param-value>classpath:META-INF/config/easy-servlet-front.xml</param-value>
-		</init-param>
-		<load-on-startup>1</load-on-startup>
-	</servlet>
-	
-	
-	<servlet>
-		<servlet-name>Jcaptcha</servlet-name>
-		<servlet-class>com.leixl.easyframework.web.JcaptchaServlet</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>Jcaptcha</servlet-name>
-		<url-pattern>/captcha.svl</url-pattern>
-	</servlet-mapping>
-	
 	<servlet-mapping>
 		<servlet-name>EasyAdmin</servlet-name>
 		<url-pattern>/myadmin/*</url-pattern>
-	</servlet-mapping>
-	
-	<servlet-mapping>
-		<servlet-name>EasyFront</servlet-name>
-		<url-pattern>*.htm</url-pattern>
 	</servlet-mapping>
 	
 	<session-config>
@@ -131,23 +59,11 @@
 	</session-config>
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
-		<welcome-file>index.jhtml</welcome-file>
 	</welcome-file-list>
-	<error-page>
-		<error-code>403</error-code>
-		<location>/WEB-INF/error/403.html</location>
-	</error-page>
+	
 	<error-page>
 		<error-code>404</error-code>
 		<location>/404.html</location>
 	</error-page>
-	<mime-mapping>
-		<extension>rar</extension>
-		<mime-type>application/zip</mime-type>
-	</mime-mapping>
-	<mime-mapping>
-		<extension>doc</extension>
-		<mime-type>application/zip</mime-type>
-	</mime-mapping>
 	
 </web-app>

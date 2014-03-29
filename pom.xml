@@ -11,7 +11,7 @@
   <url>http://maven.apache.org</url>
 
   <modules>
-    <module>weixin-common</module>
+    <module>weixin-sdk</module>
   	<module>weixin-core</module>
   	<module>weixin-service</module>
   	<module>weixin-dao</module>

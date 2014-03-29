@@ -26,12 +26,6 @@
 		<artifactId>weixin-core</artifactId>
 		<version>1.0</version>
 	 </dependency>
-	 
-	 <dependency>
-		<groupId>com.kenanai.weixin.common</groupId>
-		<artifactId>weixin-common</artifactId>
-		<version>1.0</version>
-	 </dependency>
   
     <dependency>
       <groupId>junit</groupId>
