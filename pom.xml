@@ -381,13 +381,6 @@
 		<version>1.0</version>
 	</dependency>
 	
-	<dependency>
-		<groupId>com.leixl.easyframework</groupId>
-		<artifactId>jmagick</artifactId>
-		<version>1.0</version>
-	</dependency>
-	
-	
   </dependencies>
   </dependencyManagement>
   

@@ -126,11 +126,7 @@
 			<groupId>c3p0</groupId>
 			<artifactId>c3p0</artifactId>
 		</dependency>
-		
-		<dependency>
-			<groupId>com.leixl.easyframework</groupId>
-			<artifactId>jmagick</artifactId>
-		</dependency>
+	
 		
 		<dependency>
 			<groupId>junit</groupId>
