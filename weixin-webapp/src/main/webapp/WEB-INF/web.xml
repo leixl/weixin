@@ -65,5 +65,14 @@
 		<error-code>404</error-code>
 		<location>/404.html</location>
 	</error-page>
-	
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>WinXinServlet</servlet-name>
+		<servlet-class>com.kenanai.weixin.web.servlet.WinXinServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>WinXinServlet</servlet-name>
+		<url-pattern>/WinXinServlet</url-pattern>
+	</servlet-mapping>
 </web-app>

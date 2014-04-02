@@ -29,7 +29,11 @@
 	<artifactId>weixin-service</artifactId>
 	<version>1.0</version>
   </dependency>
-  
+   <dependency>
+	<groupId>com.kenanai.weixin.sdk</groupId>
+	<artifactId>weixin-sdk</artifactId>
+	<version>1.0</version>
+  </dependency>
   <!-- spring -->
 		<dependency>
 			<groupId>org.springframework</groupId>
