@@ -13,7 +13,6 @@
 		<param-name>contextConfigLocation</param-name>
 		<param-value>
 			classpath:META-INF/config/application-context.xml
-			classpath:META-INF/config/cache-context.xml
 		</param-value>
 	</context-param>
 	<filter>

@@ -14,7 +14,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.kenanai.weixin.sdk.common.WeiXinUtil;
+import org.easyframework.core.Constants;
+
 import com.kenanai.weixin.sdk.service.WeiXinService;
 import com.kenanai.weixin.sdk.service.impl.WeiXinServiceImpl;
 import com.kenanai.weixin.sdk.weixin.DefaultSession;
@@ -169,11 +170,11 @@ public class WinXinServlet extends HttpServlet {
 						mit.addItem(d1);
 						session.callback(mit);
 					} else {
-						Msg4Text model = returnMsg(msg, WeiXinUtil.MENU);
+						Msg4Text model = returnMsg(msg, Constants.MENU);
 						session.callback(model);
 					}
 				} else {
-					Msg4Text model = returnMsg(msg, WeiXinUtil.MENU);
+					Msg4Text model = returnMsg(msg, Constants.MENU);
 					session.callback(model);
 				}
 
