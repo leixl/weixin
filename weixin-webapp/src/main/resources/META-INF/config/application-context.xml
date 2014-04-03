@@ -31,13 +31,9 @@
 		<property name="acquireIncrement" value="${cpool.acquireIncrement}"/>
 		<property name="maxIdleTimeExcessConnections" value="${cpool.maxIdleTimeExcessConnections}"/>
 	</bean>
-	<bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
 		<property name="dataSource" ref="dataSource"/>	
-		<property name="mappingLocations">
-			<list>
-				<value>classpath*:/com/kenanai/weixin/hbm/*.hbm.xml</value>
-			</list>
-		</property>
+		<property name="packagesToScan" value="com.kenanai.weixin.*.entity"></property>
 		<property name="hibernateProperties">
 			<value>
 			hibernate.dialect=org.hibernate.dialect.MySQLInnoDBDialect

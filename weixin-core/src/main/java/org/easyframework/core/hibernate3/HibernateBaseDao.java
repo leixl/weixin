@@ -3,16 +3,18 @@ package org.easyframework.core.hibernate3;
 import static org.hibernate.EntityMode.POJO;
 
 import java.io.Serializable;
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
 import java.util.List;
 
 import org.hibernate.Criteria;
-import org.hibernate.LockMode;
 import org.hibernate.criterion.Criterion;
 import org.hibernate.criterion.Projections;
 import org.hibernate.criterion.Restrictions;
 import org.hibernate.metadata.ClassMetadata;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.orm.hibernate3.HibernateTemplate;
 import org.springframework.util.Assert;
-
 /**
  * hibernate DAO基类
  * 
@@ -27,33 +29,45 @@ import org.springframework.util.Assert;
  */
 public abstract class HibernateBaseDao<T, ID extends Serializable> extends
 		HibernateSimpleDao {
-	/**
-	 * @see Session.get(Class,Serializable)
-	 * @param id
-	 * @return 持久化对象
+	
+	@Autowired
+	private HibernateTemplate template;
+	
+	/*
+	 * 
 	 */
-	protected T get(ID id) {
-		return get(id, false);
+	protected Class<T> entityClass;
+	
+	/*
+	 * 
+	 */
+	protected String className;
+
+	
+	@SuppressWarnings("unchecked")
+	public HibernateBaseDao() {
+		Class<?> entityClass = getClass();
+		Type type = entityClass.getGenericSuperclass();
+		if (type instanceof ParameterizedType) {
+			Type[] parameterizedType = ((ParameterizedType) type)
+					.getActualTypeArguments();
+			this.entityClass = (Class<T>) parameterizedType[0];
+		}
+
 	}
 
-	/**
-	 * @see Session.get(Class,Serializable,LockMode)
-	 * @param id
-	 *            对象ID
-	 * @param lock
-	 *            是否锁定，使用LockMode.UPGRADE
-	 * @return 持久化对象
-	 */
-	@SuppressWarnings("unchecked")
-	protected T get(ID id, boolean lock) {
-		T entity;
-		if (lock) {
-			entity = (T) getSession().get(getEntityClass(), id,
-					LockMode.UPGRADE);
-		} else {
-			entity = (T) getSession().get(getEntityClass(), id);
-		}
+	protected T saveOrUpdate(T entity) {
+		template.saveOrUpdate(entity);
 		return entity;
+	}
+
+	protected void delete(T entity) {
+		template.delete(entity);
+
+	}
+
+	protected T getById(ID id) {
+		return template.get(entityClass, id);
 	}
 
 	/**
@@ -110,9 +124,9 @@ public abstract class HibernateBaseDao<T, ID extends Serializable> extends
 	 */
 	@SuppressWarnings("unchecked")
 	public T updateByUpdater(Updater<T> updater) {
-		ClassMetadata cm = sessionFactory.getClassMetadata(getEntityClass());
+		ClassMetadata cm = sessionFactory.getClassMetadata(entityClass);
 		T bean = updater.getBean();
-		T po = (T) getSession().get(getEntityClass(),
+		T po = (T) getSession().get(entityClass,
 				cm.getIdentifier(bean, POJO));
 		updaterCopyToPersistentObject(updater, po, cm);
 		return po;
@@ -152,17 +166,10 @@ public abstract class HibernateBaseDao<T, ID extends Serializable> extends
 	 * 根据Criterion条件创建Criteria,后续可进行更多处理,辅助函数.
 	 */
 	protected Criteria createCriteria(Criterion... criterions) {
-		Criteria criteria = getSession().createCriteria(getEntityClass());
+		Criteria criteria = getSession().createCriteria(entityClass);
 		for (Criterion c : criterions) {
 			criteria.add(c);
 		}
 		return criteria;
 	}
-
-	/**
-	 * 获得Dao对于的实体类
-	 * 
-	 * @return
-	 */
-	abstract protected Class<T> getEntityClass();
 }

@@ -15,13 +15,20 @@ package com.kenanai.weixin.entity;
 
 import java.io.Serializable;
 import java.util.Date;
-import java.util.List;
+
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 /**
  * 
- * @author leixl
- * @date 2013-12-20 下午5:29:15
- * @version v1.0
+* @ClassName: Content 
+* @Description: 文章内容实体
+* @author leixl 
+* @date 2014年4月4日 上午12:16:10 
+*
  */
 public class Content implements Serializable {
 
@@ -30,96 +37,76 @@ public class Content implements Serializable {
 	 */
 	private static final long serialVersionUID = -5686872780036525372L;
 
-	// constructors
-	public Content() {
-		initialize();
-	}
-
-	/**
-	 * Constructor for primary key
-	 */
-	public Content(Integer id) {
-		this.setId(id);
-		initialize();
-	}
-
-	protected void initialize() {
-	}
-	
-	private int hashCode = Integer.MIN_VALUE;
 
 	// primary key
+	@Id
+	@GeneratedValue
+	@Column(name = "id", unique = true, nullable = false)
 	private Integer id;
-	private String name;
-	private String simpleName;
-	private String aliasName1;
-	private String aliasName2;
+	
+	@Column(name = "title")
 	private String title;
+	
+	@Column(name = "titleImg")
+	private String titleImg;
+	
+	@Column(name = "LINK")
 	private String link;
-	private String imdbNo;
-	private String director;
-	private String scenarist;
-	private String area;
-	private String publishYear;
-	private String screeningDate;
-	private Integer leng;
-	private String remark;
+	
+	@Column(name = "TXT")
+	private String txt;
+	
+	@Temporal(TemporalType.TIMESTAMP)
+	@Column(name = "CREATE_DATE")
 	private Date createDate;
-	private Date updateDate;
+	
+	@Column(name = "IS_RECOMMEND")
 	private Boolean recommend;
-	private String cover;
-	private String downloadUrl;
-	private String downloadUrlxl;
+	
+	@Column(name = "IS_DISABLE")
 	private Boolean disabled;
 
+	/**
+	 * @return the id
+	 */
 	public Integer getId() {
 		return id;
 	}
 
+	/**
+	 * @param id the id to set
+	 */
 	public void setId(Integer id) {
 		this.id = id;
 	}
 
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getSimpleName() {
-		return simpleName;
-	}
-
-	public void setSimpleName(String simpleName) {
-		this.simpleName = simpleName;
-	}
-
-	public String getAliasName1() {
-		return aliasName1;
-	}
-
-	public void setAliasName1(String aliasName1) {
-		this.aliasName1 = aliasName1;
-	}
-
-	public String getAliasName2() {
-		return aliasName2;
-	}
-
-	public void setAliasName2(String aliasName2) {
-		this.aliasName2 = aliasName2;
-	}
-
+	/**
+	 * @return the title
+	 */
 	public String getTitle() {
 		return title;
 	}
 
+	/**
+	 * @param title the title to set
+	 */
 	public void setTitle(String title) {
 		this.title = title;
 	}
-	
+
+	/**
+	 * @return the titleImg
+	 */
+	public String getTitleImg() {
+		return titleImg;
+	}
+
+	/**
+	 * @param titleImg the titleImg to set
+	 */
+	public void setTitleImg(String titleImg) {
+		this.titleImg = titleImg;
+	}
 
 	/**
 	 * @return the link
@@ -135,86 +122,33 @@ public class Content implements Serializable {
 		this.link = link;
 	}
 
-	public String getImdbNo() {
-		return imdbNo;
+	/**
+	 * @return the txt
+	 */
+	public String getTxt() {
+		return txt;
 	}
 
-	public void setImdbNo(String imdbNo) {
-		this.imdbNo = imdbNo;
+	/**
+	 * @param txt the txt to set
+	 */
+	public void setTxt(String txt) {
+		this.txt = txt;
 	}
 
-	public String getDirector() {
-		return director;
-	}
-
-	public void setDirector(String director) {
-		this.director = director;
-	}
-
-	public String getScenarist() {
-		return scenarist;
-	}
-
-	public void setScenarist(String scenarist) {
-		this.scenarist = scenarist;
-	}
-
-	public String getArea() {
-		return area;
-	}
-
-	public void setArea(String area) {
-		this.area = area;
-	}
-
-	public String getPublishYear() {
-		return publishYear;
-	}
-
-	public void setPublishYear(String publishYear) {
-		this.publishYear = publishYear;
-	}
-
-	public String getScreeningDate() {
-		return screeningDate;
-	}
-
-	public void setScreeningDate(String screeningDate) {
-		this.screeningDate = screeningDate;
-	}
-
-	public Integer getLeng() {
-		return leng;
-	}
-
-	public void setLeng(Integer leng) {
-		this.leng = leng;
-	}
-
-	public String getRemark() {
-		return remark;
-	}
-
-	public void setRemark(String remark) {
-		this.remark = remark;
-	}
-
+	/**
+	 * @return the createDate
+	 */
 	public Date getCreateDate() {
 		return createDate;
 	}
 
+	/**
+	 * @param createDate the createDate to set
+	 */
 	public void setCreateDate(Date createDate) {
 		this.createDate = createDate;
 	}
-
-	public Date getUpdateDate() {
-		return updateDate;
-	}
-
-	public void setUpdateDate(Date updateDate) {
-		this.updateDate = updateDate;
-	}
-	
 
 	/**
 	 * @return the recommend
@@ -230,50 +164,20 @@ public class Content implements Serializable {
 		this.recommend = recommend;
 	}
 
-	public String getCover() {
-		return cover;
-	}
-
-	public void setCover(String cover) {
-		this.cover = cover;
-	}
-    
 	/**
-	 * @return the downloadUrl
+	 * @return the disabled
 	 */
-	public String getDownloadUrl() {
-		return downloadUrl;
-	}
-
-	/**
-	 * @param downloadUrl the downloadUrl to set
-	 */
-	public void setDownloadUrl(String downloadUrl) {
-		this.downloadUrl = downloadUrl;
-	}
-
-	/**
-	 * @return the downloadUrlxl
-	 */
-	public String getDownloadUrlxl() {
-		return downloadUrlxl;
-	}
-
-	/**
-	 * @param downloadUrlxl the downloadUrlxl to set
-	 */
-	public void setDownloadUrlxl(String downloadUrlxl) {
-		this.downloadUrlxl = downloadUrlxl;
-	}
-
 	public Boolean getDisabled() {
 		return disabled;
 	}
 
+	/**
+	 * @param disabled the disabled to set
+	 */
 	public void setDisabled(Boolean disabled) {
 		this.disabled = disabled;
 	}
 
 	
-	
+
 }
