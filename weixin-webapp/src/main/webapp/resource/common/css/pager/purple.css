@@ -1,0 +1,7 @@
+/* 紫色页码 */
+.pages_purple{ clear:both; text-align:center; margin-top:10px; padding-top:8px; margin-bottom:8px;}
+.pages_purple span{ color:#7B5AC3;}
+.pages_purple a{ border:1px solid #CEB9FC; color:#7B5AC3; padding:2px 6px; text-decoration:none;}
+.pages_purple a:hover{ border:1px solid #CEB9FC; background:#7B5AC3; color:#FFF;}
+.pages_purple .current a{ border:1px solid #CEB9FC; background : #EBE2FF; color:#7B5AC3;}
+.pages_purple input{ width:30px; height:16px; border:1px solid #CEB9FC; color:#7B5AC3;}

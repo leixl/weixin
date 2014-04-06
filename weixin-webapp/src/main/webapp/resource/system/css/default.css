@@ -1,0 +1,271 @@
+/* 图片管理 */
+.ulp .tBox input{ float:left;}
+.ulp .form li select{ margin-right:10px;}
+.ulp .form li input{ width:220px;}
+.ulp .form li input[type=text]{ width:220px;}
+.ulp .sp{ position:relative; border-top:1px dashed #ddd; margin-top:5px; padding-top:6px;}
+.ulp .sp .ibut{ position:absolute; top:7px; left:350px; width:auto;}
+.ulp .form .but{ border-top:1px dashed #ddd; margin-top:5px; padding-top:6px;}
+.ulp .form .but input{ width:auto;}
+.ulp .form .st input{ width:auto;}
+
+.picli .pic{ width:120px;}
+.picli .pic img{ width:100px; height:100px;}
+
+.mpc .tBox input{ float:left;}
+.mpc .tabli table, .mpc .tBar{ width:600px;}
+
+/* 新闻管理 */
+.addn .form .np{ height:auto; line-height:normal;}
+.addn .form .np label{ height:35px; line-height:35px;}
+.addn .form .np .pic{ float:left;}
+.addn .form .np .clear{ float:none; margin:0; clear:both;}
+.addn .form .np .ds{ margin-top:9px;}
+.addn .form .np .pBox{ clear:both; padding-top:10px; margin-bottom:5px;}
+.addn .form .np .pBox img{ width:100px; height:100px; float:left; border:1px solid #ccc;}
+.addn .form .np .pBox a{ float:left; margin:86px 0 0 20px;}
+.addn .form .rv{ height:95px; line-height:normal;}
+.addn .form .rv label{ height:35px; line-height:35px;}
+.addn .form .rv div{ float:left; padding-bottom:5px; margin-top:2px; *margin-top:4px;}
+.addn .form .rv p{ height:30px; line-height:30px;}
+
+/* 会员管理 */
+.addu{ padding-left:30px;}
+.addu h3{ font-size:14px; font-weight:bold; clear:both; height:40px; line-height:40px;}
+.addu .ui{ border-top:1px dashed #ddd; margin-top:8px;}
+.addu .form input{ width:180px;}
+.addu .form .but input{ width:auto;}
+.addu .form .rr{ height:auto; line-height:normal;}
+.addu .form .rr label{ height:35px; line-height:35px;}
+.addu .form .rr textarea{ float:left; margin:7px 0; border:1px solid #ccc; width:300px; height:60px;}
+
+.uli{ padding:10px 0;}
+.uli .tBox .rt label{ float:left;}
+.uli .tBox .rt input{ width:80px;}
+.uli .tBox .rt cite{ float:left; margin:0 5px;}
+.uli .tabli table{ margin-bottom:5px;}
+
+.forms { width:100%; margin:0 auto 10px auto;}
+.forms .pbBox{ margin:0 auto; width:165px; height:15px; line-height:15px; line-height:normal; margin-bottom:3px;}
+.forms .pbBox .pbar{ float:left; width:100px; height:8px; overflow:hidden; margin:3px 5px 0 0; border:1px solid #86CCED;}
+.forms .pbBox .pbar span{ display:block; height:8px; overflow:hidden; float:left; background:#BBE1F4;}
+.forms .pbBox cite{ float:left;}
+.forms .fr .upload{float:left;}
+.forms .fr .upload td{padding-right:15px;text-align: center;}
+
+.forms li{ line-height:35px; clear:both;}
+.forms li label{ display:block; width:100px; float:left; text-align:right; margin-right:3px;}
+.forms li .lw80 { width:80px;}
+.forms li .lw90 { width:90px;}
+.forms li .lw15 { width:15px;}
+.forms li .fccl{ display:block; width:120px; float:left; text-align:right; margin-right:3px;}
+.forms li .fcl{ display:block; width:95px; float:left; text-align:right; margin-right:3px;}
+.forms li .fcc{ display:block; width:140px; float:left; text-align:right; margin-right:3px;}
+.forms li input{ float:left;}
+.forms .fr input{ margin-top:6px;}
+.forms .fc input{ margin-top:11px; *margin-top:6px;}
+.forms .ft input{ margin-top:7px; height:20px; line-height:20px; border:1px solid #7F9AB9;}
+.forms .emg { float:left;}
+.forms .emgs { float:left;}
+.forms .emgs input{ margin-top:7px; height:20px; line-height:20px;}
+.forms .emg .wh400 { width:400px; height:200px; margin-right:10px;}
+.forms .emg span { display:block; margin-top:10px; color:#a6a6a6;}
+.forms .emg input{ margin-top:7px; height:20px; line-height:20px; border:1px solid #7F9AB9;}
+.forms .emg cite { color:#a6a6a6;}
+.forms .emg font { display:block; margin:0 3px; float:left; font-size:12px;}
+.forms .emg select { width:154px; margin-right:5px;}
+.forms .emg textarea { margin-top:7px; height:20px; line-height:20px; float:left;}
+
+.forms .bbut { text-align:center;}
+.forms .fc .lBox, .forms .fr .lBox{ float:left;}
+.forms .fc .lBox label, .forms .fr .lBox label{ display:inline; width:auto; margin-right:10px; text-align:left;}
+.forms .fc .lBox span { color:red; text-align:left; display:block; float:left; margin-right:15px;}
+.forms .fc .lBox label input, .forms .fr .lBox label input{ margin-right:5px;}
+.forms .fc .lBox label cite, .forms .fr .lBox label cite{ cursor:default;}
+.forms .fr .lBox label span { color:#a6a6a6;}
+.forms .ft cite{ margin:0 5px;}
+.forms li select{ float:left; margin-top:7px;}
+.forms li cite{ float:left;}
+	/* 编辑器+图片上传 s------------------ */
+.forms .edi{ height:auto; line-height:normal;}
+.forms .edi label{ height:35px; line-height:35px;}
+.forms .edi .ediBox{ float:left; margin:7px 0 10px 0; width:640px; }
+.forms .edi .uptp, .forms .edi .hidden{ display:none;}
+.forms .edi .ip .show{ display:block;}
+.forms .edi .ip .show{ margin:0 0 8px 0;}
+body .forms .edi .uptp .tabs strong{ position:absolute; top:5px; right:40px;}
+.forms .edi .uptp em{ float:right; display:block; width:14px; height:14px; border:none; text-indent:-9999px; overflow:hidden; cursor:pointer; margin:8px 10px 0 0!important;; margin:7px 5px 0 0; background:url(../images/ico.png) no-repeat -105px -171px;}
+.forms .forms .edi .edi .ediBox{ width:657px!important; *width:680px;}
+.forms .edi .ediBox .ip{ clear:both; margin-bottom:15px; text-align:left;}
+.forms .edi .ediBox .ip  .but4{ float:none; clear:both; margin-bottom:12px; cursor:pointer;}
+body .forms .edi .ip ul{ padding:0;}
+.forms .edi .ip li{ clear:none;}
+body .forms .edi .ip .con{ border:1px solid #C4DFFE; border-top:none; padding:5px 8px;}
+body .forms .edi .ip .spc{ padding:5px 0 6px 11px;}
+body .forms .edi .ip .spc label{ width:auto;}
+body .forms .edi .ip #tab1{ padding:0;}
+body .forms .edi .ip .tb_n{ height:42px;}
+body .forms .edi .ip .tb_n .but4{ float:left; margin-top:8px;}
+body .forms .edi .ip .wk_n{ float:right; height:35px; line-height:35px;}
+body .forms .edi .ip .wk_n input{ height:35px; line-height:35px; margin-right:5px;}
+body .forms .edi .ip .wk_n label{ width:auto; margin-right:10px;}
+body .forms .edi .ip .wk_n a{}
+.forms .edi .vi .spc{ height:35px;}
+.forms .edi .vi .spc label{ font-weight:bold; margin-left:20px;}
+.forms .edi .vi .pli2 li{ width:133px; float:left; margin:0 11px;}
+.forms .edi .vi .pli2 li div{ width:133px; height:88px; margin-bottom:10px;}
+.forms .edi .vi .pli2 li img{ width:131px; height:86px; border:1px solid #ccc;}
+.forms .edi .vi .pli2 p{ height:25px; padding-left:35px; margin-bottom:10px;}
+.forms .edi .vi .pagination{ clear:both; height:auto; line-height:normal; padding-top:15px; *padding-top:8px; background:url(../../MCenter_shtml/images/line3.png) repeat-x top;}
+body .forms .edi .uppic .pbBox{ margin:0 auto; width:155px; height:15px; line-height:15px; line-height:normal; margin-bottom:3px;}
+.forms .edi .uppic .pbBox .pbar{ float:left; width:100px; height:8px; overflow:hidden; margin:3px 5px 0 0; border:1px solid #86CCED;}
+.forms .edi .uppic .pbBox .pbar span{ display:block; height:8px; overflow:hidden; float:left; background:#BBE1F4;}
+.forms .edi .uppic .pbBox cite{ float:left;}
+.forms .edi .wt{ text-align:left;}
+.forms .edi .onShow, .forms .edi .onFocus, .forms .edi .onError, .forms .edi .onCorrect{ margin:12px 0 0 0;}
+
+/* 编辑器+图片上传 e------------------ */
+.forms .but input{ margin:10px 15px 0 0;}
+.forms .upic .upBox{ float:left; margin-top: 5px;}
+.forms .upic .upBox input{ height:20px; line-height:20px;}
+.forms .upic .sp{ float:left;}
+.forms .upic .sp .but2{ margin:5px 0 0 0;}
+.forms .upic .sp ul{ height:35px; line-height:35px; padding:0; margin-top:-5px;}
+.forms .upic .sp ul ul{ margin:0; float:left;}
+.forms .upic .sp li{ float:left; clear:none; margin-right:20px;}
+.forms .upic .sp .pbBox{margin:0px;}
+.forms .upic .sp .pbBox .pbar{ float:left; width:100px; height:8px; overflow:hidden; margin:13px 5px 0 0; border:1px solid #86CCED;}
+.forms .upic .sp .pbBox span{ display:block; height:8px; float:left; background:#BBE1F4;} 
+.forms .upic .sp .pbBox cite{ float:left;padding-top:10px;}
+.forms .upic .upBox p{ clear:both;}
+.forms .upic .upBox a{ margin-top:30px;}
+.forms .upic .picBox{width:197px; height:154px; float:left; margin-top:10px;}
+.forms .upic .pic{width:195px; height:152px; border:1px solid #cfcfcf; text-align:center; margin:0 auto; overflow: hidden;}
+.forms .upic .pic img{max-width:195px; max-height:152px; vertical-align:middle;}
+.forms .upic .pic .fill{height:100%; width:0; overflow:hidden; display:inline-block; vertical-align:middle;}
+
+.forms .bl{ position:relative;}
+.forms .bl .cp{ padding:10px 0 10px 10px;}
+.forms .bl img{ width:210px; height:158px; border:1px solid #BBB;}
+.forms .bl .but2{ margin-left:10px!important; margin-left:5px;}
+.forms .bl .ftit .but7{ margin:9px 0 0 10px;}
+.forms .bl .ci{ position:absolute; top:50px; left:240px;}
+.forms .bl .ci .but8{ float:left; display:block; width:131px; height:24px; line-height:24px; *line-height:26px; overflow:hidden; text-align:center; text-decoration:none; margin:7px 0 10px 0; background:url(../images/uc_but.png) no-repeat 0 -106px;}
+.forms .bl .ci p{ clear:both; line-height:24px;}
+
+.forms .mtit{ height:45px; line-height:45px; padding:0 6px; clear:both; background:url(../images/line4.png) repeat-x top;}
+.forms .mtit h4{ float:left; height:45px; line-height:45px; font-size:14px; font-weight:bold;}
+.forms .mtit span { display:block; float:left; margin-left:5px; font-size:14px; font-weight:700; color:red;}
+.forms .mtit em{ margin:12px 0 0 15px;}
+
+.forms .ftit{ height:45px; line-height:45px; padding:0 6px; clear:both; background:url(../images/line4.png) repeat-x bottom;}
+.forms .ftit h4{ float:left; height:45px; line-height:45px; font-size:14px; font-weight:bold; padding-left:20px; background:url(../images/ico.png) no-repeat -139px -124px; *background-position:-139px -125px;}
+.forms .ftit em{ float:right;}
+
+.lpage .forms .picite { padding:5px 10px 5px 20px;}
+.forms .picite li { width:350px; height:auto; margin:10px 10px 10px 0; float:left; clear:none; display:inline;}
+.forms .picite li img { width:100px; height:130px; border:0; float:left; margin-right:10px;}
+.forms .picite li font { display:block; float:left; font-size:12px; line-height:26px;}
+.forms .picite li textarea { float:left; margin-bottom:5px; width:230px; height:75px;}
+
+.lpage .forms ul{ padding:5px 20px}
+.lpage .forms .age input{ width:50px;}
+.lpage .forms .price div{ float:left; margin-top:1px;}
+.lpage .forms .price p{ clear:both;}
+.lpage .forms .price input{ width:70px;}
+.lpage .forms .bl .lBox{ float:left; width:400px; position:relative;}
+.lpage .forms .bl .lBox label{ width:85px;}
+.lpage .forms .bl .ds{ position:absolute; bottom:7px; right:-50px;}
+
+.lpage .forms .upic .sp{ float:left;}
+.lpage .forms .upic .sp .but2{ margin:5px 0 0 0;}
+
+.addbi .bn{ height:32px; line-height:32px; background:#E5F4FB; padding:0 15px; margin-bottom:10px;}
+.addbi .bn span{ float:left;}
+.addbi .bn label, .addbi .bn .redb{ float:left; font-size:14px;}
+.addbi .bn .but5{ margin:4px 10px 0 10px;}
+
+.tabBox{ margin:0;}
+.tabBox .tabs{ height:32px; border-bottom:1px solid #C4DFFE; position:relative;}
+.tabBox .tabs ul{ height:32px; position:absolute; left:0; bottom:-1px!important; bottom:-3px;}
+.tabBox .tabs li{ float:left; height:32px; margin-right:5px; width:auto!important; width:10px; white-space:nowrap; background:url(../images/ico.png) no-repeat 0 -37px;}
+.tabBox .tabs li span{ display:block; height:32px; line-height:34px; padding:0 12px; background:url(../images/ico.png) no-repeat 100% -318px;} 
+.tabBox .tabs a{ font-size:14px; font-weight:bold; color:#0047A4; cursor:pointer; text-decoration:none;}
+.tabBox .tabs .active{ background-position:0 0;}
+.tabBox .tabs .active span{ background-position: 100% -281px;}
+.tabBox .tabs .active a{ color:#000;}
+.tabBox .con { border:1px solid #C4DFFE; border-top:none; background:#F6F9FF;}
+.tabBox .con .tab_con{ padding:8px;}
+.tabBox .con .cul { padding:15px; width:100%; height:100%; overflow:hidden;}
+.tabBox .con .cul li { float:left; width:120px; line-height:36px; height:36px; background:url(../images/fico.gif) no-repeat 0 2px; padding-left:50px;}
+.tabBox .con .conbut { height:100%; overflow:hidden; padding:15px;}
+.tabBox .con .conbut label { display:block; float:left; line-height:28px;}
+.tabBox .cont { border:1px solid #C4DFFE; background:#F6F9FF;}
+.tabBox .cont .conbut { height:100%; overflow:hidden; padding:15px;}
+.tabBox .cont .conbut label { display:block; float:left; line-height:28px;}
+
+.tabBox .conbox { margin:10px 0; padding:0 15px;}
+.tabBox .conbox .allbox { height:26px; padding-top:5px;}
+.tabBox .conbox input{ margin-top:5px; float:left;}
+.tabBox .conbox font { display:block; float:left; font-size:12px; margin:1px 0 0 5px; *margin-top:7px; _margin-top:5px;}
+.tabBox .conbox font a { display:block; margin-right:14px; float:left; display:inline;}
+.tabBox .conbox li{ width:130px; height:220px; float:left; margin:10px!important; margin:8px; overflow:hidden;}
+.tabBox .conbox li img{ width:128px; height:193px; border:1px solid #CCC;}
+
+.tabBoxs{ margin:8px auto; width:90%;}
+
+.tabBoxs .con { border:1px solid #C4DFFE; background:#F6F9FF;}
+.tabBoxs .con .tab_con{ padding:8px;}
+.tabBoxs .con .cul { padding:15px; width:100%; height:100%; overflow:hidden;}
+.tabBoxs .con .cul li { float:left; width:120px; line-height:36px; height:36px; background:url(../images/fico.gif) no-repeat 0 2px; padding-left:50px;}
+.tabBoxs .con .conbut { height:100%; overflow:hidden; padding:15px;}
+.tabBoxs .con .conbut label { display:block; float:left; line-height:28px;}
+.tabBoxs .cont { border:1px solid #C4DFFE; background:#F6F9FF;}
+.tabBoxs .cont .conbut { height:100%; overflow:hidden; padding:15px;}
+.tabBoxs .cont .conbut label { display:block; float:left; line-height:28px;}
+
+.tabBoxs .conbox { margin:10px 0; padding:0 15px;}
+.tabBoxs .conbox .allbox { height:26px; padding-top:5px;}
+.tabBoxs .conbox input{ margin-top:5px; float:left;}
+.tabBoxs .conbox font { display:block; float:left; font-size:12px; margin:1px 0 0 5px; *margin-top:7px; _margin-top:5px;}
+.tabBoxs .conbox font a { display:block; margin-right:14px; float:left; display:inline;}
+.tabBoxs .conbox li{ width:130px; height:220px; float:left; margin:10px!important; margin:8px; overflow:hidden;}
+.tabBoxs .conbox li img{ width:128px; height:193px; border:1px solid #CCC;}
+
+
+.ib_add .tabBoxs .tabs strong{ position:absolute; top:5px; right:13px;}
+.ib_add .tabBoxs .tabs span { float:left; display:block; margin-left:15px;}
+.ib_add .tabBoxs .tabs font { display:block; position:relative; float:left; font-size:12px; line-height:28px;}
+.ib_add .tabBoxs .con{ padding:0;}
+.ib_add .uppic .clew{ margin-bottom:15px; padding:0 6px 10px 6px; background:url(../images/line3.png) repeat-x bottom;}
+.ib_add .uppic .clew li{ line-height:25px;}
+.ib_add .uppic .clew .tg{ font-weight:bold;}
+.ib_add .uppic .spc{ height:35px; padding:0 6px;}
+.ib_add .uppic .spc label{ color:#666; font-weight:bold;}
+body .ib_add .uppic th{ background:#DEF5FF;}
+.ib_add .uppic th, .ib_add .uppic td{ line-height:25px; padding:6px 8px; background:url(../images/line5.png) repeat-x bottom;}
+.ib_add .uppic .pbBox{ margin:0 auto; width:165px; height:15px; line-height:15px; line-height:normal; margin-bottom:3px;}
+.ib_add .uppic .pbBox .pbar{ float:left; width:100px; height:8px; overflow:hidden; margin:3px 5px 0 0; border:1px solid #86CCED;}
+.ib_add .uppic .pbBox .pbar span{ display:block; height:8px; overflow:hidden; float:left; background:#BBE1F4;}
+.ib_add .uppic .pbBox cite{ float:left;}
+.ib_add .uppic .tb{ position:relative; height:90px; background:#E5F4FB; padding:10px;}
+.ib_add .uppic .tb ul{ height:30px; line-height:30px; width:auto;}
+.ib_add .uppic .tb li{ float:left;}
+.ib_add .uppic .tb .sd li{ width:160px;}
+.ib_add .uppic .tb .pm{ width:320px;}
+.ib_add .uppic .tb .pm li{ width:160px;}
+.ib_add .uppic .tb .but4{ height:27px; position:absolute; left:330px; top:43px;}
+.ib_add .uppic .wk{ height:30px; line-height:30px; position:absolute; left:330px; top:73px;}
+.ib_add .uppic .wk label{ float:left;}
+.ib_add .uppic .wk label input{ float:left; margin:9px 7px 0 0; *margin:3px 7px 0 0; _margin:5px 7px 0 0;}
+.ib_add .uppic .wk label cite{ float:left;}
+.ib_add .uppic .wk a{ float:left; margin-left:10px;}
+
+.forms .mr { height:auto;}
+.forms .mr select{ margin-right:5px;}
+.forms .mr .mrc{ float:left; margin-bottom:10px;}
+.forms .mr .mrc .but2{ margin:3px 0 0 5px; *margin:4px 0 0 5px;}
+.forms .mr .mrc div .areaSelect{ width:300px; height:120px; border:1px solid #ccc; margin-top:10px;}
+.forms .mr .mrc div .but2{ float:none; margin:10px 0 0 0;}
+
+.close{background: url(../images/close.gif) no-repeat scroll transparent; cursor: pointer; overflow: hidden; position: absolute; text-indent: -9999px; width: 17px; height: 17px;}

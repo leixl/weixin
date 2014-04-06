@@ -28,7 +28,19 @@
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 		</dependency>
-		
+		<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts2-core</artifactId>
+		</dependency>
+		<dependency>
+ 		<groupId>com.kenanai.weixin</groupId>
+ 		<artifactId>juncsoft-framework</artifactId>
+	</dependency>
+	<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+		</dependency>
+
 	</dependencies>
 
 	<build>

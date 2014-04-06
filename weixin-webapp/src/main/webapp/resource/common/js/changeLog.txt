@@ -1,0 +1,14 @@
+[2012-7-26]孙炬
+1、修改swfupload.handler.file.js，文件选择之后默认不出现进度条，
+开始上传的时候才出现进度条，以免造成以为进度条一直不动的错觉（因为文件默认是不自动上传的）。 
+因为文件名是截取过的，所以文件选择的li上title为文件的全名。
+2、修改swfupload.handler.queue.js
+因为文件名是截取过的，所以文件选择的td上title为文件的全名。
+
+[2011-10-17]孙炬
+修改swfupload.handler.file.js和swfupload.handler.queue.js
+的上传成功的方法。
+如果上传没成功，返回的信息采用直接打印在页面的方法。
+window.document.write(serverData);
+window.document.close()
+比如出现500错误了，返回的是一个完整的页面html代码，这时候可以打html代码直接输出，相当于跳转到错误页面。

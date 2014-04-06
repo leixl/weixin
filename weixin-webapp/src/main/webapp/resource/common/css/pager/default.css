@@ -1,0 +1,7 @@
+/* 默认页码 */
+.pages_default{ clear:both; text-align:center; margin-top:10px; padding-top:8px; margin-bottom:8px;}
+.pages_default span{ color:#0061DE;}
+.pages_default a{ border:1px solid #DEDFDE; color:#0061DE; padding:2px 6px; text-decoration:none;}
+.pages_default a:hover{ border:1px solid #0061DE; background:#0061DE; color:#FFF;}
+.pages_default .current a{ border:1px solid #DEDFDE; background:#DEF5FF; color:#0061DE;}
+.pages_default input{ width:30px; height:16px; border:1px solid #DEDFDE; color:#0061DE;}

@@ -34,6 +34,10 @@
 	<artifactId>weixin-sdk</artifactId>
 	<version>1.0</version>
   </dependency>
+<dependency>
+ <groupId>com.kenanai.weixin</groupId>
+ <artifactId>juncsoft-framework</artifactId>
+</dependency>
   <!-- spring -->
 		<dependency>
 			<groupId>org.springframework</groupId>

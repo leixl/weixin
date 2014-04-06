@@ -1,0 +1,65 @@
+.tip
+{
+    padding-left:25px;
+	padding-right:5px; 
+	font-size: 12px;
+	line-height:25px; 
+	vertical-align:middle;
+	float:left;
+	margin:0px;
+}
+.onShow
+{
+    background:url(../images/onShow.gif) no-repeat; 
+    padding-left:25px; 
+	padding-right:5px; 
+	font-size: 12px;
+	line-height:25px; 
+	vertical-align:middle;
+	float:left;
+	margin:0px;margin-left:5px;width:160px;
+}
+.onFocus
+{
+    background:#E9F0FF url(../images/onFocus.gif) no-repeat; 
+    padding-left:25px; 
+	padding-right:5px; 
+	font-size: 12px;
+	line-height:25px; 
+	vertical-align:middle;
+	float:left;
+	margin:0px;margin-left:5px;width:160px;
+}
+.onError
+{
+    background:#FFF2E9 url(../images/onError.gif) no-repeat;
+    padding-left:25px;
+	padding-right:5px; 
+	font-size: 12px;
+	line-height:25px; 
+	vertical-align:middle;
+	float:left;
+	margin:0px;margin-left:5px;width:160px;
+}
+.onCorrect
+{
+    background:#E9FFEB url(../images/onCorrect.gif) no-repeat;
+    padding-left:25px;
+	padding-right:5px; 
+	font-size: 12px;
+	line-height:25px; 
+	vertical-align:middle;
+	float:left;
+	margin:0px;margin-left:5px;width:160px;
+}
+.onLoad
+{
+    background:#E9FFEB url(../images/onLoad.gif) no-repeat 3px 3px;
+    padding-left:25px;
+	padding-right:5px; 
+	font-size: 12px;
+	line-height:25px; 
+	vertical-align:middle;
+	float:left;
+	margin:0px;margin-left:5px;width:160px;
+} 

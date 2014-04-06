@@ -1,0 +1,54 @@
+/*编辑器图片管理 */
+.waBox h2{ height:26px; line-height:26px; overflow:hidden; border-bottom:1px dashed #666; margin:10px 10px 15px 10px;}
+.waBox h2 strong{ display:block; height:26px; line-height:26px; font-size:14px; font-weight:bold; float:left; padding-left:25px; background:url(../images/sign1.gif) no-repeat 5px 6px;}
+.waBox h2 em{ float:right; margin-right:5px;}
+.waBox .button a{ display:block; height:25px; line-height:27px; float:left; overflow:hidden; padding:0 10px; margin-right:10px; text-align:center; border:1px solid #CDCDCD; color:#000; text-decoration:none; background:url(../images/wa_ico.png) no-repeat 0 -235px;}
+.waBox .button a:hover{ background-position:0 -209px; border:1px solid #BAB4DC; text-decoration:none;}
+
+.webAlbums .sunmenu{ padding-right:10px; margin:0 10px 10px 10px;}
+.webAlbums .sunmenu strong{ float:left; font-size:14px; font-weight:bold; color:#F00;}
+.webAlbums .sunmenu em{ float:right;}
+
+.pic_m .toobar{ height:61px; margin:0; border:1px solid #ccc; position:relative;}
+.pic_m .toobar span{ display:block; float:left; width:51px; height:52px; line-height:22px; padding-top:9px; margin-right:5px; text-align:center; background:#F1F1F1; font-weight:bold; border-right:1px solid #ccc;}
+.pic_m .toobar a{ display:block; float:left; width:52px; height:55px; text-indent:-9999px; overflow:hidden; text-align:center; margin:3px 5px 0 5px; background:url(../images/wa_ico.png) no-repeat;}
+.pic_m .toobar .mt{ background-position:0 -112px;}
+.pic_m .toobar .ct{ background-position:-106px -56px;}
+.pic_m .toobar .el{ background-position:-53px -56px;}
+.pic_m .toobar .tb{ background-position:0 -56px;}
+.pic_m .toobar .sh{ background-position:-106px 0;}
+.pic_m .toobar .rb{ background-position:-53px 0;}
+.pic_m .toobar div{ float:left; margin:15px 0 0 10px;}
+.pic_m .toobar div .button{ display:block; height:25px; line-height:27px; width:auto; text-indent:0; float:left; overflow:hidden; padding:0 10px; margin-right:10px; text-align:center; border:1px solid #CDCDCD; color:#000; text-decoration:none; background:url(../images/wa_ico.png) no-repeat 0 -235px;}
+.pic_m .toobar div .button:hover{ background-position:0 -209px; border:1px solid #BAB4DC; text-decoration:none;}
+.pic_m .toobar .el_box{ display:none; position:absolute; left:180px; top:40px; border:4px solid #ccc; background:#fff; padding:5px; width:150px;}
+.pic_m .toobar .el_box li{ height:22px; line-height:22px; clear:both;}
+.pic_m .toobar .el_box a{ width:150px; height:22px; line-height:22px; background:none; text-indent:0; text-align:left;}
+.pic_m .toobar .tb1{ background:url(../images/wa_ico_1.png) no-repeat;}
+
+.pic_m .pm_f{ margin:2px 10px; height:30px; line-height:30px;}
+.pic_m .pm_f li{ height:30px; line-height:30px; float:left; margin-right:10px;}
+.pic_m .pm_f li p{ margin: 0;padding: 0;}
+.pic_m .tabli .el{ line-height:20px;}
+.pic_m .tabli .od a{ margin:0 3px;}
+.pic_m .tabli span{ display:block; width:20px; height:22px; margin-left:3px!important; margin-left:2px; background:url(../images/wa_ico_2.png) no-repeat;}
+.pic_m .tabli .ico_p1{ background-position:-40px 0;}
+.pic_m .tabli .ico_p2{ background-position:-80px 0;}
+.pic_m .tabli .ico_p3{ background-position:0 -43px;}
+.pic_m .tabli .ico_p4{ background-position:-40px -43px;}
+.pic_m .tabli .ico_p5{ background-position:-80px -43px;}
+
+.tm_li{ padding:0;}
+.tm_li .tm_box{ float:left; width:150px; height:232px; margin:2px 2px!important; padding:2px; text-align:center; background:#eee; overflow:hidden;}
+.tm_li .tm_box .pic{width:152px; height:152px;}
+.tm_li .tm_box .pic a{width:150px; height:150px; display:block; border:#cfcfcf solid 1px; text-align:center; margin:0 auto; overflow: hidden;}
+.tm_li .tm_box .pic img{ max-width:150px; max-height:150px; vertical-align:middle;}
+.tm_li .tm_box .pic .fill{ height:100%; width:0; overflow:hidden; display:inline-block; vertical-align:middle;}
+.tm_li .tm_box li{ line-height:20px; height:20px; width:150px; overflow:hidden;}
+.tm_li .tm_box input{ float:left; margin-top:2px; *margin-top:0px; _margin-top:0px;}
+.tm_li .sp{ height:30px; line-height:30px; padding:10px 20px 10px 0;}
+.tm_li .sa{ float:left;}
+.tm_li .sa input{ float:left; margin:8px 5px 0 15px!important; margin:4px 5px 0 15px;}
+.tm_li .sa label{ float:left;}
+.tm_li_f .tm_box input{ float:left; margin:3px 5px 0 1px; *margin:0 5px 0 1px; _margin:2px 5px 0 1px;}
+.tm_li_f .tm_box ul a{ float:left; margin:0 3px!important; margin:4px 3px 0 3px;}

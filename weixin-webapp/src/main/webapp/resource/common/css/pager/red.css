@@ -1,0 +1,7 @@
+/* 红色页码 */
+.pages_red{ clear:both; text-align:center; margin-top:10px; padding-top:8px; margin-bottom:8px;}
+.pages_red span{ color:#ba2962;}
+.pages_red a{ border:1px solid #D98AAA; color:#ba2962; padding:2px 6px; text-decoration:none;}
+.pages_red a:hover{ border:1px solid #D98AAA; background:#ba2962; color:#FFF;}
+.pages_red .current a{ border:1px solid #D98AAA; background : #FAD9EE; color:#ba2962;}
+.pages_red input{ width:30px; height:16px; border:1px solid #D98AAA; color:#ba2962;}

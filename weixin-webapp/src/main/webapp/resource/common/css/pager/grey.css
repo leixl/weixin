@@ -1,0 +1,7 @@
+/* 灰色页码 */
+.pages_grey{ clear:both; text-align:center; margin-top:10px; padding-top:8px; margin-bottom:8px;}
+.pages_grey span{ color:#595959;}
+.pages_grey a{ border:1px solid #b0b0b0; color:#595959; padding:2px 6px; text-decoration:none;}
+.pages_grey a:hover{ border:1px solid #b0b0b0; background:#595959; color:#FFF;}
+.pages_grey .current a{ border:1px solid #b0b0b0; background : #dddddd; color:#595959;}
+.pages_grey input{ width:30px; height:16px; border:1px solid #b0b0b0; color:#595959;}

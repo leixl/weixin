@@ -1,0 +1,18 @@
+在4.1.1原版本基本上改动：
+[2011-10-30]孙炬
+1、修改之前if (initConfig.mode == "AlertTip") ，原版本是默认自动修改的，会有问题。
+设置setting.autoModify = false
+[2011-10-11]孙炬
+1、修改serialize方法之前的$(objs).serialize()改成$(objs).serializeArray()
+相关的迭代也做修改。之前的方法会出现空格替换成+号等问题。
+
+[2011-8-31]孙炬
+1、getLength方法，新增参数useTrim，判断空的地方取length是去空格的。
+inputValid方法新加空判断
+if ($.formValidator.getLength(id, true) == 0) {
+	emptyError = true
+}
+2、showAjaxMessage貌似有问题，稍作修改。
+3、更改serialize方法和调用到的两个方法，解决验证时候传中文乱码问题。参数全部以data的形式传送。
+4、更改showMessage方法的空的时候不提示正确，提示onShow。
+5、新增getTipStateHtml方法，用于自己设置提示信息。

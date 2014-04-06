@@ -1,0 +1,169 @@
+/* Copyright (c) 2010, junction.com! Inc.  All rights reserved. */
+html{ color:#000; background:#FFF;}
+body{ _width:98%;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td{ margin:0; padding:0;}
+table{ border-collapse:collapse; border-spacing:0;}
+fieldset, img{ border:0;}
+address, caption, cite, code, dfn, em, strong, th, var{ font-style:normal; font-weight:normal;}
+ul, li, ol{ list-style:none;}
+h1, h2, h3, h4, h5, h6{ font-size:100%; font-weight:normal;}
+.l {float: left;}
+
+body, button, input, select, textarea { font:12px/1.5 Tahoma, Arial, "\5b8b\4f53", sans-serif; } 
+table { border-collapse:collapse; border-spacing:0; }
+button, input, select, textarea { font-size:100%; }
+input[type=submit]{ cursor:pointer;}
+button{ cursor:pointer;}
+a{ color:#00F; text-decoration:underline;}
+a:hover, a:focus{ text-decoration:underline;}
+.clear{ clear:both;}
+.f{float:left;}
+.grey{ color:#999;}
+.green{ color:green;}
+.blue{ color: blue;}
+.red{ color:#F00;}
+.f_big{font-size:14px;}
+.borderblue{ border:1px solid #7F9AB9!important;}
+.tel input{width:40px; margin-right:5px;}
+.paddingtb{padding:10px 0px;}
+span.redb{ color:#F00; font-weight:bold;}
+span.red{ color:#F00;}
+span.ds{ float:left; margin-left:10px; color:#999;}
+.but{ clear:both;}
+.but input, .ibut,.ibut12{ height:20px; line-height:15px; padding:0 5px 5px 5px; *padding:0 3px; overflow:hidden; border:1px solid #707070; cursor:pointer; margin-right:15px; background:#fff url(../images/but.png) repeat-x;}
+.ibut12 { margin-top:12px;}
+input[type=text], input[type=file], input[type=password]{ height:20px; line-height:20px; border:1px solid #ccc;}
+.but input:hover, .ibut:hover{ border:1px solid #54a3e3;}
+a.cursor{ cursor:pointer;}
+.od a{ margin:0 3px;}
+.tabli .tal{ text-align:left;}
+
+.w20{ width:20px;}
+.w25{ width:25px;}
+.w40{ width:40px;}
+.w60{ width:60px;}
+.w80{ width:80px!important;}
+.w90{ width:90px!important;}
+.w100{ width:100px!important;}
+.w120{ width:120px!important;}
+.w150{ width:150px!important;}
+.w200{ width:200px; margin-right:10px;}
+.w300{ width:300px; margin-right:10px;}
+.w400{ width:400px; margin-right:10px;}
+.h200{ height:200px;}
+
+.mr10 { margin-right:10px;}
+.mt10 { margin-top:10px; display:block;}
+
+.main{ width:100%;}
+.path{ height:28px; line-height:28px; border-bottom:1px solid #B1CEEF; padding-left:10px; background:url(../images/title_bg1.jpg) repeat-x}
+.path a { color: #000000; text-decoration: none;}
+.path a:hover { color: #FF6600;}
+.path div { float:left;}
+.path span{ margin:0 5px;}
+.path strong{ font-weight:bold;}
+.path font { font-size:12px; color:red;}
+.path .ibut { float:right; margin:3px 10px 0 0;}
+.mBox, .fpage, .lpage{ padding:10px; background:url(../images/shadow_bg.jpg) repeat-x;}
+.tBox{ border:1px solid #EBC16B; background:#FBF7E6; padding:10px; margin: 2px;}
+.tBox li{ height:30px; width:auto; line-height:25px; float:left; margin-right:15px;}
+.tBox li label{ float:left;}
+.tBox li input{ float:left; margin-top:3px; *margin-top:0px; _margin-top:3px;}
+.tBox li input[type=radio]{ margin:6px 5px 0 0;  *margin:1px 5px 0 0}
+.tBox .but{ clear:none;}
+.tBox .lineli { border-bottom:1px dashed #ddd; float:none; margin-bottom:10px;}
+.tBox li input[type=text]{ width:100px; height:16px; *margin-top:2px; margin-left:3px; margin-right:3px;}
+.tBox li .linput { width:200px;}
+.tBox li cite { float:left; margin:0 3px; display:block;}
+
+.fpage .form li{ height:35px; line-height:35px;}
+.fpage .form li label{ display:block; width:70px; float:left; text-align:right; margin-right:3px;}
+.fpage .form li input{ float:left; margin-top:7px;}
+.fpage .form li [type=text]{ margin-top:7px;}
+.fpage .form li [type=radio]{ margin-top:11px; *margin-top:6px;}
+.fpage .form li select{ float:left; margin-top:7px;}
+.fpage .form li cite{ float:left; margin:0 15px 0 5px;}
+.fpage .form .edi{ height:auto; line-height:normal;}
+.fpage .form .edi label{ height:35px; line-height:35px;}
+.fpage .form .edi div{ float:left; margin-top:7px;}
+.fpage .form .but input{ margin:10px 15px 0 0;}
+
+.lpage .tBar{ height:35px;}
+.lpage .tBar li{ height:35px; line-height:35px; float:left; margin-right:15px;}
+.lpage .tBar li label{ float:left;}
+.lpage .tBar li label span { color:red;}
+.lpage .tBar select{ float:left; margin-top:7px; *margin-top:6px;}
+.lpage .tBar .but{ clear:none;}
+.lpage .tBar .but input{ float:left; margin:7px 10px 0 10px;}
+.lpage .tBar .as input{ float:left; margin:11px 5px 0 13px; *margin:7px 5px 0 10px;}
+.lpage .tBar .as cite{ float:left;}
+.lpage .pagination{ height:35px; line-height:35px;}
+
+.lpage .sunmenu { height:30px; padding:5px 0 0 10px; border-bottom:1px dashed #ddd;}
+.lpage .sunmenu li { width:100px; float:left; font-size:14px; font-weight:700; color:red;}
+.lpage .sunmenu .cli { width:200px;}
+.lpage .sunmenu li a { font-size:14px; font-weight:700;}
+.lpage .sunmenu li a:hover { color:red;}
+
+.tabli{ clear:both; padding:5px 0 8px 0; margin: 2px;}
+.tabli .tabar { height:25px; font-size:14px; font-weight:700; padding-top:10px;}
+.tabli table{ border-collapse:collapse; border-bottom:1px solid #D4C8DF; border-left:1px solid #D4C8DF; width:100%;}
+.tabli th, .tabli td{ border-top:1px solid #D4C8DF; border-right:1px solid #D4C8DF; text-align:center; padding:6px;}
+.tabli th{ background:#DEF5FF; font-weight:bold;}
+.tabli .tit a{ color:#0000FF; text-decoration:underline;}
+.tabli .tit a:hover{ color:#f60;}
+.tabli .thck{ width:24px;}
+.tabli .tit{ text-align:left;}
+.tabli .titi { text-align:right;}
+.tabli .od a{ margin:0 3px;}
+.tabli td span { color:red;}
+
+.htext { clear:both; padding:5px 0 8px 0;}
+.htext .hbar { height:25px; font-size:14px; font-weight:700; padding-top:10px;}
+.htext .btext input{ width:100%; height:200px;}
+.hBox{ border:1px solid #EBC16B; background:#FBF7E6; padding:10px; margin-bottom:10px;}
+.hBox font { height:25px; font-size:14px; font-weight:700; border-bottom:1px dashed #ddd; display:block; margin-bottom:10px; }
+.hBox span { height:20px; display:block;}
+.hBox span strong { font-weight:700;}
+
+.fav_tab{ height:24px; background:url(../images/f_tit_bg.gif) repeat-x;}
+.fav_tab ul{  height:24px; border-left:1px solid #C1C2DE; margin-left:10px;}
+.fav_tab li{ height:24px; line-height:26px; overflow:hidden; float:left; border-right:1px solid #C1C2DE; padding:0 8px; cursor:pointer; background:url(../images/f_tit.gif) repeat-x;}
+.fav_tab .hover{ font-weight:bold; background:url(../images/f_tit_h.gif) repeat-x;}
+.lpage .tabBox .tabli{ padding:0px;}
+
+.sbbarr { margin-left:95px;}
+.sbbar{ padding:10px 0 10px 70px;}
+.sbut{ margin:0 auto; height:42px; display:inline;}
+.sbBox{ float:left; height:42px; width:auto!important; width:10px; margin-right:15px; background:url(../images/bico.png) no-repeat 0 -132px}
+.sbBox span{ display:block; height:42px; line-height:42px; background:url(../images/bico.png) no-repeat 100% -176px;}
+.sbBox input{ height:42px; overflow:hidden; padding:0 14px 3px 12px; *padding:0; cursor:pointer; color:#753303; border:none; background:none; font-size:14px; font-weight:bold;}
+
+.but7 a{ display:block; width:106px; height:24px; line-height:24px; border:none; *line-height:26px; overflow:hidden; float:left; text-align:center; text-decoration:none; margin-right:10px; background:url(../images/ico.png) no-repeat 0 -74px;}
+.but5 a, a.but5{ display:block; width:81px; height:24px; line-height:24px; border:none; *line-height:26px; overflow:hidden; float:left; text-align:center; text-decoration:none; margin-right:10px; background:url(../images/ico.png) no-repeat 0 -132px;}
+.but6 a, a.but6{ display:block; width:94px; height:24px; line-height:24px; *line-height:26px; overflow:hidden; float:left; text-align:center; text-decoration:none; margin-right:10px; background:url(../images/ico.png) no-repeat 0 -103px;}
+.but4 a, .but4 button, a.but4{ display:block; width:71px; height:24px; line-height:24px; border:none; *line-height:26px; overflow:hidden; float:left; text-align:center; text-decoration:none; margin-right:10px; background:url(../images/ico.png) no-repeat 0 -161px;}
+.but2 a, input.but2, a.but2{ display:block; width:51px; height:24px; line-height:24px; *line-height:26px; overflow:hidden; float:left; text-align:center; text-decoration:none; margin-right:10px; border:none; cursor:pointer; background:url(../images/ico.png) no-repeat 0 -190px;}
+.but7 a, a.but7 { display:block; width:106px; height:24px; line-height:24px; border:none; *line-height:26px; overflow:hidden; float:left; text-align:center; text-decoration:none; margin-right:10px; background:url(../images/ico.png) no-repeat 0 -74px;}
+.but8 a{ float:left; display:block; width:131px; height:24px; line-height:24px; *line-height:26px; overflow:hidden; text-align:center; text-decoration:none; margin:7px 0 10px 0; background:url(../images/uc_but.png) no-repeat 0 -106px;}
+.but8, a.but8 { float:left; display:block; width:131px; height:24px; line-height:24px; *line-height:26px; overflow:hidden; text-align:center; text-decoration:none; margin:7px 0 10px 0; background:url(../images/uc_but.png) no-repeat 0 -106px;}
+
+.emg { float:left;}
+.emgs { float:left;}
+.emgs input{ margin-top:7px; height:20px; line-height:20px;}
+.emg .wh400 { width:400px; height:200px; margin-right:10px;}
+.emg span { display:block; margin-top:10px; color:#a6a6a6;}
+.emg input{ margin-top:7px; height:20px; line-height:20px; border:1px solid #7F9AB9;}
+.emg cite { color:#a6a6a6;}
+.emg font { display:block; margin:0 3px; float:left; font-size:12px;}
+
+.emg textarea { margin-top:7px; height:20px; line-height:20px; float:left;}
+.phone input{ margin-right:5px; width:40px;}
+.phone .w80{ width:80px;}
+.phone .but2{ margin-top:5px; margin-left:10px;}
+/*tree*/
+.tree div div { background: url("../images/tree.png") no-repeat scroll 0 0 transparent;}
+.tree .collapsable  .first {  background-position: 0 -250px;}
+.tree .line { background-position: 0 -400px;}
+.tree .node { background-position: 0 -450px;}
+.tree div div { background-position: 0 -100px; border: medium none; display: block; float: left;  height: 22px; overflow: hidden; width: 22px;}

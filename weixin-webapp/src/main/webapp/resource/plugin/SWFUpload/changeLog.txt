@@ -1,0 +1,14 @@
+[2011-10-11]孙炬
+1、swfupload.fileUtil.js里面
+SWFUpload.UPLOAD_ERROR.HTTP_ERROR提示改为
+var msg = "上传失败:jsessionid丢失,请您重新登录后再使用上传功能!";
+errInfo = msg;
+alert(msg);
+swfUploadInstance.debug("Error Code: HTTP Error, File name: "
+		+ file.name + ", Message: " + message);
+
+问题描述：		
+环境：firefox浏览器。
+出现问题的情况：
+用户正常登录，服务器重启，session失效，但是用户存cookie了，用户读取cookie显示是登录状态。
+但是jsessionid已经丢失，出现302错误，所以上传功能是无法使用的，所以这里改为提示用户登录。

@@ -352,7 +352,11 @@
 		<artifactId>hibernate-ehcache</artifactId>
 		<version>3.6.10.Final</version>
 	</dependency>
-
+	<dependency>
+		<groupId>org.apache.tomcat</groupId>
+		<artifactId>tomcat-jdbc</artifactId>
+		<version>7.0.34</version>
+	</dependency>
 	<!--hibernate-->
 	
 	<dependency>
@@ -373,7 +377,11 @@
 		<artifactId>c3p0</artifactId>
 		<version>0.9.1.2</version>
 	</dependency>
-	
+	<dependency>
+		<groupId>com.kenanai.weixin</groupId>				
+		<artifactId>juncsoft-framework</artifactId>
+		<version>1.0</version>
+	</dependency>
   </dependencies>
   </dependencyManagement>
   

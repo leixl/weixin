@@ -1,55 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:jee="http://www.springframework.org/schema/jee" xmlns:tx="http://www.springframework.org/schema/tx"
-	xmlns:context="http://www.springframework.org/schema/context"
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jee="http://www.springframework.org/schema/jee"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
 	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
 	http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.0.xsd
 	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd"
 	default-lazy-init="true">
 
-    <context:component-scan base-package="com.kenanai.weixin" />
+	<context:component-scan base-package="com.kenanai.weixin" />
 
-	<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
 		<property name="locations">
 			<list>
-				<value>classpath:META-INF/config/jdbc.properties</value>
+				<value>classpath:META-INF/config/spring.properties</value>
 			</list>
 		</property>
 	</bean>
-	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
-		<property name="driverClass" value="${jdbc.driverClassName}" />
-		<property name="jdbcUrl" value="${jdbc.url}" />
-		<property name="user" value="${jdbc.username}" />
-		<property name="password" value="${jdbc.password}" />
-		<property name="autoCommitOnClose" value="true"/>
-		<property name="checkoutTimeout" value="${cpool.checkoutTimeout}"/>
-		<property name="initialPoolSize" value="${cpool.minPoolSize}"/>
-		<property name="minPoolSize" value="${cpool.minPoolSize}"/>
-		<property name="maxPoolSize" value="${cpool.maxPoolSize}"/>
-		<property name="maxIdleTime" value="${cpool.maxIdleTime}"/>
-		<property name="acquireIncrement" value="${cpool.acquireIncrement}"/>
-		<property name="maxIdleTimeExcessConnections" value="${cpool.maxIdleTimeExcessConnections}"/>
+	<context:component-scan
+		base-package="com.weixin,com.juncsoft.portal,com.juncsoft.framework.adapter.hibernate.dao" />
+	<bean id="parentDataSource" class="org.apache.tomcat.jdbc.pool.DataSource"
+		destroy-method="close">
+		<property name="poolProperties">
+			<bean class="org.apache.tomcat.jdbc.pool.PoolProperties">
+				<property name="driverClassName" value="${parentDataSource.driverClassName}" />
+				<property name="maxActive" value="${parentDataSource.maxActive}" />
+				<property name="initialSize" value="${parentDataSource.initialSize}" />
+				<property name="minIdle" value="${parentDataSource.minIdle}" />
+				<property name="maxWait" value="${parentDataSource.maxWait}" />
+				<property name="testOnBorrow" value="${parentDataSource.testOnBorrow}" />
+				<property name="validationQuery" value="${parentDataSource.validationQuery}" />
+				<property name="validationInterval" value="${parentDataSource.validationInterval}" />
+				<property name="removeAbandoned" value="${parentDataSource.removeAbandoned}" />
+				<property name="removeAbandonedTimeout" value="${parentDataSource.removeAbandonedTimeout}" />
+				<property name="jdbcInterceptors" value="${parentDataSource.jdbcInterceptors}" />
+			</bean>
+		</property>
 	</bean>
-	<bean id="sessionFactory" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
-		<property name="dataSource" ref="dataSource"/>	
-		<property name="packagesToScan" value="com.kenanai.weixin.*.entity"></property>
+	<bean id="dataSource" parent="parentDataSource">
+		<property name="url" value="${dataSource0.url}" />
+		<property name="username" value="${dataSource0.username}" />
+		<property name="password" value="${dataSource0.password}" />
+	</bean>
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		<property name="dataSource">
+			<ref local="dataSource" />
+		</property>
+		<property name="packagesToScan">
+			<list>
+				<value>${sessionFactory.packagesToScan}</value>
+			</list>
+		</property>
 		<property name="hibernateProperties">
-			<value>
-			hibernate.dialect=org.hibernate.dialect.MySQLInnoDBDialect
-			hibernate.show_sql=true
-			hibernate.format_sql=false
-			hibernate.query.substitutions=true 1, false 0
-			hibernate.jdbc.batch_size=20
-			hibernate.cache.use_query_cache=true
-			</value>
+			<props>
+				<prop key="hibernate.show_sql">${sessionFactory.hibernate.show_sql}</prop>
+				<prop key="hibernate.format_sql">${sessionFactory.hibernate.format_sql}</prop>
+				<prop key="hibernate.dialect">${sessionFactory.hibernate.dialect}</prop>
+				<!--connection -->
+				<prop key="hibernate.connection.release_mode">${sessionFactory.hibernate.connection.release_mode}
+				</prop>
+				<prop key="hibernate.jdbc.fetch_size">${sessionFactory.hibernate.jdbc.fetch_size}</prop>
+				<prop key="hibernate.jdbc.batch_versioned_data">${sessionFactory.hibernate.jdbc.batch_versioned_data}
+				</prop>
+				<prop key="hibernate.jdbc.use_streams_for_binary">${sessionFactory.hibernate.jdbc.use_streams_for_binary}
+				</prop>
+
+				<!--缓存 -->
+				<prop key="hibernate.cache.provider_class">${sessionFactory.hibernate.cache.provider_class}
+				</prop>
+				<prop key="hibernate.cache.use_second_level_cache">${sessionFactory.hibernate.cache.use_second_level_cache}
+				</prop>
+				<prop key="hibernate.cache.use_query_cache">${sessionFactory.hibernate.cache.use_query_cache}
+				</prop>
+			</props>
 		</property>
 	</bean>
 
-	<bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
 		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
-	
-	<context:annotation-config/>
+
+	<context:annotation-config />
 	<tx:annotation-driven transaction-manager="transactionManager" />
 </beans>

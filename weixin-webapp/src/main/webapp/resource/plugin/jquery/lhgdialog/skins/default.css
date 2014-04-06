@@ -1,0 +1,47 @@
+﻿/*!
+ * lhgcore Dialog Plugin StyleSheet
+ * Copyright (c) 2009 - 2011 By Li Hui Gang
+ */
+html{_background-image:url(about:blank);_background-attachment:fixed;}
+.lhgdialog_default{position:absolute;padding:0;margin:0;font:12px Tahoma,Arial,sans-serif;}
+
+.lhgdg_leftTop_default,.lhgdg_rightTop_default,.lhgdg_leftBottom_default,.lhgdg_rightBottom_default,.lhgdg_left_default,.lhgdg_right_default,.lhgdg_icon_default,a.lhgdg_xbtn_default,a.lhgdg_maxbtn_default,a.lhgdg_rebtn_default,a.lhgdg_minbtn_default{background-image:url(default/lhgdg_bg.gif);background-repeat:no-repeat;}
+
+.lhgdg_leftTop_default{width:5px;height:26px;background-position:-139px -8px;}
+.lhgdg_rightTop_default{width:5px;background-position:-146px -8px;}
+.lhgdg_leftBottom_default{width:5px;height:5px;background-position:-139px -2px;}
+.lhgdg_rightBottom_default{width:5px;background-position:-146px -2px;cursor:nw-resize;}
+
+.lhgdg_left_default,.lhgdg_right_default{background-repeat:repeat-y;}
+.lhgdg_left_default{background-position:-153px 0;}
+.lhgdg_right_default{background-position:-158px 0;}
+
+.lhgdg_top_default,.lhgdg_bottom_default{background:url(default/lhgdg_x.gif) repeat-x;font-size:0;}
+.lhgdg_top_default{background-position:0 0;cursor:move;}
+.lhgdg_bottom_default{background-position:0 -26px;}
+
+.lhgdg_title_icon_default{height:26px;}
+.lhgdg_icon_default{float:left;background-position:-121px 0;width:16px;height:16px;margin-top:4px;}
+.lhgdg_title_default{float:left;color:#333333;font-weight:bold;font-size:12px;height:16px;margin-top:5px;margin-top:7px\0;padding-left:5px;}
+
+a.lhgdg_xbtn_default,a.lhgdg_maxbtn_default,a.lhgdg_rebtn_default,a.lhgdg_minbtn_default{position:absolute;display:block;cursor:default;height:18px;top:1px;}
+a.lhgdg_xbtn_default{background-position:-75px 0;right:5px;width:44px;}
+a.lhgdg_xbtn_default:hover{background-position:-75px -18px;}
+a.lhgdg_maxbtn_default{background-position:-25px 0;right:49px;width:25px}
+a.lhgdg_maxbtn_default:hover{background-position:-25px -18px;}
+a.lhgdg_rebtn_default{background-position:-50px 0;right:49px;width:25px}
+a.lhgdg_rebtn_default:hover{background-position:-50px -18px;}
+a.lhgdg_minbtn_default{background-position:0 0;right:74px;width:25px;}
+a.lhgdg_minbtn_default:hover{background-position:0 -18px;}
+
+.lhgdg_inbox_default,.lhgdg_load_default{width:100%;height:100%;background-color:#fff;overflow:auto;}
+.lhgdg_load_default{text-align:center;font-weight:bold;}
+.lhgdg_load_default span{padding-left:20px;height:16px;background:url(default/wait.gif) no-repeat center left;font-size:12px;}
+
+.lhgdg_btnBar_default{height:29px;background-color:#f6f6f6;border-top:1px solid #dadee5;}
+.lhgdg_btn_div_default{float:right;}
+a.lhgdg_button_default,a.lhgdg_button_default em{display:inline-block;height:21px;background:url(default/lhgdg_btn.gif) no-repeat;}
+a.lhgdg_button_default{text-decoration:none;background-position:0 0;padding-left:15px;color:#000;cursor:default;margin-right:5px;}
+a.lhgdg_button_default:hover{background-position:0 -42px;}
+a.lhgdg_button_default em{font-style:normal;background-position:right -21px;padding-right:15px;line-height:21px;line-height:24px\0;font-size:12px;}
+a.lhgdg_button_default:hover em{background-position:right -63px;}

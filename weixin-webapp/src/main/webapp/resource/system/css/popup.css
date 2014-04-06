@@ -1,0 +1,63 @@
+.fBox{ padding:10px;}
+.fBox li{ height:30px; line-height:30px; overflow:hidden;}
+.fBox li label{ display:block; width:100px; float:left; text-align:right; margin-right:3px;}
+
+.fBox li input, .fBox li select{ float:left; margin-top:4px;}
+.fBox li input[type=text]{ height:20px; line-height:20px; border:1px solid #ccc; width:200px;}
+
+.ulp li input{ float:left; margin:4px 8px 0 8px; *margin:4px 5px 0 5px;}
+.ulp li input[type=radio]{ float:left; margin:10px 8px 0 8px; *margin:6px 5px 0 5px;}
+.ulp li select{ float:left; margin:4px 8px 0 8px; *margin:4px 5px 0 5px;}
+.ulp li cite{ float:left;}
+.ulp li .ds{ float:right;}
+
+.blp { padding:10px;}
+.blp ul { clear:both;}
+.blp li { float:left; line-height:34px; overflow:hidden;}
+.blp li a { display:block;}
+.blp li input{ margin:4px 8px 0 8px; *margin:4px 5px 0 5px;}
+.blp li input[type=radio]{ float:left; margin:10px 8px 0 8px; *margin:6px 5px 0 5px;}
+.blp li .blin { width:180px; height:85px; float:left;}
+.blp li .mlp { width:300px; height:150px; float:left;}
+.blp li span { display:block; color:#a6a6a6; margin-left:10px; clear:both;}
+.blp .piclist{text-align:center;}
+.blp .piclist li{padding-right:5px;line-height:20px;}
+.blp .piclist li img{width:90px;height:56px;}
+
+.flp { padding:10px;}
+.flp li{ height:34px; line-height:34px; overflow:hidden;}
+.flp li label{ display:block; width:60px; float:left; text-align:right; margin:0 3px 0 5px;}
+.flp li input{ float:left; margin:4px 8px 0 8px; *margin:4px 5px 0 5px;}
+.flp li select{ float:left; margin:4px 8px 0 8px; *margin:4px 5px 0 5px;}
+.flp li input[type=radio]{ float:left; margin:10px 8px 0 8px; *margin:6px 5px 0 5px;}
+.flp li input[type=checkbox]{ float:left; margin:9px 8px 0 8px; *margin:6px 5px 0 5px;}
+.flp li .w260 { width:260px;}
+.flp li .w200 { width:200px;}
+.flp li .w100 { width:100px;}
+.flp li cite { display:block; float:left;}
+
+.llp { padding:10px;}
+.llp li{ line-height:34px; overflow:hidden;}
+.llp li input{ margin:4px 8px 0 8px; *margin:4px 5px 0 5px; float:left;}
+.llp li input[type=radio]{ float:left; margin:9px 8px 0 8px; *margin:6px 5px 0 5px;}
+.llp li label { display:block; float:left;}
+.llp li font { display:block; float:left; font-weight:700; font-size:12px;}
+
+.fBox .full{margin-right:8px;}
+.fBox .button{ display:block; height:25px; line-height:27px; width:auto; text-indent:0; float:left; overflow:hidden; padding:0 10px; margin-right:10px; text-align:center; border:1px solid #CDCDCD; color:#000; text-decoration:none; background:url(../images/wa_ico.png) no-repeat 0 -235px;}
+.fBox .mr { height:auto;}
+.fBox .mr select{ margin-right:5px;}
+.fBox .mr .mrc{ float:left;}
+.fBox .mr .mrc .but2{ margin:3px 0 0 5px; *margin:4px 0 0 5px;}
+.fBox .mr .mrc div { margin-left:5px;}
+.fBox .mr .mrc div .areaSelect{ width:300px; height:120px; border:1px solid #ccc; margin-top:10px;}
+.fBox .mr .mrc div .but2{ float:none; margin:10px 0 0 0;}
+
+.fBox .bl{ position:relative; height:auto;}
+.fBox .bl .lBox{ float:left; width:400px;}
+.fBox .bl .lBox label{ width:85px;}
+.fBox .bl input{ margin-top:9px; *margin-top:4px;}
+
+.fBox2{margin-top:20px;margin-left:20px;}
+.fBox2 ul{}
+.fBox2 ul li{float:left;text-align:center;padding-right:10px;}

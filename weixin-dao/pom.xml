@@ -20,7 +20,10 @@
   
   
   <dependencies>
-  
+  <dependency>
+ 		<groupId>com.kenanai.weixin</groupId>
+ 		<artifactId>juncsoft-framework</artifactId>
+	</dependency>
     <dependency>
 		<groupId>com.kenanai.weixin.core</groupId>
 		<artifactId>weixin-core</artifactId>

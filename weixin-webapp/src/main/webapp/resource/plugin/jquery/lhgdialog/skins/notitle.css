@@ -1,0 +1,43 @@
+﻿/*!
+ * lhgcore Dialog Plugin StyleSheet
+ * Copyright (c) 2009 - 2011 By Li Hui Gang
+ */
+html{_background-image:url(about:blank);_background-attachment:fixed;}
+.lhgdialog_notitle{position:absolute;padding:0;margin:0;font:12px Tahoma,Arial,sans-serif;}
+
+.lhgdg_leftTop_notitle,.lhgdg_rightTop_notitle,.lhgdg_leftBottom_notitle,.lhgdg_rightBottom_notitle,.lhgdg_left_notitle,.lhgdg_right_notitle,a.lhgdg_button_notitle,a.lhgdg_button_notitle em{background-image:url(notitle/lhgdg_bg.gif);background-repeat:no-repeat;}
+
+.lhgdg_leftTop_notitle{background-position:-28px 0;width:11px;height:11px;}
+.lhgdg_rightTop_notitle{background-position:-44px 0;width:11px;}
+.lhgdg_leftBottom_notitle{background-position:-60px 0;width:11px;height:11px;}
+.lhgdg_rightBottom_notitle{background-position:-78px 0;cursor:nw-resize;width:11px;}
+
+.lhgdg_left_notitle,.lhgdg_right_notitle{background-repeat:repeat-y;}
+.lhgdg_left_notitle{background-position:0 0;}
+.lhgdg_right_notitle{background-position:-14px 0;}
+
+.lhgdg_top_notitle,.lhgdg_bottom_notitle{background:url(notitle/lhgdg_x.gif) repeat-x;font-size:0;}
+.lhgdg_top_notitle{background-position:0 0;cursor:move;}
+.lhgdg_bottom_notitle{background-position:0 -11px;}
+ 
+.lhgdg_inbox_notitle,.lhgdg_load_notitle{width:100%;height:auto;background-color:#fff;overflow:auto;}
+.lhgdg_load_notitle{text-align:center;font-weight:bold;}
+.lhgdg_load_notitle span{padding-left:20px;height:16px;background:url(notitle/wait.gif) no-repeat center left;font-size:12px;}
+
+.lhgdg_btnBar_notitle{height:29px;background-color:#f6f6f6;border-top:1px solid #dadee5;}
+.lhgdg_btn_div_notitle{float:right;}
+a.lhgdg_button_notitle,a.lhgdg_button_notitle em{display:inline-block;height:21px;}
+a.lhgdg_button_notitle{text-decoration:none;background-position:-28px -18px;padding-left:15px;color:#000;cursor:default;margin-right:5px;}
+a.lhgdg_button_notitle:hover{background-position:-28px -60px;}
+a.lhgdg_button_notitle em{font-style:normal;background-position:right -39px;padding-right:15px;line-height:21px;line-height:24px\0;font-size:12px;}
+a.lhgdg_button_notitle:hover em{background-position:right -81px;}
+/*prompt*/
+.lhgdg_alertInner {background: none repeat scroll 0 0 #FEFACF;border-color: #C1C1C1;border-style: solid;border-width: 0px;display: block;padding: 0 9px 9px;text-align: left; overflow: hidden;}
+.lhgdg_alertInner .msg {line-height: 1.3em;margin: 10px;max-height: 200px;overflow: auto;}
+.lhgdg_alertInner .title {background: url("notitle/alertpanel_icon.gif") no-repeat scroll 0 0 transparent;border-color: #CCCCCC;border-style: solid;border-width: 0 0 1px;display: block;height: 30px;line-height: 30px;margin-bottom: 10px;overflow: hidden;padding: 0 0 0 25px;font-weight: bold;}
+.lhgdg_error .lhgdg_alertInner, .lhgdg_info .lhgdg_alertInner {border-color: #E50000;border-width: 1px;}
+.lhgdg_error .title {background-position: 2px -42px;}
+.lhgdg_info .title, .lhgdg_info .title {background-position: 2px 8px;}
+.lhgdg_success .title {background-position: 2px -92px;}
+.lhgdg_confirm .title {background-position: 2px 8px;}
+.lhgdg_process .title { background: url("notitle/wait.gif") no-repeat scroll 2px 8px transparent;}

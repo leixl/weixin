@@ -1,0 +1,51 @@
+[2012-07-03]孙炬
+1、升级至3.6.3版本
+
+[2011-11-25]孙炬
+1、编辑器分页符ie和其他浏览器生成代码不一样。
+改动ckeditor.js源码
+74行page-break-after: always;改成page-break-after
+76行display: none;改成display: none
+
+[2011-10-18]孙炬
+在3.6.2原版本基本上改动：
+<一>、flash插件
+1、添加变量var playerPath = "/resource/plugin/jwplayer/player.swf";
+2、属性里面添加file : [{
+					type : b,
+					name : 'file'
+				}, {
+					type : c,
+					name : 'file'
+				}],
+3、去掉参数设置下面的
+e = ['allowFullScreen', 'autostart', 'loop', 'menu'];
+	for (f = 0; f < e.length; f++)
+		d[e[f]][0]['default'] = d[e[f]][1]['default'] = true;
+	var g = CKEDITOR.tools.cssLength;
+这一段。
+
+4、onOk方法改动。
+在commitContent之后添加如下代码：
+var flashSrc = playerPath + "?file=" + p.getAttribute("file") + "&autostart=" + p.getAttribute("autostart");
+p.setAttributes({
+			type : 'application/x-shockwave-flash',
+			src : flashSrc
+		});
+		
+5、contents这个json配置里面改动：
+之前的id : 'src',
+改成
+id : 'file',
+然后这个项的onLoad方法改动
+修改了预览代码
+var file = CKEDITOR.tools.htmlEncode(q);
+var flashSrc = playerPath + "?file=" + file;
+o.preview
+		.setHtml('<embed height="100%" width="100%" file="'
+				+ file
+				+ '" src="'
+				+ flashSrc
+				+ '" type="application/x-shockwave-flash"></embed>');
+				
+6、参数play改成autostart，相关的代码改动。

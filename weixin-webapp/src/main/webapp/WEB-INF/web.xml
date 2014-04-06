@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
-	<display-name>weixin-root</display-name>
-	
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
 	<listener>
 		<listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
 	</listener>
-	
+
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>
@@ -16,54 +18,94 @@
 		</param-value>
 	</context-param>
 	<filter>
-		<filter-name>encoding</filter-name>
+		<filter-name>struts2</filter-name>
+		<filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+		<init-param>   
+		<param-name>config</param-name>   
+		<param-value>struts-default.xml,struts-plugin.xml,../struts.xml</param-value>  
+		 </init-param> 
+	</filter>
+	<filter>
+		<filter-name>struts2-cleanup</filter-name>
+		<filter-class>org.apache.struts2.dispatcher.ActionContextCleanUp</filter-class>
+	</filter>
+	<!-- openSession -->
+	<filter>
+		<filter-name>openSessionInView</filter-name>
+		<filter-class>org.springframework.orm.hibernate3.support.OpenSessionInViewFilter</filter-class>
+		<init-param>
+			<param-name>singleSession</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+	<!-- 字符集过滤设置 -->
+	<filter>
+		<filter-name>encodingFilter</filter-name>
 		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
 		<init-param>
 			<param-name>encoding</param-name>
 			<param-value>UTF-8</param-value>
 		</init-param>
 	</filter>
-	
+
+
 	<filter>
 		<filter-name>osivFilter</filter-name>
 		<filter-class>org.springframework.orm.hibernate3.support.OpenSessionInViewFilter</filter-class>
 	</filter>
-	
+
+	<!-- 配置各个filter的url -->
+
 	<filter-mapping>
-		<filter-name>encoding</filter-name>
-		<url-pattern>*.php</url-pattern>
+		<filter-name>struts2</filter-name>
+		<url-pattern>*.shtml</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>
+		<dispatcher>INCLUDE</dispatcher>
 	</filter-mapping>
 	<filter-mapping>
-		<filter-name>osivFilter</filter-name>
-		<url-pattern>*.php</url-pattern>
+		<filter-name>struts2</filter-name>
+		<url-pattern>*.jsp</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>
+		<dispatcher>INCLUDE</dispatcher>
 	</filter-mapping>
-	
-	<servlet>
-		<servlet-name>EasyAdmin</servlet-name>
-		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-		<init-param>
-			<param-name>contextConfigLocation</param-name>
-			<param-value>classpath:META-INF/config/easy-servlet-admin.xml</param-value>
-		</init-param>
-		<load-on-startup>1</load-on-startup>
-	</servlet>
-	
-	<servlet-mapping>
-		<servlet-name>EasyAdmin</servlet-name>
-		<url-pattern>/myadmin/*</url-pattern>
-	</servlet-mapping>
-	
+	<filter-mapping>
+		<filter-name>struts2-cleanup</filter-name>
+		<url-pattern>*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>openSessionInView</filter-name>
+		<url-pattern>*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>encodingFilter</filter-name>
+		<url-pattern>*</url-pattern>
+	</filter-mapping>
+	<!-- 查看日志状态[end] -->
+	<!-- session 过期时间 -->
 	<session-config>
-		<session-timeout>10</session-timeout>
+		<session-timeout>60</session-timeout>
 	</session-config>
+	<!-- 设置session共享 -->
+	<distributable />
+	<!-- 欢迎页面 -->
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
-	
-	<error-page>
-		<error-code>404</error-code>
-		<location>/404.html</location>
-	</error-page>
+	<!-- 优化出错页面 -->
+	<!-- 404错误 页面不存在 -->
+
+
+
+
+	<jsp-config>
+		<jsp-property-group>
+			<url-pattern>*.html</url-pattern>
+			<page-encoding>UTF-8</page-encoding>
+		</jsp-property-group>
+	</jsp-config>
 	<servlet>
 		<description>This is the description of my J2EE component</description>
 		<display-name>This is the display name of my J2EE component</display-name>
@@ -74,4 +116,5 @@
 		<servlet-name>WinXinServlet</servlet-name>
 		<url-pattern>/WinXinServlet</url-pattern>
 	</servlet-mapping>
+	
 </web-app>

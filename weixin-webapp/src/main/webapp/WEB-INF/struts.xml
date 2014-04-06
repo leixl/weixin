@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<!-- REST configuration start -->
+    <!--  默认的国际化地区信息-->
+    <constant name="struts.locale" value="zh_CN"/>
+     <!-- 指定Web应用的默认编码集.该属性对于处理中文请求参数非常有用-->
+	<constant name="struts.i18n.encoding" value="UTF-8"/>
+	<!--  指定Struts 2默认的ObjectFactory Bean,该属性默认值是spring-->
+	<constant name="struts.objectFactory" value="spring"/>
+	<!--  指定Spring框架的自动装配模式, 该属性的默认值是name-->
+	<constant name="struts.objectFactory.spring.autoWire" value="name"/>
+	
+	<!--  指定整合Spring框架时,是否缓存Bean实例-->
+	<constant name="struts.objectFactory.spring.useClassCache" value="true"/>
+	<!--  ognl表达式是否允许调用静态方法-->
+	<constant name="struts.ognl.allowStaticMethodAccess" value="true"/>
+	<!--  启用动态方法注入-->
+	<constant name="struts.enable.DynamicMethodInvocation" value="false"/>
+	<!--  禁止去上级目录，默认目录中搜索-->
+	<constant name="struts.mapper.alwaysSelectFullNamespace" value="true"/>
+	<!--  请求后缀-->
+	<constant name="struts.action.extension" value="shtml"/>
+	<!--  指定上传文件的临时保存路径,该属性的默认值是javax.servlet.context.tempdir-->
+	<constant name="struts.multipart.saveDir" value="javax.servlet.context.tempdir"/>
+	<!--  指定Struts2文件上传中整个请求内容允许的最大字节数(当前110MB)-->
+	<constant name="struts.multipart.maxSize" value="115343360"/>
+	
+	<!--  struts.xml文件改变后,系统是否自动重新加载该文件.该属性的默认值是false-->
+	<constant name="struts.configuration.xml.reload" value="false"/>
+	<!--  指定Struts2文件上传中整个请求内容允许的最大字节数(当前110MB)-->
+	<constant name="struts.multipart.maxSize" value="115343360"/>
+	
+	<!--  打开开发模式-->
+	<constant name="struts.devMode" value="false"/>
+	<!--  struts.xml文件改变后,系统是否自动重新加载该文件.该属性的默认值是false-->
+	<constant name="struts.convention.classes.reload" value="false"/>
+	<!--  默认继承的package-->
+	<constant name="struts.convention.default.parent.package" value="default"/>
+	
+    <!-- REST configuration end -->
+
+	<package name="default" extends="struts-default" abstract="true">
+		<interceptors>
+			<!-- 基本拦截 -->
+         	<interceptor name="base" class="com.kenanai.weixin.web.interceptor.BaseInterceptor" />
+         	<!-- 会员登录拦截 -->
+<!--          	<interceptor name="memberLogin" class="com.doctor.interceptor.MemberLoginInterceptor" /> -->
+         	<!-- 基本拦截器(包括会员、管理员登录拦截，权限拦截，信息锁定拦截等) -->
+         	<interceptor-stack name="baseInterceptor">
+         		<interceptor-ref name="defaultStack" />
+				<interceptor-ref name="base" />
+			</interceptor-stack>
+			<!-- 基本和重复提交拦截器 -->
+			<interceptor-stack name="baseAndTokenInterceptor">
+				<interceptor-ref name="defaultStack" />
+				<interceptor-ref name="token" />
+				<interceptor-ref name="base" />
+			</interceptor-stack>
+			
+     	</interceptors>
+     	
+     	<default-interceptor-ref name="baseInterceptor" />
+     	<global-results>
+     		<result name="notFound">
+     			/common/404.html
+     		</result>
+     		
+     		<result name="exception" type="freemarker">
+     			/WEB-INF/content/common/prompt/exception.ftl
+     		</result>
+			
+			<result name="memberNotLogin" type="freemarker">
+				/WEB-INF/content/member/login.ftl
+			</result>
+			
+			<result name="clinicNotLogin" type="freemarker">
+				/WEB-INF/content/clinic/login.ftl
+			</result>
+			
+			<result name="wapNotLogin" type="freemarker">
+				/WEB-INF/content/wap/login.ftl
+			</result>
+			
+			
+			
+			<result name="invalid.token" type="chain">
+				<param name="actionName">token</param>
+				<param name="namespace">/common/prompt</param>
+			</result>
+		</global-results>
+		<global-exception-mappings>
+			<exception-mapping result="exception" exception="com.juncsoft.framework.exception.SystemException"></exception-mapping>
+		</global-exception-mappings>
+	</package>
+</struts>

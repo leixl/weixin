@@ -1,0 +1,7 @@
+/* 粉色页码 */
+.pages_pink{ clear:both; text-align:center; margin-top:10px; padding-top:8px; margin-bottom:8px;}
+.pages_pink span{ color:#D944A0;}
+.pages_pink a{ border:1px solid #E995C9; color:#D944A0; padding:2px 6px 2px 6px; text-decoration:none;}
+.pages_pink a:hover{ border:1px solid #E995C9; background:#D944A0; color:#FFF;}
+.pages_pink .current a{ border:1px solid #E995C9; background : #FAD9EE; color:#FF0084;}
+.pages_pink input{ width:30px; height:16px; border:1px solid #E995C9; color:#D944A0;}

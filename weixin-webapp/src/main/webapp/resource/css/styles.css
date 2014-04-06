@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* CSS Document */
+body{padding: 0; margin: 0 auto; font-size:12px;}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,
+fieldset,input,textarea,p,blockquote,th,td {padding: 0; margin: 0;}   
+table {border-collapse: collapse;  border-spacing: 0;}
+fieldset,img { border: 0;}
+address,caption,cite,code,dfn,em,th,var {font-weight: normal; font-style: normal;}   
+ol,ul {list-style: none;}   
+input,select,img{vertical-align:middle;}
+caption,th {text-align: left;}   
+h1,h2,h3,h4,h5,h6 { font-size: 14px;}   
+q:before,q:after { content:"";}   
+abbr,acronym {border: 0;}
+a{color:#666;text-decoration:none;}
+a:hover{color:#257cb7; text-decoration:underline;}
+body{color:#666;}
+#header,#footer,#nav,#gd,#box,#bottom,#about{margin:auto; width:964px; overflow:hidden;}
+ 
+#topbg{background:url(../images/topbg.gif) repeat-x top;}
+#header{}
+	#header .logo{float:left; background:url(../images/logo.gif) no-repeat; width:409px; height:117px; margin-right:300px;}
+	#header .right{float:right; margin-top:20px;}
+	#header .right .home{line-height:30px; text-align:right;}
+	#header .right .home a{margin: 0 5px 0 5px; cursor:pointer;}
+	#header .right .serch{float:left; background:url(../images/ssbg.gif) no-repeat; width:227px;}
+	#header .right .serch .inp{border:1px solid #fff; line-height:25px; height:25px; margin:7px 0 3px 3px; width:180px; color: #A3A3A3;}
+	#header .right .serch .but{background:url(../images/ss.gif) no-repeat; border:0; cursor:pointer ; width:34px; height:34px;}
+	#header .gq{float:left;width:227px; margin-top:20px; text-align:right;}
+	#header .gq a{font-weight:bold; font-size:14px;}
+#nav{background:url(../images/navbg.gif) no-repeat; line-height:40px; font-weight:bold;}
+	#nav a{text-align:center; font-size:14px; color:#fff; width:146px; height:40px; float:left; display:block}
+	#nav .hovimg{background:url(../images/navbg_01.gif) no-repeat; width:146px; height:40px; margin-left:10px}
+	#nav a:hover{background:url(../images/navbg_01.gif) no-repeat; width:146px; height:40px; text-decoration:none;}	 
+#gd{background:url(../images/banner.gif) no-repeat;}
+	#gd a{margin-right:5px;display:block; float:left; text-indent:-9999px;width:213px; height:79px;}
+	#gd span{text-indent:-9999px; display:block;}
+#box{margin-top:20px;line-height:22px;}
+	#box .bleft{float:left; width:560px; margin-right:17px;}
+		#box .bleft h1{border-bottom:1px dashed #b6b6b6; line-height:30px; color:#2566a8; margin-bottom:20px;}
+		#box .bleft a{font-size:12px; font-weight:100; color:#fff; text-align:center; background:#257cb7; width:54px; line-height:20px; display:inline; float:right;margin-top:5px;}
+		#box .bleft .picBox{width:197px; height:154px; float:left; margin:0px 20px 0 0;}
+		#box .bleft .pic{width:195px; height:152px; border:1px solid #cfcfcf; text-align:center; margin:0 auto; overflow: hidden;}
+		#box .bleft .pic img{max-width:195px; max-height:152px; vertical-align:middle;}
+		#box .bleft .pic .fill{height:100%; width:0; overflow:hidden; display:inline-block; vertical-align:middle;}
+		
+		#box .bleft p{margin-bottom:10px;}
+	#box .bright{width:370px; float:left; border:1px solid #e6e6e6; background:#f6f6f6; padding:7px;}
+		#box .bright ul{margin:5px 10px;}
+		#box .bright .mar{border:1px solid #e6e6e6; background:#fff;}
+		#box .bright .mar h1{border-bottom:1px dashed #b6b6b6; line-height:30px; color:#2566a8; margin:5px 10px;}
+		#box .bright .more{font-size:12px; font-weight:100; color:#fff; text-align:center; background:#257cb7; width:54px; line-height:20px; display:inline; float:right; margin-top:5px;}
+		#box .bright .mar em{float:right; color:#9b9b9b}
+		#box .bright .mar li{background:url(../images/tb.gif) no-repeat 0 7px; padding-left:20px; line-height:22px;}
+#bottom{background:#2e8acf;  margin-top:10px; color:#fff; padding:20px; width:924px;}
+#about{margin-top:10px}
+	#about .aleft{width:198px; float:left;}
+		#about .aleft h1{background:url(../images/lisebg.gif) no-repeat; width:195px; line-height:60px; text-align:center; color:#0054a7; font-family:"黑体"; font-size:22px}
+		#about .aleft p{margin:15px 0 0 0; line-height:27px; overflow: hidden;}
+		#about .aleft a{padding-left:30px; display:block; background: url(../images/bglist.gif) no-repeat; width:162px; height:27px;}
+		#about .aleft a:hover{padding-left:30px; text-decoration:none;color:#0351a3; background:url(../images/bglist01.gif) no-repeat; width:162px; height:27px;}
+		#about .aleft ul{border:1px solid #e6e6e6; width:190px; border-top:0;}
+		#about .aleft ul li{border-bottom:1px dashed #e6e6e6; line-height:30px;}
+		#about .aleft ul li a{padding-left:28px; background:none;}
+		#about .aleft ul li a:hover{padding-left:28px; background: url(../images/tb.gif) no-repeat right;}
+		#about .aleft ul li .hvimg{background: url(../images/tb.gif) no-repeat right;}
+		#about .aleft .hoimg{color:#0351a3; background:url(../images/bglist01.gif) no-repeat;}
+		
+	#about .aright{float:left; margin-left:10px; width:754px;}
+		#about .aright .detail{line-height:22px;padding:10px; border:1px solid #CFCFCF; margin-top:10px;}
+		#about .aright .detail em{float:right; color:#9b9b9b;padding-right:15px;}
+		#about .aright .detail .title{border-bottom:#cfcfcf dotted 1px;padding:10px 0px;overflow:hidden;zoom:1;margin:0px 10px 10px;}
+		#about .aright .detail .title .info{margin: 0px auto;float: right;}
+		#about .aright .detail .title li h1{font-size:16px;font-weight:bold;color:#585656;text-align:center;line-height:30px;padding-bottom:10px;}
+		#about .aright .detail .title li span{color:#9a9a9a;float:left;font-size:12px;font-weight:normal;}
+		#about .aright .detail .title li span a{color:#7e5bc3;}
+		#about .aright .detail .title li span a:hover{color:#ff6600!important;}
+		#about .aright .detail .title li font{float:right;text-align:right;padding-left:10px;display:block;width:320px;height:18px;overflow:hidden;}
+		#about .aright .detail .title li font a{color:#fc0000;}
+		#about .aright .detail .title li font a:hover{color:#ff6600;}
+		#about .aright .detail .introduction{font-size:12px;line-height:24px;text-indent: 30px;border:#D5C4FB solid 1px;padding:10px;background:#F7F4FF;margin:10px 25px;}
+		#about .aright .detail .content{font-size:14px;line-height:24px;text-indent: 30px;margin:0px 24px;}
+		
+		#about .aright .list li {background:url(../images/tb.gif) no-repeat -7px 12px;padding-left:12px;border-bottom:1px dotted #ccc;height:30px;line-height:30px;}
+		
+        #about .product ul{border:1px solid #dddddd;margin:10px 0;background:#f6f8f7; overflow:hidden; zoom:1;}
+        #about .product li{float:left;}
+        #about .product li.jt{background:url(../images/imgbg.gif) no-repeat; width:209px; height:152px; margin-right:5px;}
+        #about .product li.txt{width:531px;}
+        #about .product p.pp{line-height:22px; color:#666; margin:5px 0;}
+		#about .product li .pic{width:195px; height:152px;}
+		#about .product li .pic a{width:195px; height:152px; display:block; border:0; text-align:center; margin:0 auto; overflow: hidden;}
+		#about .product li .pic img{ max-width:195px; max-height:152px; vertical-align:middle;}
+		#about .product li .pic .fill{ height:100%; width:0; overflow:hidden; display:inline-block; vertical-align:middle;}
+        #about .product li h1{color:#008fe5; line-height:30px; border-bottom:1px dashed #ccc; background:url(../images/tb.gif) no-repeat -7px 12px; padding-left:12px;}
+/* focus */
+#focus {width:962px; height:323px; overflow:hidden; position:relative; border-bottom:0px; border:1px solid #e6e6e6; margin:5px auto;}
+#focus ul {height:323px; position:absolute;}
+#focus ul li {float:left; width:962px; overflow:hidden; position:relative; background:#000;}
+#focus ul li div {position:absolute; overflow:hidden;}
+#focus .btnBg {position:absolute; width:962px; height:15px; left:0; bottom:0; background:#000;}
+#focus .btn {position:absolute; height:10px; padding:2px 10px; right:0; bottom:0; text-align:right;}
+#focus .btn span {display:inline-block; _display:inline; _zoom:1; width:10px; height:10px; _font-size:0; margin-left:5px; cursor:pointer; background:#fff;}
+#focus .btn span.on {background:#fff;}
+#focus .preNext {width:45px; height:100px; position:absolute; top:90px; background:url(../images/sprite.png) no-repeat 0 0; cursor:pointer;}
+#focus .pre {left:0;}
+#focus .next {right:0; background-position:right top;}
